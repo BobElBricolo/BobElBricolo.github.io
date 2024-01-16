@@ -1,0 +1,12 @@
+a{
+  background-color: #262626;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1em;
+  text-decoration: none;
+
+}
+
+a:hover{
+  background-color: black;
+}

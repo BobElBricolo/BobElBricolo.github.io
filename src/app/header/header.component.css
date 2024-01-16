@@ -1,0 +1,12 @@
+.jumbotron{
+  padding: 4rem 1rem;
+  background-color: lightgray;
+  background-image: url("../../assets/Image/image5.png");
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h3{
+  text-shadow: 2px 2px 3px #36394A;
+  color: white;
+}
