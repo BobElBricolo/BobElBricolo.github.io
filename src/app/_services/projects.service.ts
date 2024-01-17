@@ -31,7 +31,7 @@ export class ProjectsService {
     {
       id: 2,
       name: 'Mini-jeu d\'action 3D',
-      summary: 'Explorez des contrées mystérieuses et défiez d\'immenses monstres dans cette aventure où chaque défi façonne votre légende.',
+      summary: 'Explorez des contrées mystérieuses et défiez des monstres dans cette aventure où chaque défi façonne votre légende.',
       description: '"A Knight\'s Wrath" est un mini-jeu d\'action auquel j\'ai participé. Vous incarnez un intrépide' +
         ' chevalier qui se bat contre des hordes d\'ennemis et d\'imposants boss. Le jeu se déroule sur plusieurs mini-cartes, chacune offrant des défis uniques. En tant que chevalier, les joueurs doivent faire preuve de compétence et de ruse pour surmonter des vagues d\'ennemis' +
         ' variés. Les combats intenses exigent une maîtrise de la stratégie pour triompher.',
