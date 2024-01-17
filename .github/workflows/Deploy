@@ -1,0 +1,28 @@
+name: Build and Deploy
+permissions:
+  contents: write 
+  
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout 🛎️
+      uses: actions/checkout@v3
+      
+    - name: Install and Build 🔧
+      run: |
+        npm install
+        npm run build:prod
+        # Copy to 404 cause gh pages is a little sus
+        cp ./dist/angular-portfolio-web/index.html ./dist/angular-portfolio-web/404.html
+        
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: dist/angular-portfolio-web
