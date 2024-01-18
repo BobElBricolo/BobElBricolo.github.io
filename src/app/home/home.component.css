@@ -12,9 +12,20 @@
   font-size: 2em;
 }
 
+.aligner{
+  margin: 0.25em;
+}
+
 @media screen and (max-width: 500px) {
   .para{
     font-size: 1em;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .aligner{
+    margin-left: 0;
+    margin-bottom: 0.7em;
   }
 }
