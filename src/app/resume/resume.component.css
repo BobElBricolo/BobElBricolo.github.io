@@ -21,3 +21,18 @@ a:hover{
   font-weight: 250;
   font-size: 1.3em;
 }
+
+.para{
+  font-size: 1.05em;
+  text-align: justify;
+  text-justify: inter-character;
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .para{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+}

@@ -1,5 +1,7 @@
 .para{
   font-size: 1.1em;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 .sousTitre{
@@ -10,3 +12,9 @@
   font-size: 2em;
 }
 
+@media screen and (max-width: 500px) {
+  .para{
+    font-size: 1em;
+    text-align: center;
+  }
+}
