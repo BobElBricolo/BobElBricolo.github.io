@@ -29,10 +29,19 @@ a:hover{
   padding-bottom: 1em;
 }
 
+.atout{
+  text-align: justify;
+  text-justify: inter-character;
+}
+
 @media screen and (max-width: 500px) {
   .para{
     font-size: 1em;
     text-align: center;
     padding-bottom: 1em;
+  }
+
+  .atout{
+    text-align: center;
   }
 }
