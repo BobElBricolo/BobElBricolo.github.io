@@ -10,3 +10,14 @@ a{
 a:hover{
   background-color: black;
 }
+
+.logo{
+  width: 105px;
+  height: 105px;
+  padding: 1rem;
+}
+
+.titre{
+  font-weight: 250;
+  font-size: 1.3em;
+}
