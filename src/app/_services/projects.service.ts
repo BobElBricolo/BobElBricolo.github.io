@@ -105,7 +105,4 @@ export class ProjectsService {
 
     return filteredProjects;
   }
-
-
-
 }
