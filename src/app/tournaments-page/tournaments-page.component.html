@@ -1,0 +1,16 @@
+<div class="tournaments-container">
+  <h1>Upcoming <span>Tournaments</span></h1>
+
+  <div class="tournament-list">
+    @for (tournament of tournaments; track tournament.title) {
+      <div class="tournament-card">
+        <h2>{{ tournament.title }}</h2>
+        <img [src]="tournament.image" [alt]="tournament.title" class="tournament-image" />
+        <p class="game">Game: {{ tournament.game }}</p>
+        <p class="date">Date: {{ tournament.date }}</p>
+        <a [href]="tournament.link" class="join-button">Join</a>
+      </div>
+    }
+  </div>
+
+</div>

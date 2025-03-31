@@ -1,0 +1,26 @@
+<div class="accueil-container">
+  <h1 class="titre">🎮 GetGoodOrGetOut</h1>
+
+  <button mat-raised-button class="btn-download">
+    📲 Télécharger l’application
+  </button>
+
+  <p class="description">
+    La plateforme ultime pour créer, rejoindre et gérer tes tournois en ligne. Que tu sois un amateur ou un compétiteur acharné, ici, c'est joue ou sors !
+  </p>
+
+  <ngx-slick-carousel
+    class="carousel"
+    [config]="{ slidesToShow: 1, slidesToScroll: 1, dots: true, infinite: true }"
+  >
+    @for (tournoi of tournois; track tournoi.tournamentName) {
+      <div ngxSlickItem class="slide">
+        <app-tournament-card [tournament]="tournoi"></app-tournament-card>
+      </div>
+    }
+  </ngx-slick-carousel>
+
+  <button mat-raised-button class="btn-azure" routerLink="/tournaments">
+    Voir les tournois
+  </button>
+</div>
