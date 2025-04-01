@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './mission.component.css'
 })
 export class MissionComponent {
-  img_src = "assets/_background/Astronaut-Home.png"
+  img_src = "assets/_background/floating-guys.png";
 }
