@@ -2,11 +2,11 @@
   <h1 class="titre">🎮 GetGoodOrGetOut</h1>
 
   <button mat-raised-button class="btn-download">
-    📲 Télécharger l’application
+    📲 {{ 'HOME.HTML.DOWNLOAD-BTN' | translate }}
   </button>
 
   <p class="description">
-    La plateforme ultime pour créer, rejoindre et gérer tes tournois en ligne. Que tu sois un amateur ou un compétiteur acharné, ici, c'est joue ou sors !
+    {{ 'HOME.HTML.DESCRIPTION' | translate }}
   </p>
 
   <ngx-slick-carousel
@@ -21,6 +21,6 @@
   </ngx-slick-carousel>
 
   <button mat-raised-button class="btn-azure" routerLink="/tournaments">
-    Voir les tournois
+    {{ 'HOME.HTML.TOURNAMENTS-BTN' | translate }}
   </button>
 </div>
