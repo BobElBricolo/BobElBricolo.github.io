@@ -1,0 +1,110 @@
+@if(!isLoading()){
+<div class="profil-container">
+  <mat-form-field class="search-user-field" appearance="outline">
+    <mat-label>Rechercher un utilisateur</mat-label>
+    <input type="text" matInput>
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+  <mat-card class="profile-card">
+    <form #profileForm="ngForm">
+      @if(isProfileOwner()) {
+      <div class="card-actions-top-right">
+        <button mat-icon-button color="primary" aria-label="Modifier le profil" matTooltip="Modifier le profil"
+          (click)="isEditing() ? cancelEdit() : editProfile()">
+          <mat-icon>{{ isEditing() ? 'close' : 'edit' }}</mat-icon>
+        </button>
+      </div>
+      }
+
+      <div class="header-row">
+        <div class="avatar-container">
+          <img [src]="previewImage || profileInfoCopyToEdit.profileImage || '/assets/_images/default_profil_image.webp'"
+            alt="Avatar" class="avatar" />
+
+          @if (isEditing()) {
+          <div class="edit-photo-btn">
+            <button mat-icon-button color="primary" (click)="imageInput.click()">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <input type="file" #imageInput accept="image/png" style="display: none" (change)="onFileSelected($event)" />
+          </div>
+          }
+        </div>
+
+
+        <div class="user-info">
+          <h2>{{ profilInfo()?.username }}</h2>
+
+          @if (!isEditing()) {
+          @if(profilInfo()?.email) {
+          <p class="email"><strong> Courriel:</strong> {{ profilInfo()?.email }}</p>
+          }
+          } @else {
+          <div class="edit-fields">
+
+            <!-- 
+                  <mat-form-field appearance="outline">
+                    <mat-label>Courriel</mat-label>
+                    <input matInput name="email"
+                           [(ngModel)]="profileInfoCopyToEdit.email"
+                           email type="email"
+                           #EmailInput="ngModel" />
+                    @if (EmailInput.invalid && EmailInput.touched) {
+                      <mat-error>
+                        Adresse courriel invalide
+                      </mat-error>
+                    }
+                  </mat-form-field>
+                  -->
+
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput name="email" [(ngModel)]="profileInfoCopyToEdit.email" email type="email" disabled="false"
+                #emailInput="ngModel" />
+            </mat-form-field>
+          </div>
+
+          }
+
+          <p class="created">
+            <mat-icon>event</mat-icon>
+            Compte créé le {{ profilInfo()?.createdAt | date:'dd MMM yyyy' }}
+          </p>
+        </div>
+      </div>
+
+      @if (isEditing()) {
+      <div class="save-button">
+        <button mat-raised-button color="primary" [disabled]="!profileForm.valid" (click)="saveProfile()">
+          Enregistrer
+        </button>
+      </div>
+      }
+    </form>
+  </mat-card>
+
+
+  <mat-card class="bio-card">
+    <h3>Bio</h3>
+
+    @if (!isEditing()) {
+    @if (profilInfo()?.bio) {
+    <p>{{ profilInfo()?.bio }}</p>
+    } @else {
+    <p>Aucune bio pour le moment</p>
+    }
+
+    } @else {
+    <mat-form-field appearance="outline" class="bio-field">
+      <mat-label>Bio</mat-label>
+      <textarea matInput rows="3" [(ngModel)]="profileInfoCopyToEdit.bio"></textarea>
+    </mat-form-field>
+    }
+  </mat-card>
+</div>
+}
+@else {
+<div class="is-loading">
+  <mat-spinner></mat-spinner>
+</div>
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "username": "GamerPro",
+        "email": "gamerpro@example.com",
+        "profileImage": "assets/_background/Astronaut.png",
+        "bio": "Passionné de jeux vidéo et compétiteur eSport.",
+        "createdAt": "2023-09-03T14:27:00Z"
+    },
+    {
+        "id": "2",
+        "username": "NoScopeMaster",
+        "email": "noscope@example.com",
+        "profileImage": "assets/_background/Astronaut.png",
+        "bio": "Sniper légendaire sur tous les FPS.",
+        "createdAt": "2023-09-03T14:27:00Z"
+    },
+    {
+        "id": "3",
+        "username": "BuildKing",
+        "email": "buildking@example.com",
+        "profileImage": "assets/_background/Astronaut.png",
+        "bio": "Architecte suprême de Fortnite.",
+        "createdAt": "2023-09-03T14:27:00Z"
+    }
+]
