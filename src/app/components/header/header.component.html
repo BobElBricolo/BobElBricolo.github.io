@@ -1,14 +1,31 @@
-<mat-toolbar color="primary" class="header">
-  <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="mobile-sidenav" mode="over">
+    <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
+    <a mat-list-item routerLink="/tournaments" (click)="sidenav.close()">Tournament</a>
+    <a mat-list-item routerLink="/about" (click)="sidenav.close()">About us</a>
+    <a mat-list-item routerLink="/installation" (click)="sidenav.close()">Download</a>
+  </mat-sidenav>
 
-  <span class="spacer"></span>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="header">
+      <button mat-icon-button (click)="sidenav.toggle()" class="burger-button">
+        <mat-icon>menu</mat-icon>
+      </button>
 
-  <a mat-button routerLink="/home">Home</a>
-  <a mat-button routerLink="/tournaments">Tournament</a>
-  <a mat-button routerLink="/about">About us</a>
-  <a mat-button routerLink="/installation">Download</a>
-  <a mat-button routerLink="/profil">
-    <img [width]="50" [height]="50" [src]="userProfilPicturePath" alt="Profil" />
-  </a>
-</mat-toolbar>
+      <img src="assets/Logo.png" alt="Logo" class="logo" />
 
+      <span class="spacer"></span>
+
+      <div class="desktop-links">
+        <a mat-button routerLink="/home">Home</a>
+        <a mat-button routerLink="/tournaments">Tournament</a>
+        <a mat-button routerLink="/about">About us</a>
+        <a mat-button routerLink="/installation">Download</a>
+      </div>
+
+      <a mat-button routerLink="/profil">
+        <img [width]="40" [height]="40" [src]="userProfilPicturePath" alt="Profil" />
+      </a>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

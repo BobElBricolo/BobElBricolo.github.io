@@ -20,3 +20,10 @@
     scroll-snap-align: none;
   }
 }
+
+@media (max-height: 670px) {
+  .section {
+    min-height: auto;
+    height: auto;
+  }
+}

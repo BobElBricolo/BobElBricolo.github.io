@@ -110,8 +110,8 @@
   }
 
   .circle-frame {
-    width: 250px;
-    height: 250px;
+    width: 70%;
+    height: auto;
   }
 
   .left-text {
@@ -130,4 +130,52 @@
     justify-content: center;
     padding-bottom: 5%;
   }
+}
+
+@media (max-height: 670px) {
+  .circle-frame {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Cacher par défaut les versions spécifiques */
+.desktop-only {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-only {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Sur mobile (moins de 768px), on inverse */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}
+
+/* Style général des boutons */
+.download-link {
+  padding: 0.8rem 1.5rem;
+  background-color: #00e0ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-link:hover {
+  background-color: #00cce0;
+  transform: scale(1.05);
 }

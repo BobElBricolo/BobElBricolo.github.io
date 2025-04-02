@@ -98,3 +98,49 @@
   border-radius: 50%;
   transform: rotate(-16deg); /* image droite */
 }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .circle-frame {
+    width: 250px;
+    height: 250px;
+  }
+
+  .right-text {
+    margin-top: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-text h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .see-works {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-height: 670px) {
+  .about-container {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .circle-frame {
+    width: 180px;
+    height: 180px;
+  }
+}
