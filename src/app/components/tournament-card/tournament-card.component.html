@@ -3,8 +3,8 @@
   [style.background-image]="'url(' + tournament().tournamentImage + ')'"
 >
   <div class="card-info">
-    <h3>{{ tournament().tournamentName }}</h3>
-    <p>{{ tournament().tournamentDate }} - {{ tournament().tournamentLocation }}</p>
-    <p class="description">{{ tournament().tournamentDescription }}</p>
+    <h3>{{ tournament().tournamentName | translate }}</h3>
+    <p>{{ tournament().tournamentDate | translate }} - {{ tournament().tournamentLocation | translate }}</p>
+    <p class="description">{{ tournament().tournamentDescription | translate }}</p>
   </div>
 </div>

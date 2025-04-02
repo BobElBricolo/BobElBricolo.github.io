@@ -91,3 +91,47 @@
   margin-top: 0.5rem;
   color: #dcdcdc;
 }
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .left-icon {
+    padding-top: 4rem;
+  }
+
+  .circle-frame {
+    width: 250px;
+    height: 250px;
+  }
+
+  .right-text {
+    margin-top: 0;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .right-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .feature-description {
+    font-size: 0.95rem;
+    margin-top: 0.4rem;
+  }
+
+  .learn-more {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+}
