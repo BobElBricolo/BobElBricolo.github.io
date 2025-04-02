@@ -39,7 +39,6 @@
   flex-wrap: wrap;
 }
 
-
 .download-link {
   background-color: #00e0ff;
   color: black;
@@ -87,7 +86,6 @@
   transform: rotate(-16deg);
 }
 
-
 @keyframes float {
   0% {
     transform: rotate(12deg) translateY(0);
@@ -97,5 +95,39 @@
   }
   100% {
     transform: rotate(12deg) translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .download-container {
+    flex-direction: column-reverse;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .right-image {
+    animation: none;
+    padding-top: 4rem;
+  }
+
+  .circle-frame {
+    width: 250px;
+    height: 250px;
+  }
+
+  .left-text {
+    padding: 0;
+  }
+
+  .left-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .download-buttons {
+    justify-content: center;
+    padding-bottom: 5%;
   }
 }
