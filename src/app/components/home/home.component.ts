@@ -25,14 +25,14 @@ export class HomeComponent {
       tournamentDate: 'HOME.TS.TOURNAMENT-DATE-RL',
       tournamentLocation: 'HOME.TS.TOURNAMENT-LOCATION-RL',
       tournamentDescription: 'HOME.TS.TOURNAMENT-DESCRIPTION-RL',
-      tournamentImage: 'assets/Warzone.jpg'
+      tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     {
       tournamentName: 'HOME.TS.TOURNAMENT-NAME-WZ',
       tournamentDate: 'HOME.TS.TOURNAMENT-DATE-WZ',
       tournamentLocation: 'HOME.TS.TOURNAMENT-LOCATION-WZ',
       tournamentDescription: 'HOME.TS.TOURNAMENT-DESCRIPTION-WZ',
-      tournamentImage: 'assets/Warzone.jpg'
+      tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     // autres tournois...
   ];
