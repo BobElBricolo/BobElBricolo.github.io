@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class ApiCallsService {
 
-  private jsonFilePathForProfile = '../../assets/_data/MockDataProfil.json';
-  
+  private jsonFilePathForProfile = 'assets/_data/MockDataProfil.json';
+
   constructor(private http: HttpClient) { }
 
   router = inject(Router);
@@ -46,5 +46,5 @@ export class ApiCallsService {
       })
     );
   }
-  
+
 }
