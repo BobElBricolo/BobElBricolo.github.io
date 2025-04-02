@@ -29,7 +29,6 @@ export class ApiCallsService {
         // Fallback: créer un profil avec le currentUser (plus tard ce sera inutile avec une vraie API)
         const userData = localStorage.getItem('currentUser');
         if (!userData) {
-          this.router.navigate(['/login']);
           return EMPTY;
         }
 
