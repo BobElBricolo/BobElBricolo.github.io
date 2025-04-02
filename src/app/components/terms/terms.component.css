@@ -117,3 +117,15 @@
     padding: 0.7rem 1.2rem;
   }
 }
+
+@media (max-height: 670px) {
+  .about-container {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .circle-frame {
+    width: 180px;
+    height: 180px;
+  }
+}
