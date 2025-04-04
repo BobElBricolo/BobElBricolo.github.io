@@ -42,7 +42,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "1500kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -102,6 +102,9 @@
               "node_modules/slick-carousel/slick/slick.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

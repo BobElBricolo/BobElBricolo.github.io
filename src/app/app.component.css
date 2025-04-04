@@ -4,13 +4,12 @@ app-header {
     left: 0;
     width: 100%;
     z-index: 1000;
-
 }
 
 main {
     overflow-y: auto;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom right, #0e0526, #320c4b);
+}
 
+.app-content {
+  padding-top: 80px;
 }

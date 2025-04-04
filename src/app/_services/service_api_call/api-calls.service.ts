@@ -28,7 +28,6 @@ export class ApiCallsService {
       catchError(() => {
         const userData = localStorage.getItem('currentUser');
         if (!userData) {
-          this.router.navigate(['/login']);
           return EMPTY;
         }
 
@@ -42,7 +41,7 @@ export class ApiCallsService {
           currentUser.profileImage,
           currentUser.bio,
         );
-        return of(fallbackProfile); 
+        return of(fallbackProfile);
       })
     );
   }

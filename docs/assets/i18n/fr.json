@@ -1,0 +1,107 @@
+{
+  "HOME":{
+    "HTML": {
+      "DOWNLOAD-BTN": "Télécharger l’application",
+      "DESCRIPTION": "La plateforme ultime pour créer, rejoindre et gérer tes tournois en ligne. Que tu sois un amateur ou un compétiteur acharné, ici, c'est joue ou sors !",
+      "SEE-TOURNAMENTS-BTN": "Voir les tournois"
+    },
+    "TS": {
+      "TOURNAMENT-NAME-RL": "Rocket League Open",
+      "TOURNAMENT-DATE-RL": "5 avril 2025",
+      "TOURNAMENT-LOCATION-RL": "En ligne",
+      "TOURNAMENT-DESCRIPTION-RL": "Tournoi 2v2 ouvert à tous, prix en argent disponible pour les gagnants !",
+      "TOURNAMENT-NAME-WARZONE": "Warzone Open",
+      "TOURNAMENT-DATE-WARZONE": "6 avril 2025",
+      "TOURNAMENT-LOCATION-WARZONE": "En ligne",
+      "TOURNAMENT-DESCRIPTION-WARZONE": "Tournoi Battle Royale ouvert à tous, prix en argent disponible pour les gagnants !"
+    }
+  },
+  "PROFIL":{
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "DOWNLOAD":{
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "DOWNLOAD-PAGE":{
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "DOWNLOAD-SECTION": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "FONCTIONNALITY": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "HEADER": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "HERO": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "HOME-PAGE": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "MISSION": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "TOURNAMENT-CARD": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  },
+  "TOURNAMENT-PAGE": {
+    "HTML": {
+
+    },
+    "TS": {
+
+    }
+  }
+}

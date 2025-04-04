@@ -4,6 +4,7 @@ import {MatButton} from '@angular/material/button';
 import {TournamentCard} from '../../_models/TournamentCard';
 import {TournamentCardComponent} from '../tournament-card/tournament-card.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import {SlickCarouselModule} from 'ngx-slick-carousel';
     RouterLink,
     MatButton,
     TournamentCardComponent,
-    SlickCarouselModule
+    SlickCarouselModule,
+    TranslatePipe
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -19,17 +21,17 @@ import {SlickCarouselModule} from 'ngx-slick-carousel';
 export class HomeComponent {
   tournois: TournamentCard[] = [
     {
-      tournamentName: 'Rocket League Open',
-      tournamentDate: '5 avril 2025',
-      tournamentLocation: 'En ligne',
-      tournamentDescription: 'Tournoi 2v2 ouvert à tous, cash prize à gagner!',
+      tournamentName: 'HOME.TS.TOURNAMENT-NAME-RL',
+      tournamentDate: 'HOME.TS.TOURNAMENT-DATE-RL',
+      tournamentLocation: 'HOME.TS.TOURNAMENT-LOCATION-RL',
+      tournamentDescription: 'HOME.TS.TOURNAMENT-DESCRIPTION-RL',
       tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     {
-      tournamentName: 'Rocket League Open',
-      tournamentDate: '5 avril 2025',
-      tournamentLocation: 'En ligne',
-      tournamentDescription: 'Tournoi 2v2 ouvert à tous, cash prize à gagner!',
+      tournamentName: 'HOME.TS.TOURNAMENT-NAME-WZ',
+      tournamentDate: 'HOME.TS.TOURNAMENT-DATE-WZ',
+      tournamentLocation: 'HOME.TS.TOURNAMENT-LOCATION-WZ',
+      tournamentDescription: 'HOME.TS.TOURNAMENT-DESCRIPTION-WZ',
       tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     // autres tournois...

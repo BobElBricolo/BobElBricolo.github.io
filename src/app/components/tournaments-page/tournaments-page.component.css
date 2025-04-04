@@ -21,8 +21,8 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
-
 .tournament-card {
   background-color: #1a1a2e;
   padding: 2rem;
@@ -49,7 +49,7 @@
   margin-bottom: 0.5rem;
 }
 
-.join-button {
+.join-button, .description-toggle {
   margin-top: 1rem;
   display: inline-block;
   background-color: #00e0ff;
@@ -61,7 +61,19 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.join-button:hover {
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+}
+
+.join-button:hover, .description-toggle:hover {
   background-color: #00cce0;
   transform: scale(1.05);
 }

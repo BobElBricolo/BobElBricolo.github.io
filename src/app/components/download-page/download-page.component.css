@@ -9,3 +9,14 @@
   scroll-snap-align: start;
   height: 100vh;
 }
+
+@media (max-width: 768px) {
+  .fullpage-wrapper {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+
+  .section {
+    scroll-snap-align: none;
+  }
+}
