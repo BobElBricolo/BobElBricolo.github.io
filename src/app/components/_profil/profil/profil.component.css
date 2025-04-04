@@ -1,11 +1,12 @@
 .profil-container {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     width: 100%;
     color: white;
+    padding-top: 10%;
+    background: linear-gradient(to bottom right, #0e0526, #320c4b);
 }
 
 .search-user-field {
