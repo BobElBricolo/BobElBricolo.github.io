@@ -23,14 +23,14 @@ export class HomeComponent {
       tournamentDate: '5 avril 2025',
       tournamentLocation: 'En ligne',
       tournamentDescription: 'Tournoi 2v2 ouvert à tous, cash prize à gagner!',
-      tournamentImage: 'assets/Warzone.jpg'
+      tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     {
       tournamentName: 'Rocket League Open',
       tournamentDate: '5 avril 2025',
       tournamentLocation: 'En ligne',
       tournamentDescription: 'Tournoi 2v2 ouvert à tous, cash prize à gagner!',
-      tournamentImage: 'assets/Warzone.jpg'
+      tournamentImage: 'assets/_videoGames/Warzone.jpg'
     },
     // autres tournois...
   ];

@@ -3,12 +3,18 @@
 
   <span class="spacer"></span>
 
-  <a mat-button routerLink="/home">Home</a>
-  <a mat-button routerLink="/tournaments">Tournament</a>
-  <a mat-button routerLink="/about">About us</a>
-  <a mat-button routerLink="/installation">Download</a>
-  <a mat-button routerLink="/profil">
-    <img [width]="50" [height]="50" [src]="userProfilPicturePath" alt="Profil" />
-  </a>
-</mat-toolbar>
+  <a class="link" mat-button routerLink="/home">Home</a>
+  <a class="link" mat-button routerLink="/tournaments">Tournament</a>
+  <a class="link" mat-button routerLink="/about">About us</a>
+  <a class="link" mat-button routerLink="/installation">Download</a>
 
+  @if(!isNotLogggedIn()){
+  <a (click)="onProfil()">
+    <img class="image-profil" src={{profileInfoCopyToEdit.profileImage}} alt="Profil" />
+  </a>}
+  @else{
+  <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>
+  }
+
+
+</mat-toolbar>

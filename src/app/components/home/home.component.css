@@ -4,7 +4,6 @@
   align-items: center;
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #1e1e2f, #141423);
   color: white;
   min-height: calc(100vh - 64px);
 }
