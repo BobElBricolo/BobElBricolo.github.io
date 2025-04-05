@@ -10,7 +10,7 @@
 
   @if(!isNotLogggedIn()){
   <a (click)="onProfil()">
-    <img class="image-profil" src={{profileInfoCopyToEdit.profileImage}} alt="Profil" />
+    <img class="image-profil" src={{connectedUser.profileImage}} alt="Profil" />
   </a>}
   @else{
   <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>

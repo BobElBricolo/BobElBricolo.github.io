@@ -26,22 +26,6 @@ export class HeaderComponent {
   authentificationService = inject(AuthentificationService);
 
   connectedUser = this.authentificationService.getUser();
-  profilInfo = signal<User | null>(null);
-  profileInfoCopyToEdit = new User('', '', '', '', false, '');
-
-
-  ngOnInit(): void {
-    this.apiCallsService.getProfileInfo(this.connectedUser.id).subscribe({
-      next: (data: User) => {
-        this.profilInfo.set(data);
-        this.profileInfoCopyToEdit = { ...data };
-      },
-      error: (err: any) => {
-        console.error('Erreur lors de la récupération du profil:', err);
-      }
-    });
-  }
-
 
   protected onProfil() {
     if (this.authentificationService.isNotLogggedIn()) {

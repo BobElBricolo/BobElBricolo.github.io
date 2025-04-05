@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 })
 export class ApiCallsService {
 
-  private jsonFilePathForProfile = '../../assets/_data/MockDataProfil.json';
-  private jsonFilePathForUserNames = '../../assets/_data/MockDataUserNames.json';
+  private jsonFilePathForProfile = '/assets/_data/MockDataProfil.json';
+  private jsonFilePathForUserNames = '/assets/_data/MockDataUserNames.json';
 
   constructor(private http: HttpClient) { }
 

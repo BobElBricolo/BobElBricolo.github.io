@@ -16,15 +16,9 @@ export class AuthentificationService {
 
   getUser(): User {
     const userData = localStorage.getItem(this.CURRENT_USER_KEY);
-    if (!userData) {
 
-    }
     const currentUser = userData ? JSON.parse(userData) : null;
 
-    if (!currentUser) {
-      //this.router.navigate(['/login']);
-      return new User("", "", "", "", false, "", "");
-    }
     return currentUser;
   }
 
