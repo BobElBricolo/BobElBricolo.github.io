@@ -10,7 +10,7 @@ describe('ConnexionComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ConnexionComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ConnexionComponent);
     component = fixture.componentInstance;

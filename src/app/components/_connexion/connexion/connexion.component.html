@@ -1,0 +1,33 @@
+<div class="connexion-container">
+    <mat-card class="card">
+        <div class="logo-container">
+            <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
+            <h3>GetGoodOrGetOut</h3>
+        </div>
+        <p class="welcome">Welcome back</p>
+        <div class="form-container">
+            <div class="flex-container">
+                <mat-form-field class="email" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" [(ngModel)]="user.email" required>
+                </mat-form-field>
+            </div>
+            <div class="flex-container">
+                <mat-form-field class="password" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" [(ngModel)]="user.password" required>
+                </mat-form-field>
+            </div>
+            <div class="forgot-password">
+                <a class="button" (click)="onForgotPassword()">Forgot password</a>
+            </div>
+            <div class="flex-container">
+                <button mat-flat-button class="button" (click)="onLogin()">Connexion</button>
+            </div>
+            <div class="flex-container align-center">
+                <p>You don't have an account yet?</p>
+                <a class="button" (click)="onRegister()">Sign-up</a>
+            </div>
+        </div>
+    </mat-card>
+</div>

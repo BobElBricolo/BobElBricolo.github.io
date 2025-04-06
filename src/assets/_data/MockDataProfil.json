@@ -1,11 +1,12 @@
 [
     {
         "id": "1",
-        "username": "GamerPro",
-        "email": "gamerpro@example.com",
+        "username": "BobbyLePro",
+        "email": "bobby.bob@uqtr.ca",
         "profileImage": "assets/_background/Astronaut.png",
-        "bio": "Passionné de jeux vidéo et compétiteur eSport.",
-        "createdAt": "2023-09-03T14:27:00Z"
+        "bio": "Passionné de jeux vidéo et compétiteur eSport depuis plus de 10 ans. J'ai gagner mon premier tournoi sur Lol quand j'avais 13 ans. Je suis toujours disponible pour faire des tournois",
+        "createdAt": "2023-09-03T14:27:00Z",
+        "isPremium": true
     },
     {
         "id": "2",
@@ -13,7 +14,8 @@
         "email": "noscope@example.com",
         "profileImage": "assets/_background/Astronaut.png",
         "bio": "Sniper légendaire sur tous les FPS.",
-        "createdAt": "2023-09-03T14:27:00Z"
+        "createdAt": "2023-09-04T14:27:00Z",
+        "isPremium": false
     },
     {
         "id": "3",
@@ -21,6 +23,16 @@
         "email": "buildking@example.com",
         "profileImage": "assets/_background/Astronaut.png",
         "bio": "Architecte suprême de Fortnite.",
-        "createdAt": "2023-09-03T14:27:00Z"
+        "createdAt": "2023-10-07T14:27:00Z",
+        "isPremium": false
+    },
+    {
+        "id": "4",
+        "username": "GamerPro",
+        "email": "gamerpro@example.com",
+        "profileImage": "assets/_background/Astronaut.png",
+        "bio": "Passionné de jeux vidéo et compétiteur eSport depuis plus de 10 ans. J'ai gagner mon premier tournoi sur Lol quand j'avais 13 ans. Je suis toujours disponible pour faire des tournois",
+        "createdAt": "2023-09-03T14:27:00Z",
+        "isPremium": true
     }
 ]

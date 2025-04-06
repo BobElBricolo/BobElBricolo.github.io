@@ -1,0 +1,59 @@
+<div class="register-container">
+    <mat-card class="card">
+        <div class="logo-container">
+            <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
+            <h3>GetGoodOrGetOut</h3>
+        </div>
+        <p class="welcome">Let's get started</p>
+
+        <!-- Ajout du [formGroup] ici -->
+        <form class="form-container" [formGroup]="signupForm">
+            <div class="flex-container">
+                <mat-form-field class="email" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email" required>
+                </mat-form-field>
+            </div>
+
+            <div class="flex-container">
+                <mat-form-field class="username" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput type="text" formControlName="username" required>
+                </mat-form-field>
+            </div>
+
+            <div class="flex-container">
+                <mat-form-field class="password" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password" required>
+                </mat-form-field>
+            </div>
+
+            <div class="flex-container">
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirm password</mat-label>
+                    <input matInput type="password" formControlName="confirmPassword" />
+
+                    @if (signupForm.get('confirmPassword')?.touched &&
+                    signupForm.get('confirmPassword')?.errors?.['required']) {
+                    <mat-error>Required</mat-error>
+                    }
+
+                    @if (signupForm.get('confirmPassword')?.touched &&
+                    signupForm.get('confirmPassword')?.errors?.['passwordsMismatch']) {
+                    <mat-error>Password doesnt match</mat-error>
+                    }
+                </mat-form-field>
+            </div>
+
+            <div class="flex-container">
+                <button mat-flat-button class="button" (click)="onRegister()">Register</button>
+            </div>
+
+            <div class="flex-container align-center">
+                <p>Already have an account?</p>
+                <a class="button" (click)="onLogin()">Sign-in</a>
+            </div>
+        </form>
+    </mat-card>
+</div>

@@ -4,7 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { DatePipe } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
@@ -13,8 +13,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { ApiCallsService } from '../../../_services/service_api_call/api-calls.service';
 import { AuthentificationService } from '../../../_services/authentification/authentification.service';
-import { ProfilInfo } from '../../../_models/ProfilInfo';
-
+import { User, UserName } from '../../../_models/UserInfo';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-profil',
@@ -31,6 +31,8 @@ import { ProfilInfo } from '../../../_models/ProfilInfo';
     MatAutocompleteModule,
     ReactiveFormsModule,
     DatePipe,
+    MatTabsModule,
+    CommonModule,
   ],
   templateUrl: './profil.component.html',
   styleUrl: './profil.component.css'
@@ -41,21 +43,28 @@ export class ProfilComponent implements OnInit {
   authentificationService = inject(AuthentificationService);
   snackBar = inject(MatSnackBar);
 
-  profilInfo = signal<ProfilInfo | null>(null);
-  profileInfoCopyToEdit = new ProfilInfo('', '', '', '', '');
+  profilInfo = signal<User | null>(null);
+  profileInfoCopyToEdit = new User('', '', '', '', false, "", "");
   isEditing = signal(false);
   isLoading = signal(false);
-  
+
   connectedUser = this.authentificationService.getUser();
   isProfileOwner = computed(() => this.connectedUser.id === this.profilInfo()?.id);
 
   previewImage: string | null = null;
 
+  searchQuery = signal<string>('');
+  allUsers = signal<UserName[]>([]);
+
+  filteredUsers = computed(() => {
+    return this.allUsers().filter(user => user.username.toLowerCase().includes(this.searchQuery().toLowerCase()));
+  });
+
   ngOnInit(): void {
     this.isLoading.set(true);
 
     this.apiCallsService.getProfileInfo(this.connectedUser.id).subscribe({
-      next: (data: ProfilInfo) => {
+      next: (data: User) => {
         this.profilInfo.set(data);
         this.profileInfoCopyToEdit = { ...data };
         this.isLoading.set(false);
@@ -65,11 +74,41 @@ export class ProfilComponent implements OnInit {
         this.isLoading.set(false);
       }
     });
+
+    this.apiCallsService.getAllProfileNames().subscribe({
+      next: (data: UserName[]) => {
+        this.allUsers.set(data);
+      },
+      error: (err) => console.error('Erreur utilisateurs:', err)
+    });
+  }
+
+
+  selectUser(user: UserName): void {
+    this.isLoading.set(true);
+    this.isEditing.set(false);
+    this.apiCallsService.getProfileInfo(user.id).subscribe({
+      next: (data: User) => {
+        this.profilInfo.set(data);
+        this.profileInfoCopyToEdit = { ...data };
+        this.isLoading.set(false);
+      },
+      error: (err) => {
+        console.error('Erreur lors de la récupération du profil:', err);
+        this.isLoading.set(false);
+      }
+    });
+
+    this.searchQuery.set('');
+  }
+
+  displayUser(user: UserName): string {
+    return user ? `${user.username}` : '';
   }
 
   cancelEdit(): void {
     this.isEditing.set(false);
-    this.profileInfoCopyToEdit = { ...this.profilInfo() as ProfilInfo };
+    this.profileInfoCopyToEdit = { ...this.profilInfo() as User };
   }
 
 
@@ -77,7 +116,7 @@ export class ProfilComponent implements OnInit {
     if (!this.profilInfo() || this.isEditing() || !this.isProfileOwner()) {
       return;
     }
-    this.profileInfoCopyToEdit = { ...this.profilInfo() as ProfilInfo };
+    this.profileInfoCopyToEdit = { ...this.profilInfo() as User };
     this.isEditing.set(true);
   }
 
@@ -106,4 +145,66 @@ export class ProfilComponent implements OnInit {
     }
   }
 
+  tournaments = [
+    {
+      title: 'Warzone',
+      game: 'Valorant',
+      date: 'February 12, 2025',
+      link: '#',
+      image: 'assets/_videoGames/Warzone.jpg',
+      index: 2,
+    },
+    {
+      title: 'CSGO',
+      game: 'Rocket League',
+      date: 'January 15, 2025',
+      link: '#',
+      image: 'assets/_videoGames/csgo.png',
+      index: 4,
+    },
+    {
+      title: 'League of Legends Cup',
+      game: 'LoL',
+      date: 'April 20, 2024',
+      link: '#',
+      image: 'assets/_videoGames/LOL.jpg',
+      index: 3,
+    },
+    {
+      title: 'Civ5',
+      game: 'Civilization 5',
+      date: 'April 12, 2023',
+      link: '#',
+      image: 'assets/_videoGames/civilization5.png',
+      index: 1,
+    }
+  ];
+
+  badges = [
+    {
+      image: 'assets/badges/badge1_v2.png',
+      title: 'Participer a son premier tournoie'
+    },
+    {
+      image: 'assets/badges/badge2.png',
+      title: 'Faire son premier dollars'
+    },
+    {
+      image: 'assets/badges/badge2.png',
+      title: 'Gagner son premier tournoie'
+    }
+  ]
+
+  getMedalIcon(position: number): string {
+    switch (position) {
+      case 1: return '🥇'; // Médaille d'or
+      case 2: return '🥈'; // Médaille d'argent
+      case 3: return '🥉'; // Médaille de bronze
+      default: return '🏅'; // Médaille générique pour les autres positions
+    }
+  }
+
+  logout() {
+    this.authentificationService.logout();
+  }
 }

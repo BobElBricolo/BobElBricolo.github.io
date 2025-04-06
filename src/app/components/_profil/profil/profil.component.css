@@ -1,20 +1,44 @@
 .profil-container {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom right, #0e0526, #320c4b);
     color: white;
+    padding-top: 10%;
+    background: linear-gradient(to bottom right, #0e0526, #320c4b);
 }
 
 .search-user-field {
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 1200px;
     transition: width 0.3s ease;
     border-radius: 20px;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logout-button {
+    background-color: #e53935;
+    /* rouge vif */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c62828;
+    /* plus foncé au survol */
 }
 
 .search-bar {
@@ -30,6 +54,8 @@
     background-color: linear-gradient(to bottom right, #0e0526, #320c4b);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    /* Bordure blanche subtile */
 }
 
 .card-actions-top-right {
@@ -77,43 +103,58 @@
 
 .user-info h2 {
     margin: 0;
+    margin-bottom: 30px;
     color: white;
-    font-size: 24px;
+    font-size: 36px;
+    padding: 5px;
+    display: flex;
+    /* Utiliser flexbox pour aligner les éléments */
+    align-items: center;
+    /* Aligner l'étoile et le nom */
+}
+
+.user-info h2 mat-icon {
+    color: orange;
+    font-size: 32px;
+    margin-left: 8px;
+    /* Espacement entre l'username et l'étoile */
+    position: relative;
+    /* S'assurer que l'étoile reste dans son conteneur */
+    bottom: 1px;
+    /* Ajuste légèrement la position verticale si nécessaire */
+    width: 32px;
+    /* Spécifie une largeur explicite de l'icône */
+    height: 32px;
+    /* Spécifie une hauteur explicite de l'icône */
 }
 
 .user-info .email {
-    margin: 4px 0;
-    color: white;
+    margin: 12px 0;
+    /* Augmenté pour plus d'espacement */
+    color: grey;
+    display: flex;
+    align-items: center;
+    /* Aligner l'icône et le texte */
+    gap: 8px;
+    /* Espacer l'icône et le texte */
 }
-
-.email strong {
-    color: white;
-}
-
 
 .user-info .created {
-    margin: 2px 0;
+    margin: 12px 0;
+    /* Augmenté pour plus d'espacement */
     padding-top: 4px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    /* Aligner l'icône et le texte */
+    gap: 8px;
+    /* Espacer l'icône et le texte */
 }
 
 .actions {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
-}
-
-.bio-card {
-    padding: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    border-radius: 16px;
-    background-color: linear-gradient(to bottom right, #0e0526, #320c4b);
-    box-shadow: 0 4px 8px rgba(49, 38, 38, 0.1);
-}
-
-.bio-card h3 {
-    color: white;
-    margin-bottom: 1rem;
 }
 
 .profile-card {
@@ -140,93 +181,151 @@
     height: 100%;
 }
 
+.tabs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centrer le contenu horizontalement */
+    padding: 1rem;
+    /* Ajouter un peu de padding autour des tabs */
+}
 
-@media screen and (max-width: 768px) {
-    .profile-container {
-        padding: 1rem;
-    }
+.bio-card {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 16px;
+    background-color: linear-gradient(to bottom right, #0e0526, #320c4b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    /* Bordure blanche subtile */
+    margin-bottom: 1rem;
+    /* Ajout d'un espacement entre les cartes */
+}
 
-    .profile-card,
-    .bio-card {
-        padding: 1.2rem;
-        border-radius: 12px;
-        width: 100%;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
+.bio-field {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
-    .header-row {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.tournament-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
 
-    .avatar-container {
-        margin: 0 0 1rem 0;
-    }
+.tournament-card {
+    background-color: #1a1a2e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(0, 224, 255, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .avatar {
-        width: 100px;
-        height: 100px;
-        border: 3px solid #007bff;
-    }
+.tournament-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 224, 255, 0.3);
+}
 
-    .edit-photo-btn {
-        bottom: 4px;
-        right: 4px;
-    }
+.tournament-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
 
-    .user-info {
-        width: 100%;
-    }
+.tournament-card .game,
+.tournament-card .date {
+    color: #dcdcdc;
+    margin-bottom: 0.5rem;
+}
 
-    .user-info h2 {
-        font-size: 20px;
-        word-break: break-word;
-    }
+.tournament-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
 
-    .user-info p {
-        font-size: 14px;
-        word-break: break-word;
-        white-space: normal;
-    }
 
-    .edit-fields {
-        gap: 1rem;
-    }
+.position {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
-    mat-form-field {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+.rank-icon {
+    font-size: 1.5em;
+}
 
-    .save-button {
-        justify-content: center;
-    }
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+}
 
-    .card-actions-top-right {
-        top: 8px;
-        right: 8px;
-    }
+.badge {
+    display: flex;
+    flex-direction: column;
+    /* Aligne l'image et le titre verticalement */
+    align-items: center;
+    /* Centre l'image et le titre horizontalement */
+    text-align: center;
+    /* Centrer le texte du titre */
+    max-width: 200px;
+    /* Limite la taille des badges */
+    position: relative;
+    /* Nécessaire pour l'animation du titre */
+    overflow: hidden;
+    /* Cache l'élément titre lorsqu'il est invisible */
+    transition: transform 0.3s ease;
+    /* Animation du badge au survol */
+}
 
-    .bio-card h3 {
-        text-align: center;
-    }
+/* Style de l'image du badge */
+.image-badge {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    /* Animation de l'agrandissement de l'image */
+}
 
-    .bio-card p {
-        font-size: 14px;
-        white-space: pre-wrap;
-        word-break: break-word;
-    }
+.badge-title {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fdfdfd;
+    font-weight: bold;
+    /* Texte en gras */
+    opacity: 0;
+    /* Cache le titre par défaut */
+    transition: opacity 0.3s ease;
+    /* Animation de l'apparition du titre */
+}
 
-    .option-content img {
-        width: 24px;
-        height: 24px;
-    }
+/* Effet au survol pour afficher le titre et agrandir l'image */
+.badge:hover .image-badge {
+    transform: scale(1.1);
+    /* Agrandit l'image */
+}
 
-    .option-content {
-        font-size: 14px;
-    }
+.badge:hover .badge-title {
+    opacity: 1;
+    /* Affiche le titre au survol */
+    transform: translateY(0);
+    /* Déplace le titre vers sa position originale */
+}
+
+.bio-title {
+    font-size: 50px;
+    color: #ece5e5;
+    /* Couleur du texte */
+    font-weight: bold;
 }

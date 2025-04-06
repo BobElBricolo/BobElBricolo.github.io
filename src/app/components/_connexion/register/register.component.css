@@ -1,0 +1,82 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrer les éléments verticalement */
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #0e0526, #320c4b);
+    color: white;
+}
+
+.logo-container {
+    margin-top: 40px;
+    /* Ajuste cette valeur selon ce que tu veux visuellement */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+}
+
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    /* Assurez-vous que les éléments à l'intérieur sont en colonne */
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    /* Ajout d'un rayon de bordure plus doux */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    padding: auto;
+}
+
+.form-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    /* Assurez-vous que les éléments à l'intérieur sont en colonne */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    /* Centrer les éléments horizontalement dans .flex-container */
+    justify-content: flex-start;
+    /* Centrer également verticalement dans .flex-container */
+    margin-top: 5px;
+    gap: 10px;
+}
+
+a.button {
+
+    text-decoration: underline;
+    /* Enlever le soulignement par défaut */
+    opacity: 0.5;
+    gap: 10px;
+    color: inherit;
+    /* Hérite de la couleur du texte, ou définissez une couleur spécifique */
+}
+
+a.button:hover {
+    opacity: 1;
+    text-decoration: underline;
+    /* Souligner lors du survol */
+    cursor: pointer;
+    /* Modifier le curseur pour indiquer que c'est un lien cliquable */
+}
+
+.email {
+    width: 100%;
+    max-width: 1200px;
+    transition: width 0.3s ease;
+    border-radius: 20px;
+}
