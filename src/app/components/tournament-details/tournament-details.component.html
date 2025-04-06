@@ -1,0 +1,89 @@
+<div class="tournament-details-page">
+  <div class="tournament-header">
+      <div class="header-bar">
+        <h1>{{ tournament.title }}</h1>
+
+        @if (!tournament.ended) {
+          <button class="join-button">Join Tournament</button>
+        }
+      </div>
+
+      <p class="game">{{ tournament.game }} – {{ tournament.date | date:'dd/MM/yyyy' }}</p>
+    <p class="description">{{ tournament.description }}</p>
+
+    @if (!tournament.ended) {
+      <div class="tournament-infos-inline">
+        <p><span class="label">Entry Fee:</span> {{ tournament.entryFee | currency: 'USD' }}</p>
+        <p><span class="label">Prize Pool:</span> {{ tournament.prize | currency: 'USD' }}</p>
+      </div>
+    }
+
+
+    <img [src]="tournament.image"
+         [alt]="tournament.title"
+         [ngClass]="tournament.ended ? 'tournament-banner-ended' : 'tournament-banner'"
+    />
+
+    @if (tournament.ended) {
+      <div class="prize-section">
+        <div class="left-content">
+          <h2 class="section-title">Prize Breakdown</h2>
+          <p class="section-description">
+            The top 3 players of this tournament earned their place on the podium — and walked away with cash prizes.
+          </p>
+        </div>
+
+        <div class="right-content">
+          <div class="tournament-podium">
+            <div class="podium-column second">
+              <div class="player">
+                <div class="medal">🥈</div>
+                <strong>{{ tournament.ranking[1].name }}</strong>
+                <span>$300</span>
+              </div>
+            </div>
+            <div class="podium-column first">
+              <div class="player">
+                <div class="medal">🥇</div>
+                <strong>{{ tournament.ranking[0].name }}</strong>
+                <span>$500</span>
+              </div>
+            </div>
+            <div class="podium-column third">
+              <div class="player">
+                <div class="medal">🥉</div>
+                <strong>{{ tournament.ranking[2].name }}</strong>
+                <span>$200</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+
+
+
+
+    @if (tournament.ended) {
+      <div class="ranking-section">
+        <div class="ranking-list-wrapper">
+          <h2 class="ranking-title">Final Ranking</h2>
+          <ol class="ranking-list">
+            @for (player of tournament.ranking; track player.name) {
+              <li>
+                <span class="position">#{{ tournament.ranking.indexOf(player) + 1 }}</span>
+                <span class="name">{{ player.name }}</span>
+                <span class="points">{{ player.points }} pts</span>
+              </li>
+            }
+          </ol>
+        </div>
+
+        <div class="astronaut-wrapper">
+          <img src="assets/_background/Astronaut_Crown.png" alt="Champion Astronaut" class="astronaut-image" />
+        </div>
+      </div>
+    }
+  </div>
+</div>

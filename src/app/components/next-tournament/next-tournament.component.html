@@ -1,0 +1,15 @@
+<div class="home-container">
+  <div class="left-section">
+    <h1>Next <span class="highlight">Tournament</span></h1>
+    <div class="intro">
+      <p class="description">
+        Ready to prove your skills? Join our upcoming tournament and battle your way to the top.
+      </p>
+      <button class="learn-more" (click)="openTournamentLink()">Register Now</button>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <app-tournament-card [tournament]="tournament"></app-tournament-card>
+</div>
+</div>

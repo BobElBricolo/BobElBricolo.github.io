@@ -9,7 +9,7 @@
 .tournaments-container h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .tournaments-container h1 span {
@@ -27,7 +27,7 @@
   background-color: #1a1a2e;
   padding: 2rem;
   border-radius: 12px;
-  width: 280px;
+  width: 300px;
   box-shadow: 0 0 20px rgba(0, 224, 255, 0.1);
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -82,4 +82,57 @@
   height: 160px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem; /* espace à gauche pour l’icône */
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background-color: #1a1a2e;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.1);
+}
+
+.view-toggle {
+  margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+  background-color: #1a1a2e;
+  color: #00e0ff;
+  border: 1px solid #00e0ff;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-toggle button:hover {
+  background-color: #00cce0;
+  color: black;
+}
+
+.view-toggle button.active {
+  background-color: #00e0ff;
+  color: black;
 }
