@@ -3,6 +3,7 @@ import { catchError, EMPTY, map, Observable, of } from 'rxjs';
 import { User, UserName, UserToRegister } from '../../_models/UserInfo';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import {Tournament} from '../../_models/TournamentDetails';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ export class ApiCallsService {
 
   private jsonFilePathForProfile = '/assets/_data/MockDataProfil.json';
   private jsonFilePathForUserNames = '/assets/_data/MockDataUserNames.json';
+  private jsonFileForTournamentDetails = '/assets/_data/MockDataTournaments.json';
 
   constructor(private http: HttpClient) { }
 
@@ -89,6 +91,22 @@ export class ApiCallsService {
     return new Observable(subscriber => {
       subscriber.next(newUser);
     });
+  }
+
+  getTournamentDetails(tournamentId: number): Observable<Tournament> {
+    return this.http.get<Tournament[]>(this.jsonFileForTournamentDetails).pipe(
+      map(tournaments => {
+        const tournament = tournaments.find(t => t.id === tournamentId);
+        if (!tournament) {
+          throw new Error(`Tournament with id ${tournamentId} not found`);
+        }
+        return tournament;
+      }),
+      catchError(() => {
+        console.error('Error fetching tournament details');
+        return EMPTY;
+      })
+    );
   }
 
 

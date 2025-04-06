@@ -13,9 +13,4 @@ import {TranslatePipe} from '@ngx-translate/core';
 export class TournamentCardComponent {
 
   tournament = input.required<TournamentCard>();
-
-  // On init, print the tournament name
-  ngOnInit() {
-    console.log(this.tournament().tournamentName);
-  }
 }

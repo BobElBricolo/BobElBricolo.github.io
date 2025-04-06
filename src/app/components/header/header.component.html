@@ -6,7 +6,7 @@
   <a class="link" mat-button routerLink="/home">Home</a>
   <a class="link" mat-button routerLink="/tournaments">Tournament</a>
   <a class="link" mat-button routerLink="/about">About us</a>
-  <a class="link" mat-button routerLink="/installation">Download</a>
+  <a class="link" mat-button routerLink="/download">Download</a>
 
   @if(!isNotLogggedIn()){
   <a (click)="onProfil()">
@@ -15,6 +15,4 @@
   @else{
   <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>
   }
-
-
 </mat-toolbar>

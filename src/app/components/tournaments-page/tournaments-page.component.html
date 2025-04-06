@@ -1,15 +1,37 @@
 <div class="tournaments-container">
-  <h1>Upcoming <span>Tournaments</span></h1>
+  <h1>
+    @if (viewMode === 'upcoming') {
+      <span>Upcoming</span>
+    } @else {
+      <span>Past</span>
+    }
+    Tournaments
+  </h1>
+
+  <div class="view-toggle">
+    <button [class.active]="viewMode === 'upcoming'" (click)="viewMode = 'upcoming'">Upcoming</button>
+    <button [class.active]="viewMode === 'past'" (click)="viewMode = 'past'">Past</button>
+  </div>
+
+  <div class="search-wrapper">
+    <i class="fas fa-search search-icon"></i>
+    <input
+      type="text"
+      class="search-bar"
+      placeholder="Search tournaments..."
+      [(ngModel)]="searchTerm"
+    />
+  </div>
 
   <div class="tournament-list">
-    @for (tournament of tournaments; track tournament.title) {
+    @for (tournament of filteredTournaments; track tournament.title) {
       <div class="tournament-card">
         <h2>{{ tournament.title }}</h2>
         <img [src]="tournament.image" [alt]="tournament.title" class="tournament-image" />
         <p class="game">Game: {{ tournament.game }}</p>
-        <p class="date">Date: {{ tournament.date }}</p>
+        <p class="date">Date: {{ tournament.date | date:'dd/MM/yyyy' }}</p>
         <div class="actions">
-          <a [href]="tournament.link" class="join-button">Join</a>
+          <a class="join-button" (click)="openTournament(tournament.id)">Join</a>
           <button class="description-toggle" (click)="toggleDescription(tournament)">
             {{ tournament.showDescription ? 'Hide' : 'Show' }} Description
           </button>
@@ -22,5 +44,4 @@
       </div>
     }
   </div>
-
 </div>

@@ -1,13 +1,13 @@
 .card {
   position: relative;
   border-radius: 1rem;
-min-height: 18.75rem;
-min-width: 37.5rem;
-background-size: cover;
+  min-height: 18.75rem;
+  min-width: 35rem;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.6);
-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -18,21 +18,25 @@ transition: transform 0.3s ease;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-width: 35.5rem;
-background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.65);
   color: white;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-sizing: border-box;
+}
 
-  h3 {
-    margin: 0 0 0.5rem;
-    font-size: 1.5rem;
-    color: #00e0ff;
-  }
+.card-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #00e0ff;
+}
 
-  .description {
-    font-size: 0.9rem;
-    color: #ddd;
-  }
+.card-info p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.4;
+  word-break: break-word;
 }
