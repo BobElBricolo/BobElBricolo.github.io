@@ -9,6 +9,8 @@ import { RegisterComponent } from './components/_connexion/register/register.com
 import { ForgotPasswordComponent } from './components/_connexion/forgot-password/forgot-password.component';
 import {AccueilPageComponent} from './components/accueil-page/accueil-page.component';
 import {TournamentDetailsComponent} from './components/tournament-details/tournament-details.component';
+import {Error404Component} from './components/error404/error404.component';
+import {Error403Component} from './components/error403/error403.component';
 
 export const routes: Routes = [
   { path: 'login', component: ConnexionComponent },
@@ -20,5 +22,8 @@ export const routes: Routes = [
   { path: 'about', component: HomePageComponent, data: { animation: 'aboutPage' } },
   { path: 'download', component: DownloadPageComponent, data: { animation: 'downloadPage' } },
   { path: 'profil', component: ProfilComponent, canActivate: [userLoggedGuard] },
+  {path: '404', component: Error404Component, data: { animation: '404Page' }},
+  {path: '403', component: Error403Component, data: { animation: '404Page' }},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path:'**', redirectTo: '404', pathMatch: 'full' } // Wildcard route for a 404 page
 ];
