@@ -1,0 +1,85 @@
+.forbidden-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0e0526, #320c4b);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.forbidden-content {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.forbidden-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.code {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #00e0ff;
+  margin: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: -10px;
+  color: #ffffff;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.forbidden-button {
+  display: inline-block;
+  background-color: #00e0ff;
+  color: #0e0526;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.forbidden-button:hover {
+  background-color: #00cce0;
+  transform: scale(1.05);
+}
+
+.forbidden-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #1a1a2e;
+  padding: 0.1rem;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .forbidden-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .forbidden-text {
+    text-align: center;
+  }
+
+  .forbidden-image img {
+    width: 200px;
+    height: 180px;
+  }
+}
