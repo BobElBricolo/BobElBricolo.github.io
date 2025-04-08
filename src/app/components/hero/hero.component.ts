@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
   img_src = "assets/_background/Astronaut-Home.png"
+
+  private readonly router = inject(Router)
+
+    openDownload() {
+        this.router.navigateByUrl('/download');
+    }
 }

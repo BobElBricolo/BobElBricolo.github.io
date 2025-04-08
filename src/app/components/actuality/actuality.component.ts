@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-actuality',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ActualityComponent {
 
+  private readonly router = inject(Router)
+
+  openRank() {
+    this.router.navigateByUrl('/tournament/27');
+  }
 }

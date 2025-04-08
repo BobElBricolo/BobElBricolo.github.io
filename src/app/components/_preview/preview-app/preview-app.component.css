@@ -1,0 +1,130 @@
+.results-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(to bottom right, #180038, #320c4b);
+  padding: 1rem;
+  gap: 2rem;
+  color: white;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00e0ff;
+}
+
+.match-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #00e0ff;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.4);
+}
+
+
+.score {
+  display: block;
+  font-size: 2rem;
+  margin-top: 0.3rem;
+}
+
+.vs {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.team.winner {
+  background-color: rgba(0, 224, 255, 0.1);
+  border: 2px solid #00e0ff;
+  transform: scale(1.05);
+}
+
+.match-image {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.2);
+}
+
+.stat-section {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+.stat-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #00e0ff;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-table thead {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.stats-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.results-card {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 0.5rem;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.2);
+  margin: .5rem auto;
+}
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+mat-card.results-card {
+  width: 100%;
+  max-width: 100%;
+}

@@ -11,6 +11,7 @@ import {AccueilPageComponent} from './components/accueil-page/accueil-page.compo
 import {TournamentDetailsComponent} from './components/tournament-details/tournament-details.component';
 import {Error404Component} from './components/error404/error404.component';
 import {Error403Component} from './components/error403/error403.component';
+import {AppBaseComponent} from './components/_preview/app-base/app-base.component';
 
 export const routes: Routes = [
   { path: 'login', component: ConnexionComponent },
@@ -24,6 +25,7 @@ export const routes: Routes = [
   { path: 'profil', component: ProfilComponent, canActivate: [userLoggedGuard] },
   {path: '404', component: Error404Component, data: { animation: '404Page' }},
   {path: '403', component: Error403Component, data: { animation: '404Page' }},
+  {path: 'gameplay', component:AppBaseComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path:'**', redirectTo: '404', pathMatch: 'full' } // Wildcard route for a 404 page
 ];

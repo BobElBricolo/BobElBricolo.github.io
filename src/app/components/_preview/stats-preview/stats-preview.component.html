@@ -1,0 +1,54 @@
+<div class="page-container">
+  <!-- Texte -->
+  <div class="text-section">
+    <h1><strong>MatchBoard</strong><br><span class="highlight">Preview</span></h1>
+    <p class="description">
+      Easily track standings, upcoming matchups, and results — all in one clear and dynamic interface.
+    </p>
+  </div>
+
+  <!-- Bracket card -->
+  <div class="bracket-card">
+    <div class="bracket-grid">
+      <!-- Pour chaque round -->
+      @for (round of rounds; track round; let r = $index) {
+        <div class="round-column">
+          @for (i of generateIndexArray(Math.pow(2, rounds.length - r - 1)); track i) {
+            <div class="match-slot">
+              @if (round[i]) {
+                <div class="match-wrapper" [class.has-vertical]="r < rounds.length - 1">
+                  <div class="match">
+                    <div class="team" [class.winner]="round[i].scoreA > round[i].scoreB">
+                      {{ round[i].teamA }}
+                      <span class="score">{{ round[i].scoreA }}</span>
+                    </div>
+                    <div class="team" [class.winner]="round[i].scoreB > round[i].scoreA">
+                      {{ round[i].teamB }}
+                      <span class="score">{{ round[i].scoreB }}</span>
+                    </div>
+                  </div>
+                  @if(r < rounds.length - 1) {
+                    @if (isUpperRound(i)) {
+                      <div class="line-vertical bottom"></div>
+                    } @else {
+                      <div class="line-vertical top"></div>
+                    }
+                  }
+
+
+                  @if (isRightRound(r)) {
+                    <div class="line-horizontal right"></div>
+                  }
+                  @if (isLeftRound(r)) {
+                    <div class="line-horizontal left"></div>
+                  }
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+
+    </div>
+  </div>
+</div>

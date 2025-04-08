@@ -1,0 +1,54 @@
+<mat-card class="results-card">
+  <div class="results-wrapper">
+    <!-- Partie gauche : équipes -->
+    <div class="left-side">
+      <h1 class="title">Round Results</h1>
+
+      <div class="match-summary">
+        <div class="team team-a" [class.winner]="winner === 'A'">
+          <img src="../../../../assets/_background/bear.png" alt="Team A" class="team-icon">
+          <h2>Team A</h2>
+          <span class="score">{{ teamA.score }}</span>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="team team-b" [class.winner]="winner === 'B'">
+          <img src="../../../../assets/_background/tiger.png" alt="Team B" class="team-icon">
+          <h2>Team B</h2>
+          <span class="score">{{ teamB.score }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partie droite : stats -->
+    <div class="right-side">
+      <div class="stat-section">
+        <h3>Stats</h3>
+
+        <table class="stats-table">
+          <thead>
+          <tr>
+            <th>Player</th>
+            <th>Kills</th>
+            <th>K/D</th>
+            <th>Win %</th>
+            <th>MVPs</th>
+          </tr>
+          </thead>
+          <tbody>
+            @for (player of stats; track player.name) {
+              <tr>
+                <td>{{ player.name }}</td>
+                <td>{{ player.kills }}</td>
+                <td>{{ player.kd }}</td>
+                <td>{{ player.winRate }}%</td>
+                <td>{{ player.mvps }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</mat-card>

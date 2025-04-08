@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DownloadComponent } from './download.component';
+import { StatsPreviewComponent } from './stats-preview.component';
 
-describe('DownloadComponent', () => {
-  let component: DownloadComponent;
-  let fixture: ComponentFixture<DownloadComponent>;
+describe('StatsPreviewComponent', () => {
+  let component: StatsPreviewComponent;
+  let fixture: ComponentFixture<StatsPreviewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DownloadComponent]
+      imports: [StatsPreviewComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DownloadComponent);
+    fixture = TestBed.createComponent(StatsPreviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

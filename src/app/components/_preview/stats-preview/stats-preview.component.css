@@ -1,0 +1,159 @@
+.page-container {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0e0526, #320c4b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 10rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.text-section {
+  max-width: 300px;
+  color: white;
+}
+
+.highlight {
+  color: #00e5ff;
+}
+
+.bracket-card {
+  background: linear-gradient(145deg, #10042a, #1b1033);
+  border-radius: 24px;
+  box-shadow: 0 0 60px rgba(0, 229, 255, 0.1);
+  padding: 2rem;
+  overflow-x: auto;
+}
+
+.bracket-grid {
+  display: flex;
+  gap: 80px;
+}
+
+.round-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.match-slot {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.match-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.match {
+  background: #1b1033;
+  border: 2px solid #8644ff;
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 220px;
+  z-index: 2;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  color: #b5b4b4;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team:last-child {
+  border-bottom: none;
+}
+
+.score {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.winner {
+  background-color: #2e1f65;
+  font-weight: bold;
+  color: #00e5ff;
+  border-left: 4px solid #00e5ff;
+}
+
+
+.line-vertical {
+  position: absolute;
+  right: -40px;
+  top: -55px;
+  width: 2px;
+  height: 110px;
+  background: #8644ff;
+  z-index: 1;
+}
+
+.match-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-horizontal {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background: #8644ff;
+  z-index: 1;
+}
+
+.line-horizontal.right {
+  right: -40px;
+  width: 40px;
+}
+
+.line-horizontal.left {
+  left: -40px;
+  width: 40px;
+}
+
+.line-vertical.top {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  height: 126%;
+  width: 2px;
+  background: #8644ff;
+  transform: translateY(-100%);
+}
+
+.line-vertical.bottom {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  height: 126%;
+  width: 2px;
+  background: #8644ff;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.text-section h1 .highlight {
+  color: #00e0ff;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: #dcdcdc;
+}

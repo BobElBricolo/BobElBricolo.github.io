@@ -1,0 +1,11 @@
+.match-card {
+  background: linear-gradient(to right, #6e1785, #24084c);
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.match-card:hover {
+  background: #8134af;
+}
