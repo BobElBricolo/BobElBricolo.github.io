@@ -1,0 +1,62 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 5%;
+  background: linear-gradient(to bottom right, #0e0526, #320c4b);
+  color: white;
+  flex-wrap: wrap; /* Pour le responsive */
+}
+
+.left-section {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 6rem;
+}
+
+.left-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.left-section h1 .highlight {
+  color: #00e0ff;
+}
+
+.intro {
+  margin-top: 2rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #dcdcdc;
+}
+
+.learn-more {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #00e0ff;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.learn-more:hover {
+  background-color: #00cce0;
+  transform: scale(1.05);
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}

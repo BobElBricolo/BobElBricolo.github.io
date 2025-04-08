@@ -1,0 +1,45 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 5%;
+  background: linear-gradient(to bottom right, #0e0526, #320c4b);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 2rem;
+}
+
+.left-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.left-section h1 .highlight {
+  color: #00e0ff;
+}
+
+
+
+.description {
+  font-size: 1.3rem;
+  color: #dcdcdc;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: 70%;
+}

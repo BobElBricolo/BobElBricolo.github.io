@@ -1,0 +1,12 @@
+<div class="overlay">
+  <div class="detail-box">
+    <h2>{{ match.teamA }} vs {{ match.teamB }}</h2>
+    <p>Score: {{ match.scoreA }} - {{ match.scoreB }}</p>
+    <p>Round: {{ match.round }}</p>
+    <p>Winner: {{ match.winner }}</p>
+    @if (match.details) {
+      <p>{{ match.details }}</p>
+    }
+    <button (click)="close.emit()">Close</button>
+  </div>
+</div>

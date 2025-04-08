@@ -1,0 +1,40 @@
+<div class="tournament-container">
+  <img src="../../../../assets/_background/gameplay.jpg" alt="Tournament Background" class="background-image" />
+
+  <div class="toggle-button" (click)="toggleStatusBar()">
+    {{ isOpen ? '−' : '+' }}
+  </div>
+
+  @if (isOpen) {
+    <div class="status-bar" @slideInOut>
+      <div class="tournament-info">
+        <div class="info-row">
+          <mat-icon>sports_esports</mat-icon>
+          <span>{{ tournamentInfo.kills }} kills</span>
+        </div>
+        <div class="info-row">
+          <mat-icon>emoji_events</mat-icon>
+          <span>Rank: #{{ tournamentInfo.tournamentRank }}</span>
+        </div>
+        <div class="info-row">
+          <mat-icon>leaderboard</mat-icon>
+          <span>In-game: #{{ tournamentInfo.gameRank }}</span>
+        </div>
+        <div class="info-row">
+          <mat-icon>repeat</mat-icon>
+          <span>Round {{ tournamentInfo.round }}</span>
+        </div>
+
+        <div class="players-title">This Round Opponents</div>
+        <div class="opponents">
+          @for (player of tournamentInfo.opponents; track player.name) {
+            <div class="opponent">
+              <span class="player-name">{{ player.name }}</span>
+              <span class="player-score">{{ player.kills }} ⚔</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

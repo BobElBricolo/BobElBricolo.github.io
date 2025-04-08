@@ -1,0 +1,25 @@
+<div class="fullpage-wrapper">
+  <section class="section">
+    <app-gameplay-section></app-gameplay-section>
+  </section>
+
+  <section class="section">
+    <app-preview-section></app-preview-section>
+  </section>
+
+  <section class="section">
+    <app-stats-preview></app-stats-preview>
+  </section>
+</div>
+
+@if (showPopup){
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <h2>Heads up!</h2>
+      <p>This app is under construction. What you’re seeing are prototypes of upcoming features.</p>
+      <button (click)="showPopup = false">Got it</button>
+    </div>
+  </div>
+
+}
+

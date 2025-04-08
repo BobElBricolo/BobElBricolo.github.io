@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-fonctionnality',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class FonctionnalityComponent {
   img_path = "assets/_background/controllers.png";
+  private readonly router = inject(Router)
+
+  openApp() {
+    this.router.navigate(['/gameplay']);
+  }
 }
