@@ -123,3 +123,83 @@
   font-size: 1.8rem;
   margin-bottom: 0.3rem;
 }
+
+@media (max-width: 768px) {
+  .winners-page {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem 5rem;
+    gap: 2rem;
+    min-height: auto;
+  }
+
+  .left-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .learn-more {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .podium {
+    gap: 0.7rem;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .podium-column {
+    width: 80px;
+    padding: 0.6rem 0;
+  }
+
+  .podium-column.first {
+    height: 150px;
+  }
+
+  .podium-column.second {
+    height: 110px;
+  }
+
+  .podium-column.third {
+    height: 90px;
+  }
+
+  .medal {
+    font-size: 1.5rem;
+  }
+
+  .player strong {
+    font-size: 1rem;
+  }
+
+  .player span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .learn-more {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .podium-column {
+    width: 70px;
+  }
+}

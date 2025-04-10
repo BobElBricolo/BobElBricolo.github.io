@@ -27,5 +27,11 @@ export const routes: Routes = [
   {path: '403', component: Error403Component, data: { animation: '404Page' }},
   {path: 'gameplay', component:AppBaseComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  {path:'**', redirectTo: '404', pathMatch: 'full' } // Wildcard route for a 404 page
+  {
+    matcher: (url) => {
+      // Ne pas capturer /sitemap.xml
+      return url.length === 1 && url[0].path === 'sitemap.xml' ? null : { consumed: url };
+    },
+    redirectTo: '404'
+  }
 ];

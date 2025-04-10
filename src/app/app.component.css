@@ -10,6 +10,18 @@ main {
     overflow-y: auto;
 }
 
-.app-content {
-  padding-top: 80px;
+
+@media (max-width: 768px) {
+    app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    main {
+        overflow-y: auto;
+      padding-top: 60px;
+    }
 }

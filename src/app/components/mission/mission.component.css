@@ -98,3 +98,82 @@
   border-radius: 50%;
   transform: rotate(-16deg); /* image droite */
 }
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    min-height: auto;
+  }
+
+  .left-cube {
+    order: -1; /* image au-dessus */
+    width: 100%;
+    justify-content: center;
+    margin-bottom: -1rem;
+    margin-top: 1.5rem;
+  }
+
+  .circle-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .cube {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: rotate(-16deg);
+  }
+
+  .right-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .who-we-are span {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .see-works {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .see-works {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.1rem;
+  }
+
+  .circle-frame {
+    width: 180px;
+    height: 180px;
+  }
+}

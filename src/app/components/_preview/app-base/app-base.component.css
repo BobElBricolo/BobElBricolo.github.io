@@ -14,9 +14,11 @@
   .fullpage-wrapper {
     scroll-snap-type: none;
     scroll-behavior: auto;
+    height: auto;
   }
 
   .section {
+    height: auto;
     scroll-snap-align: none;
   }
 }

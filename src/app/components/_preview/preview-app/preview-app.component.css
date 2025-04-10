@@ -128,3 +128,178 @@ mat-card.results-card {
   width: 100%;
   max-width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .left-section {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .left-section h1 {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .right-section {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  app-preview-app, mat-card.results-card {
+    width: 100% !important;
+  }
+
+  .results-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .left-side {
+    width: 100%;
+    align-items: center;
+  }
+
+  .right-side {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .match-summary {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .score {
+    font-size: 1.5rem;
+  }
+
+  .vs {
+    font-size: 1.5rem;
+  }
+
+  .stat-section {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .stat-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .stats-table {
+    width: 100%;
+    font-size: 0.85rem;
+    table-layout: fixed; /* force les colonnes à se répartir l’espace */
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .team {
+    padding: 0.5rem;
+  }
+
+  .team-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.3rem;
+    box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+  }
+
+  .team h2 {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+  }
+
+  .score {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+  }
+
+  .match-summary {
+    flex-direction: row !important; /* Force côte à côte */
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -2rem;
+  }
+
+  .team {
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem;
+    max-width: 140px; /* empêche que ça déborde */
+  }
+
+  .team-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .score {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .left-section h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .score {
+    font-size: 1.3rem;
+  }
+
+  .stat-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .stats-table {
+    font-size: 0.8rem;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 0.4rem;
+  }
+}
+

@@ -329,3 +329,158 @@
     /* Couleur du texte */
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .profil-container {
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .logout-container {
+    justify-content: center;
+  }
+
+  .search-user-field {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .avatar-container {
+    margin: 0 auto 1rem;
+  }
+
+  .avatar {
+    width: 130px;
+    height: 130px;
+  }
+
+  .user-info h2 {
+    font-size: 1.8rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .user-info .email,
+  .user-info .created {
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  .tabs-container {
+    padding: 0.5rem;
+  }
+
+  .bio-card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .bio-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .badges-container {
+    justify-content: center;
+  }
+
+  .badge {
+    max-width: 120px;
+  }
+
+  .image-badge {
+    width: 100px;
+    height: 100px;
+  }
+
+  .badge-title {
+    font-size: 1rem;
+  }
+
+  .tournament-list {
+    gap: 1rem;
+  }
+
+  .tournament-card {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .tournament-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .tournament-image {
+    height: 130px;
+  }
+
+  .position {
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .rank-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-card,
+  .bio-card,
+  .tournament-card {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .bio-card {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tournament-card {
+    padding: 1rem;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .user-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .bio-title {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    max-width: 100px;
+  }
+
+  .image-badge {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge-title {
+    font-size: 0.9rem;
+  }
+
+  .position {
+    font-size: 0.9rem;
+  }
+}
