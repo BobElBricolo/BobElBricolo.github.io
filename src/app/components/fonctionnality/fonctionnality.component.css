@@ -135,3 +135,27 @@
     padding: 0.6rem 1rem;
   }
 }
+
+@media (max-width: 1180px) {
+
+  .circle-frame {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-icon {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .features-container{
+    padding-bottom: 2rem;
+  }
+  .circle-frame {
+    width: 200px;
+    height: 200px;
+  }
+
+}

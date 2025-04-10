@@ -7,6 +7,7 @@ import { Router, RouterLink } from '@angular/router';
 import { AuthentificationService } from '../../_services/authentification/authentification.service';
 import { ApiCallsService } from '../../_services/service_api_call/api-calls.service';
 import { User } from '../../_models/UserInfo';
+import {MatMenu, MatMenuItem, MatMenuTrigger} from '@angular/material/menu';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,10 @@ import { User } from '../../_models/UserInfo';
     MatButtonModule,
     MatIconModule,
     NgOptimizedImage,
-    RouterLink
+    RouterLink,
+    MatMenu,
+    MatMenuTrigger,
+    MatMenuItem
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

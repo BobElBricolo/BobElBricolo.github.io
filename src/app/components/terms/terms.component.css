@@ -6,8 +6,20 @@
   padding: 0 5%;
   background: linear-gradient(to bottom right, #0e0526, #320c4b);
   color: white;
+  max-width: 100vw;
   flex-wrap: wrap;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 .left-text {
   flex: 1;
@@ -82,38 +94,69 @@
   transform: rotate(-16deg);
 }
 
+@media (max-width: 1180px) {
+
+  .circle-frame {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .terms-container {
     flex-direction: column-reverse;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     text-align: center;
-  }
-
-  .right-image {
-    padding-top: 8rem;
-  }
-
-  .circle-frame {
-    width: 250px;
-    height: 250px;
   }
 
   .left-text {
     padding: 0;
-    margin-top: 1.5rem;
   }
 
   .left-text h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   .description {
     font-size: 1rem;
+    margin-top: 1rem;
   }
 
   .download-pdf {
     margin-top: 1.5rem;
-    font-size: 1rem;
     padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .circle-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .pdf-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-text h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .download-pdf {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .circle-frame {
+    width: 170px;
+    height: 170px;
   }
 }

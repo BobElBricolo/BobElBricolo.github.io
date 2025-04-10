@@ -1,18 +1,43 @@
 <mat-toolbar color="primary" class="header">
-  <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
+  <!-- Logo à gauche en desktop / à droite en mobile via CSS -->
+  <a routerLink="/home" class="logo-container">
+    <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
+  </a>
 
   <span class="spacer"></span>
 
-  <a class="link" mat-button routerLink="/home">Home</a>
-  <a class="link" mat-button routerLink="/tournaments">Tournament</a>
-  <a class="link" mat-button routerLink="/about">About us</a>
-  <a class="link" mat-button routerLink="/download">Download</a>
+  <!-- Desktop nav -->
+  <nav class="nav-links desktop-only">
+    <a class="link" mat-button routerLink="/home">Home</a>
+    <a class="link" mat-button routerLink="/tournaments">Tournament</a>
+    <a class="link" mat-button routerLink="/about">About us</a>
+    <a class="link" mat-button routerLink="/download">Download</a>
 
-  @if(!isNotLogggedIn()){
-  <a (click)="onProfil()">
-    <img class="image-profil" src={{connectedUser.profileImage}} alt="Profil" />
-  </a>}
-  @else{
-  <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>
-  }
+    @if (!isNotLogggedIn()) {
+      <a (click)="onProfil()">
+        <img class="image-profil" [src]="connectedUser.profileImage" alt="Profil" />
+      </a>
+    } @else {
+      <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>
+    }
+  </nav>
+
+  <!-- Mobile menu icon -->
+  <button mat-icon-button [matMenuTriggerFor]="mobileMenu" class="mobile-only">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Mobile menu -->
+  <mat-menu #mobileMenu="matMenu">
+    <button mat-menu-item routerLink="/home">Home</button>
+    <button mat-menu-item routerLink="/tournaments">Tournament</button>
+    <button mat-menu-item routerLink="/about">About us</button>
+    <button mat-menu-item routerLink="/download">Download</button>
+
+    @if (!isNotLogggedIn()) {
+      <button mat-menu-item (click)="onProfil()">Profil</button>
+    } @else {
+      <button mat-menu-item routerLink="/login">Login</button>
+    }
+  </mat-menu>
 </mat-toolbar>
