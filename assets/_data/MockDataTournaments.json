@@ -1,0 +1,797 @@
+[
+  {
+    "id": 1,
+    "title": "Valorant Cup",
+    "game": "Valorant",
+    "date": "2025-05-12",
+    "description": "Join the Valorant Cup, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "entryFee": 11,
+    "prize": 777,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player4431",
+        "points": 179
+      },
+      {
+        "name": "Player7276",
+        "points": 159
+      },
+      {
+        "name": "Player9244",
+        "points": 125
+      },
+      {
+        "name": "Player3451",
+        "points": 117
+      },
+      {
+        "name": "Player9025",
+        "points": 68
+      },
+      {
+        "name": "Player7686",
+        "points": 216
+      },
+      {
+        "name": "Player1732",
+        "points": 277
+      },
+      {
+        "name": "Player9954",
+        "points": 169
+      },
+      {
+        "name": "Player8262",
+        "points": 50
+      },
+      {
+        "name": "Player3542",
+        "points": 163
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Valorant Championship",
+    "game": "Valorant",
+    "date": "2025-06-25",
+    "description": "Join the Valorant Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "entryFee": 15,
+    "prize": 1015,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player6079",
+        "points": 248
+      },
+      {
+        "name": "Player6973",
+        "points": 252
+      },
+      {
+        "name": "Player5675",
+        "points": 146
+      },
+      {
+        "name": "Player4936",
+        "points": 60
+      },
+      {
+        "name": "Player5857",
+        "points": 146
+      },
+      {
+        "name": "Player6835",
+        "points": 270
+      },
+      {
+        "name": "Player3716",
+        "points": 241
+      },
+      {
+        "name": "Player6890",
+        "points": 298
+      },
+      {
+        "name": "Player1014",
+        "points": 214
+      },
+      {
+        "name": "Player7122",
+        "points": 283
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Valorant Tournament",
+    "game": "Valorant",
+    "date": "2025-08-02",
+    "description": "Join the Valorant Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "entryFee": 11,
+    "prize": 905,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 4,
+    "title": "Valorant League",
+    "game": "Valorant",
+    "date": "2025-06-29",
+    "description": "Join the Valorant League, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "entryFee": 29,
+    "prize": 621,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player8385",
+        "points": 245
+      },
+      {
+        "name": "Player4461",
+        "points": 169
+      },
+      {
+        "name": "Player5465",
+        "points": 294
+      },
+      {
+        "name": "Player3961",
+        "points": 116
+      },
+      {
+        "name": "Player9156",
+        "points": 278
+      },
+      {
+        "name": "Player7767",
+        "points": 289
+      },
+      {
+        "name": "Player6321",
+        "points": 247
+      },
+      {
+        "name": "Player8920",
+        "points": 204
+      },
+      {
+        "name": "Player1859",
+        "points": 234
+      },
+      {
+        "name": "Player5251",
+        "points": 94
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Rocket League Showdown",
+    "game": "Rocket League",
+    "date": "2025-06-15",
+    "description": "Join the Rocket League Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "entryFee": 29,
+    "prize": 1308,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player7653",
+        "points": 281
+      },
+      {
+        "name": "Player3548",
+        "points": 223
+      },
+      {
+        "name": "Player3714",
+        "points": 99
+      },
+      {
+        "name": "Player3143",
+        "points": 183
+      },
+      {
+        "name": "Player5211",
+        "points": 70
+      },
+      {
+        "name": "Player2258",
+        "points": 115
+      },
+      {
+        "name": "Player2497",
+        "points": 250
+      },
+      {
+        "name": "Player8187",
+        "points": 55
+      },
+      {
+        "name": "Player8578",
+        "points": 127
+      },
+      {
+        "name": "Player2609",
+        "points": 123
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Rocket League Tournament",
+    "game": "Rocket League",
+    "date": "2025-10-02",
+    "description": "Join the Rocket League Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "entryFee": 22,
+    "prize": 1355,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 7,
+    "title": "Rocket League Cup",
+    "game": "Rocket League",
+    "date": "2025-08-17",
+    "description": "Join the Rocket League Cup, where you could compete for glory and money!",
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "entryFee": 15,
+    "prize": 850,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 8,
+    "title": "Rocket League Getaway",
+    "game": "Rocket League",
+    "date": "2025-06-23",
+    "description": "Join the Rocket League Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "entryFee": 6,
+    "prize": 1203,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player1727",
+        "points": 106
+      },
+      {
+        "name": "Player4704",
+        "points": 176
+      },
+      {
+        "name": "Player6786",
+        "points": 69
+      },
+      {
+        "name": "Player8695",
+        "points": 196
+      },
+      {
+        "name": "Player3005",
+        "points": 252
+      },
+      {
+        "name": "Player7244",
+        "points": 136
+      },
+      {
+        "name": "Player7388",
+        "points": 212
+      },
+      {
+        "name": "Player7598",
+        "points": 81
+      },
+      {
+        "name": "Player4892",
+        "points": 226
+      },
+      {
+        "name": "Player6512",
+        "points": 249
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "League of Legends Tournament",
+    "game": "League of Legends",
+    "date": "2025-08-20",
+    "description": "Join the League of Legends Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "entryFee": 15,
+    "prize": 1137,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 10,
+    "title": "League of Legends Showdown",
+    "game": "League of Legends",
+    "date": "2025-11-03",
+    "description": "Join the League of Legends Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "entryFee": 24,
+    "prize": 873,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 11,
+    "title": "League of Legends Getaway",
+    "game": "League of Legends",
+    "date": "2025-12-21",
+    "description": "Join the League of Legends Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "entryFee": 14,
+    "prize": 727,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 12,
+    "title": "League of Legends Championship",
+    "game": "League of Legends",
+    "date": "2025-09-23",
+    "description": "Join the League of Legends Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "entryFee": 27,
+    "prize": 708,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 13,
+    "title": "Apex Legends Tournament",
+    "game": "Apex Legends",
+    "date": "2025-07-22",
+    "description": "Join the Apex Legends Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "entryFee": 20,
+    "prize": 603,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 14,
+    "title": "Apex Legends Championship",
+    "game": "Apex Legends",
+    "date": "2025-09-24",
+    "description": "Join the Apex Legends Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "entryFee": 13,
+    "prize": 1296,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 15,
+    "title": "Apex Legends Showdown",
+    "game": "Apex Legends",
+    "date": "2025-09-05",
+    "description": "Join the Apex Legends Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "entryFee": 5,
+    "prize": 1289,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 16,
+    "title": "Apex Legends Getaway",
+    "game": "Apex Legends",
+    "date": "2025-08-26",
+    "description": "Join the Apex Legends Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "entryFee": 10,
+    "prize": 1472,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 17,
+    "title": "Dota 2 Tournament",
+    "game": "Dota 2",
+    "date": "2025-07-30",
+    "description": "Join the Dota 2 Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "entryFee": 5,
+    "prize": 1399,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 18,
+    "title": "Dota 2 Championship",
+    "game": "Dota 2",
+    "date": "2025-11-07",
+    "description": "Join the Dota 2 Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "entryFee": 12,
+    "prize": 743,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 19,
+    "title": "Dota 2 Showdown",
+    "game": "Dota 2",
+    "date": "2025-06-14",
+    "description": "Join the Dota 2 Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "entryFee": 29,
+    "prize": 990,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player2769",
+        "points": 206
+      },
+      {
+        "name": "Player2706",
+        "points": 234
+      },
+      {
+        "name": "Player6025",
+        "points": 171
+      },
+      {
+        "name": "Player6591",
+        "points": 84
+      },
+      {
+        "name": "Player1416",
+        "points": 189
+      },
+      {
+        "name": "Player7924",
+        "points": 290
+      },
+      {
+        "name": "Player8358",
+        "points": 137
+      },
+      {
+        "name": "Player5533",
+        "points": 273
+      },
+      {
+        "name": "Player4943",
+        "points": 260
+      },
+      {
+        "name": "Player5794",
+        "points": 258
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Dota 2 Getaway",
+    "game": "Dota 2",
+    "date": "2025-08-30",
+    "description": "Join the Dota 2 Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "entryFee": 29,
+    "prize": 666,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Fortnite Tournament",
+    "game": "Fortnite",
+    "date": "2025-05-18",
+    "description": "Join the Fortnite Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "entryFee": 14,
+    "prize": 1036,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      },
+      {
+        "name": "Player4154",
+        "points": 55
+      },
+      {
+        "name": "Player8861",
+        "points": 239
+      },
+      {
+        "name": "Player4824",
+        "points": 289
+      },
+      {
+        "name": "Player9979",
+        "points": 180
+      },
+      {
+        "name": "Player4229",
+        "points": 226
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Fortnite Championship",
+    "game": "Fortnite",
+    "date": "2025-08-19",
+    "description": "Join the Fortnite Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "entryFee": 29,
+    "prize": 1082,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 23,
+    "title": "Fortnite Showdown",
+    "game": "Fortnite",
+    "date": "2025-09-09",
+    "description": "Join the Fortnite Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "entryFee": 13,
+    "prize": 947,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      },
+      {
+        "name": "Player4154",
+        "points": 55
+      },
+      {
+        "name": "Player8861",
+        "points": 239
+      },
+      {
+        "name": "Player4824",
+        "points": 289
+      },
+      {
+        "name": "Player9979",
+        "points": 180
+      },
+      {
+        "name": "Player4229",
+        "points": 226
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Fortnite Getaway",
+    "game": "Fortnite",
+    "date": "2025-07-31",
+    "description": "Join the Fortnite Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "entryFee": 23,
+    "prize": 790,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 25,
+    "title": "Warzone Tournament",
+    "game": "Warzone",
+    "date": "2025-06-26",
+    "description": "Join the Warzone Tournament, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "entryFee": 26,
+    "prize": 744,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player9528",
+        "points": 168
+      },
+      {
+        "name": "Player2923",
+        "points": 224
+      },
+      {
+        "name": "Player8990",
+        "points": 243
+      },
+      {
+        "name": "Player6805",
+        "points": 143
+      },
+      {
+        "name": "Player9547",
+        "points": 101
+      },
+      {
+        "name": "Player8591",
+        "points": 54
+      },
+      {
+        "name": "Player7813",
+        "points": 300
+      },
+      {
+        "name": "Player8386",
+        "points": 123
+      },
+      {
+        "name": "Player2067",
+        "points": 227
+      },
+      {
+        "name": "Player3107",
+        "points": 205
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Warzone Championship",
+    "game": "Warzone",
+    "date": "2025-11-27",
+    "description": "Join the Warzone Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "entryFee": 19,
+    "prize": 1339,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player9528",
+        "points": 168
+      },
+      {
+        "name": "Player2923",
+        "points": 224
+      },
+      {
+        "name": "Player8990",
+        "points": 243
+      },
+      {
+        "name": "Player6805",
+        "points": 143
+      },
+      {
+        "name": "Player9547",
+        "points": 101
+      },
+      {
+        "name": "Player8591",
+        "points": 54
+      },
+      {
+        "name": "Player7813",
+        "points": 300
+      },
+      {
+        "name": "Player8386",
+        "points": 123
+      },
+      {
+        "name": "Player2067",
+        "points": 227
+      },
+      {
+        "name": "Player3107",
+        "points": 205
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Warzone Showdown",
+    "game": "Warzone",
+    "date": "2025-09-11",
+    "description": "Join the Warzone Showdown, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "entryFee": 24,
+    "prize": 1271,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 28,
+    "title": "Warzone Getaway",
+    "game": "Warzone",
+    "date": "2025-09-01",
+    "description": "Join the Warzone Getaway, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "entryFee": 13,
+    "prize": 798,
+    "ended": false,
+    "ranking": []
+  }
+]
