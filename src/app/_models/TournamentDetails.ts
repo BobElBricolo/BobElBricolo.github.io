@@ -9,6 +9,7 @@ export class Tournament {
   description!: string;
   ended!: boolean;
   ranking!: PlayerRanking[];
+  paiementLink!: string;
 }
 
 export class PlayerRanking {
