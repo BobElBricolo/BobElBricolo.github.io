@@ -194,3 +194,7 @@
     height: 180px;
   }
 }
+
+.left-section h1 .highlight {
+  color: #00e0ff;
+}
