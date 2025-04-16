@@ -177,3 +177,7 @@
     height: 180px;
   }
 }
+
+.highlight {
+  color: #00e0ff !important;
+}

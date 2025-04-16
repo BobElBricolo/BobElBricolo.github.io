@@ -2,3 +2,14 @@
 <main>
   <router-outlet></router-outlet>
 </main>
+
+@if (showPopup) {
+  <div class="popup-overlay">
+    <div class="popup-content">
+      <h2>{{ 'POPUP.HTML.TITLE' | translate }}</h2>
+      <p [innerHTML]="'POPUP.HTML.DESCRIPTION' | translate"></p>
+      <button (click)="showPopup = false">{{ 'POPUP.HTML.BUTTON' | translate }}</button>
+    </div>
+  </div>
+}
+

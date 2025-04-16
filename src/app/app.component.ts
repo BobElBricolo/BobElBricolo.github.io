@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from './components/header/header.component';
-import {TranslateService} from '@ngx-translate/core';
+import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent,
+  imports: [RouterOutlet, HeaderComponent, TranslatePipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -20,4 +20,6 @@ export class AppComponent {
     const langToUse = browserLang && supportedLangs.includes(browserLang) ? browserLang : 'en';
     translate.use(langToUse);
   }
+
+  showPopup = true;
 }

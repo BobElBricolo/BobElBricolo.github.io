@@ -81,14 +81,6 @@
 
     }
   },
-  "MISSION": {
-    "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
   "TOURNAMENT-CARD": {
     "HTML": {
 
@@ -104,5 +96,54 @@
     "TS": {
 
     }
+  },
+  "POPUP": {
+    "HTML": {
+      "TITLE": "Heads up!",
+      "DESCRIPTION": "This site is a <strong>prototype</strong>. Please do not make any real purchases.<br />By continuing to browse, you agree to our use of <strong>cookies</strong> for analytics purposes.",
+      "BUTTON": "Got it"
+    },
+    "TS": {
+
+    }
+  },
+  "MISSION": {
+    "HTML": {
+      "TITLE1": "Our mission",
+      "TITLE2": "and vision",
+      "SUBTITLE1": "— Our Mission",
+      "DESCRIPTION1": "To make gaming tournaments and betting accessible to everyone by simplifying their organization and delivering a smooth, enjoyable, and automated experience.",
+      "SUBTITLE2": "— Our Vision",
+      "DESCRIPTION2": "Building a true eSport ecosystem where players, organizers, and spectators come together around a shared passion and an engaging competitive experience.",
+      "BUTTON": "Explore the platform"
+    },
+    "TS": {}
+  },
+  "ABOUT": {
+    "HERO": {
+      "HTML": {
+        "TITLE1": "Train.",
+        "TITLE2": "Compete.",
+        "TITLE3": "Win.",
+        "SUBTITLE": "— What We’re About",
+        "DESCRIPTION": "We build competitive experiences for those who play to improve — not just to play.",
+        "BUTTON": "Join the Arena"
+      },
+      "TS": {}
+    }
+  },
+  "CONTACT": {
+    "HTML": {
+      "TITLE_BLUE": "Contact",
+      "TITLE_REST": " us",
+      "DESCRIPTION1": "Have questions or want to work with us? We'd love to hear from you.",
+      "DESCRIPTION2": "You can find us at:",
+      "ADDRESS": "3351 Bd des Forges, Trois-Rivières, QC G8Z 4M3",
+      "DESCRIPTION3": "Or reach us by email at"
+    },
+    "TS": {}
   }
+
+
+
 }

@@ -1,19 +1,25 @@
 <div class="home-container">
   <div class="left-section">
-    <h1>Train. <br />Compete. <br /><span>Win.</span></h1>
+    <h1>
+      {{ 'ABOUT.HERO.HTML.TITLE1' | translate }}<br />
+      <span class="highlight">{{ 'ABOUT.HERO.HTML.TITLE2' | translate }}</span><br />
+      <span>{{ 'ABOUT.HERO.HTML.TITLE3' | translate }}</span>
+    </h1>
+
     <div class="what-we-do">
-      <p><span>— What We’re About</span></p>
+      <p><span>{{ 'ABOUT.HERO.HTML.SUBTITLE' | translate }}</span></p>
       <p class="description">
-        We build competitive experiences for those who play to improve — not just to play.
+        {{ 'ABOUT.HERO.HTML.DESCRIPTION' | translate }}
       </p>
-      <button (click)="openDownload()" class="learn-more">Join the Arena</button>
+      <button (click)="openDownload()" class="learn-more">
+        {{ 'ABOUT.HERO.HTML.BUTTON' | translate }}
+      </button>
     </div>
   </div>
 
   <div class="right-section">
     <div class="oval-frame">
-      <img src={{img_src}} alt="Astronaut" class="astronaut" />
+      <img [src]="img_src" alt="Astronaut" class="astronaut" />
     </div>
   </div>
-
 </div>

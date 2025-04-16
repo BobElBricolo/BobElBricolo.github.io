@@ -1,9 +1,12 @@
 import {Component, inject} from '@angular/core';
 import {Router} from '@angular/router';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mission',
-  imports: [],
+  imports: [
+    TranslatePipe
+  ],
   templateUrl: './mission.component.html',
   styleUrl: './mission.component.css'
 })

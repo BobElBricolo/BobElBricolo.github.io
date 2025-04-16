@@ -80,14 +80,6 @@
 
     }
   },
-  "MISSION": {
-    "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
   "TOURNAMENT-CARD": {
     "HTML": {
 
@@ -103,5 +95,52 @@
     "TS": {
 
     }
+  },
+  "POPUP": {
+    "HTML": {
+      "TITLE": "Attention",
+      "DESCRIPTION": "Ce site est un <strong>prototype</strong>. Veuillez ne pas effectuer d’achats réels.<br />En naviguant, vous acceptez notre utilisation des <strong>cookies</strong> à des fins d’analyse.",
+      "BUTTON": "Compris"
+    },
+    "TS": {
+
+    }
+  },
+  "MISSION": {
+    "HTML": {
+      "TITLE1": "Notre mission",
+      "TITLE2": "et vision",
+      "SUBTITLE1": "— Notre mission",
+      "DESCRIPTION1": "Rendre les tournois de jeux et les paris accessibles à tous en simplifiant leur organisation et en offrant une expérience fluide, agréable et automatisée.",
+      "SUBTITLE2": "— Notre vision",
+      "DESCRIPTION2": "Créer un véritable écosystème eSport où joueurs, organisateurs et spectateurs se réunissent autour d'une passion commune et d'une expérience compétitive engageante.",
+      "BUTTON": "Explorer la plateforme"
+    },
+    "TS": {}
+  },
+  "ABOUT": {
+    "HERO": {
+      "HTML": {
+        "TITLE1": "Apprends.",
+        "TITLE2": "Évolue.",
+        "TITLE3": "Excelle.",
+        "SUBTITLE": "— Notre philosophie",
+        "DESCRIPTION": "Nous créons des expériences compétitives pour ceux qui jouent pour progresser — pas juste pour jouer.",
+        "BUTTON": "Rejoins l’arène"
+      },
+      "TS": {}
+    }
+  },
+  "CONTACT": {
+    "HTML": {
+      "TITLE_BLUE": "Contactez",
+      "TITLE_REST": "nous",
+      "DESCRIPTION1": "Vous avez des questions ou souhaitez collaborer avec nous ? Écrivez-nous, ça nous fera plaisir.",
+      "DESCRIPTION2": "Vous pouvez nous trouver à l’adresse suivante :",
+      "ADDRESS": "3351 Bd des Forges, Trois-Rivières, QC G8Z 4M3",
+      "DESCRIPTION3": "Ou nous joindre par courriel à"
+    },
+    "TS": {}
   }
+
 }
