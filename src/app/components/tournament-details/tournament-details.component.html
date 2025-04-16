@@ -4,7 +4,7 @@
         <h1>{{ tournament.title }}</h1>
 
         @if (!tournament.ended) {
-          <button class="join-button">Join Tournament</button>
+          <button class="join-button" (click)="redirectToPayment()">Join Tournament</button>
         }
       </div>
 

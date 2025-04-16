@@ -29,5 +29,10 @@ export class TournamentDetailsComponent implements OnInit {
       });
     }
   }
+
+  redirectToPayment() {
+    const features = 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes,status=yes';
+    window.open(this.tournament.paiementLink, '_blank', features);
+  }
 }
 
