@@ -1,12 +1,18 @@
 export class Tournament {
   id!: number;
-  title!: string;
+  title!: {
+    en: string;
+    fr: string;
+  };
   game!: string;
   date!: Date;
   image!: string;
   entryFee!: number;
   prize!: number;
-  description!: string;
+  description!: {
+    en: string;
+    fr: string;
+  };
   ended!: boolean;
   ranking!: PlayerRanking[];
   paiementLink!: string;

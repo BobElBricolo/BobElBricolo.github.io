@@ -147,6 +147,18 @@
 
     }
   },
+  "TOURNAMENT-DETAILS": {
+    "HTML": {
+      "BTN_JOIN": "Participer au Tournament",
+      "FEE": "Frais d'entrée:",
+      "PRIZE": "Cagnotte totale:",
+      "TITLE_BDN": "Répartition des prix",
+      "DESCRIPTION": "Le top 3 des joueurs de ce tournoi a mérité sa place sur le podium - et remporté des prix en argent."
+    },
+    "TS": {
+
+    }
+  },
   "TOURNAMENT-PAGE": {
     "HTML": {
 

@@ -1,10 +1,16 @@
 [
   {
     "id": 1,
-    "title": "Valorant Cup",
+    "title": {
+      "en": "Valorant Cup",
+      "fr": "Coupe Valorant"
+    },
     "game": "Valorant",
     "date": "2025-05-12",
-    "description": "Join the Valorant Cup, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Valorant Cup, where you could compete for glory and money!",
+      "fr": "Rejoignez la Coupe Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Valorant.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_cN2bJi5czalG0jm8wy",
@@ -56,10 +62,16 @@
   },
   {
     "id": 2,
-    "title": "Valorant Championship",
+    "title": {
+      "en": "Valorant Championship",
+      "fr": "Championnat Valorant"
+    },
     "game": "Valorant",
     "date": "2025-06-25",
-    "description": "Join the Valorant Championship, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Valorant Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Valorant.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_eVa3cMdJ551md68bIL",
@@ -111,10 +123,16 @@
   },
   {
     "id": 3,
-    "title": "Valorant Tournament",
+    "title": {
+      "en": "Valorant Tournament",
+      "fr": "Tournoi Valorant"
+    },
     "game": "Valorant",
     "date": "2025-08-02",
-    "description": "Join the Valorant Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Valorant Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Valorant.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_6oE3cMbAX79u7LOaEI",
@@ -125,10 +143,16 @@
   },
   {
     "id": 4,
-    "title": "Valorant League",
+    "title": {
+      "en": "Valorant League",
+      "fr": "Ligue Valorant"
+    },
     "game": "Valorant",
     "date": "2025-06-29",
-    "description": "Join the Valorant League, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Valorant League, where you could compete for glory and money!",
+      "fr": "Rejoignez la Ligue Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Valorant.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_bIY28I7kHfG05DGeUZ",
@@ -180,10 +204,16 @@
   },
   {
     "id": 5,
-    "title": "Rocket League Showdown",
+    "title": {
+      "en": "Rocket League Showdown",
+      "fr": "Duel Rocket League"
+    },
     "game": "Rocket League",
     "date": "2025-06-15",
-    "description": "Join the Rocket League Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Rocket League Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/RocketLeague.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_eVa5kUbAXbpKfegaEK",
@@ -235,10 +265,16 @@
   },
   {
     "id": 6,
-    "title": "Rocket League Tournament",
+    "title": {
+      "en": "Rocket League Tournament",
+      "fr": "Tournoi Rocket League"
+    },
     "game": "Rocket League",
     "date": "2025-10-02",
-    "description": "Join the Rocket League Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Rocket League Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/RocketLeague.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_3cs14EcF1alG5DG14b",
@@ -249,10 +285,16 @@
   },
   {
     "id": 7,
-    "title": "Rocket League Cup",
+    "title": {
+      "en": "Rocket League Cup",
+      "fr": "Coupe Rocket League"
+    },
     "game": "Rocket League",
     "date": "2025-08-17",
-    "description": "Join the Rocket League Cup, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Rocket League Cup, where you could compete for glory and money!",
+      "fr": "Rejoignez la Coupe Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/RocketLeague.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEUdRqeN9gK48PSdQY",
@@ -263,10 +305,16 @@
   },
   {
     "id": 8,
-    "title": "Rocket League Getaway",
+    "title": {
+      "en": "Rocket League Getaway",
+      "fr": "Évasion Rocket League"
+    },
     "game": "Rocket League",
     "date": "2025-06-23",
-    "description": "Join the Rocket League Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Rocket League Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/RocketLeague.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_28o28I8oLbpK7LO8wF",
@@ -318,10 +366,16 @@
   },
   {
     "id": 9,
-    "title": "League of Legends Tournament",
+    "title": {
+      "en": "League of Legends Tournament",
+      "fr": "Tournoi League of Legends"
+    },
     "game": "League of Legends",
     "date": "2025-08-20",
-    "description": "Join the League of Legends Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the League of Legends Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/LeagueOfLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEU3cMfRd79u4zC6oy",
@@ -332,10 +386,16 @@
   },
   {
     "id": 10,
-    "title": "League of Legends Showdown",
+    "title": {
+      "en": "League of Legends Showdown",
+      "fr": "Duel League of Legends"
+    },
     "game": "League of Legends",
     "date": "2025-11-03",
-    "description": "Join the League of Legends Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the League of Legends Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/LeagueOfLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_3cs9BacF19hC7LO9AL",
@@ -346,10 +406,16 @@
   },
   {
     "id": 11,
-    "title": "League of Legends Getaway",
+    "title": {
+      "en": "League of Legends Getaway",
+      "fr": "Évasion League of Legends"
+    },
     "game": "League of Legends",
     "date": "2025-12-21",
-    "description": "Join the League of Legends Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the League of Legends Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/LeagueOfLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_bIYeVudJ52Te2ru28k",
@@ -360,10 +426,16 @@
   },
   {
     "id": 12,
-    "title": "League of Legends Championship",
+    "title": {
+      "en": "League of Legends Championship",
+      "fr": "Championnat League of Legends"
+    },
     "game": "League of Legends",
     "date": "2025-09-23",
-    "description": "Join the League of Legends Championship, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the League of Legends Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/LeagueOfLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_cN2aFe5cz8dyc24cMZ",
@@ -374,10 +446,16 @@
   },
   {
     "id": 13,
-    "title": "Apex Legends Tournament",
+    "title": {
+      "en": "Apex Legends Tournament",
+      "fr": "Tournoi Apex Legends"
+    },
     "game": "Apex Legends",
     "date": "2025-07-22",
-    "description": "Join the Apex Legends Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Apex Legends Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/ApexLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
@@ -388,10 +466,16 @@
   },
   {
     "id": 14,
-    "title": "Apex Legends Championship",
+    "title": {
+      "en": "Apex Legends Championship",
+      "fr": "Championnat Apex Legends"
+    },
     "game": "Apex Legends",
     "date": "2025-09-24",
-    "description": "Join the Apex Legends Championship, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Apex Legends Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/ApexLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
@@ -402,10 +486,16 @@
   },
   {
     "id": 15,
-    "title": "Apex Legends Showdown",
+    "title": {
+      "en": "Apex Legends Showdown",
+      "fr": "Duel Apex Legends"
+    },
     "game": "Apex Legends",
     "date": "2025-09-05",
-    "description": "Join the Apex Legends Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Apex Legends Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/ApexLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
@@ -416,10 +506,16 @@
   },
   {
     "id": 16,
-    "title": "Apex Legends Getaway",
+    "title": {
+      "en": "Apex Legends Getaway",
+      "fr": "Évasion Apex Legends"
+    },
     "game": "Apex Legends",
     "date": "2025-08-26",
-    "description": "Join the Apex Legends Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Apex Legends Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/ApexLegends.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
@@ -430,10 +526,16 @@
   },
   {
     "id": 17,
-    "title": "Dota 2 Tournament",
+    "title": {
+      "en": "Dota 2 Tournament",
+      "fr": "Tournoi Dota 2"
+    },
     "game": "Dota 2",
     "date": "2025-07-30",
-    "description": "Join the Dota 2 Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Dota 2 Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Dota2.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
@@ -444,7 +546,10 @@
   },
   {
     "id": 18,
-    "title": "Dota 2 Championship",
+    "title": {
+      "en": "Dota 2 Championship",
+      "fr": "Championnat Dota 2"
+    },
     "game": "Dota 2",
     "date": "2025-11-07",
     "description": "Join the Dota 2 Championship, where you could compete for glory and money!",
@@ -458,10 +563,16 @@
   },
   {
     "id": 19,
-    "title": "Dota 2 Showdown",
+    "title": {
+      "en": "Dota 2 Showdown",
+      "fr": "Duel Dota 2"
+    },
     "game": "Dota 2",
     "date": "2025-06-14",
-    "description": "Join the Dota 2 Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Dota 2 Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Dota2.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
@@ -513,10 +624,16 @@
   },
   {
     "id": 20,
-    "title": "Dota 2 Getaway",
+    "title": {
+      "en": "Dota 2 Getaway",
+      "fr": "Évasion Dota 2"
+    },
     "game": "Dota 2",
     "date": "2025-08-30",
-    "description": "Join the Dota 2 Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Dota 2 Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Dota2.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
@@ -548,10 +665,16 @@
   },
   {
     "id": 21,
-    "title": "Fortnite Tournament",
+    "title": {
+      "en": "Fortnite Tournament",
+      "fr": "Tournoi Fortnite"
+    },
     "game": "Fortnite",
     "date": "2025-05-18",
-    "description": "Join the Fortnite Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Fortnite Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Fortnite.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
@@ -603,10 +726,16 @@
   },
   {
     "id": 22,
-    "title": "Fortnite Championship",
+    "title": {
+      "en": "Fortnite Championship",
+      "fr": "Championnat Fortnite"
+    },
     "game": "Fortnite",
     "date": "2025-08-19",
-    "description": "Join the Fortnite Championship, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Fortnite Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Fortnite.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
@@ -617,10 +746,16 @@
   },
   {
     "id": 23,
-    "title": "Fortnite Showdown",
+    "title": {
+      "en": "Fortnite League",
+      "fr": "Ligue Fortnite"
+    },
     "game": "Fortnite",
     "date": "2025-09-09",
-    "description": "Join the Fortnite Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Fortnite League, where you could compete for glory and money!",
+      "fr": "Rejoignez la Ligue Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Fortnite.jpg",
     "link": "#",
     "entryFee": 13,
@@ -671,10 +806,16 @@
   },
   {
     "id": 24,
-    "title": "Fortnite Getaway",
+    "title": {
+      "en": "Fortnite Getaway",
+      "fr": "Évasion Fortnite"
+    },
     "game": "Fortnite",
     "date": "2025-07-31",
-    "description": "Join the Fortnite Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Fortnite Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Fortnite.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
@@ -685,10 +826,16 @@
   },
   {
     "id": 25,
-    "title": "Warzone Tournament",
+    "title": {
+      "en": "Warzone Tournament",
+      "fr": "Tournoi Warzone"
+    },
     "game": "Warzone",
     "date": "2025-06-26",
-    "description": "Join the Warzone Tournament, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Warzone Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Warzone.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
@@ -740,10 +887,16 @@
   },
   {
     "id": 27,
-    "title": "Warzone Championship",
+    "title": {
+      "en": "Warzone Championship",
+      "fr": "Championnat Warzone"
+    },
     "game": "Warzone",
     "date": "2025-11-27",
-    "description": "Join the Warzone Championship, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Warzone Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Warzone.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
@@ -795,10 +948,16 @@
   },
   {
     "id": 26,
-    "title": "Warzone Showdown",
+    "title": {
+      "en": "Warzone Showdown",
+      "fr": "Duel Warzone"
+    },
     "game": "Warzone",
     "date": "2025-09-11",
-    "description": "Join the Warzone Showdown, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Warzone Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Warzone.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
@@ -809,10 +968,16 @@
   },
   {
     "id": 28,
-    "title": "Warzone Getaway",
+    "title": {
+      "en": "Warzone Getaway",
+      "fr": "Évasion Warzone"
+    },
     "game": "Warzone",
     "date": "2025-09-01",
-    "description": "Join the Warzone Getaway, where you could compete for glory and money!",
+    "description": {
+      "en": "Join the Warzone Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
     "image": "assets/_videoGames/Warzone.jpg",
     "link": "#",
     "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",

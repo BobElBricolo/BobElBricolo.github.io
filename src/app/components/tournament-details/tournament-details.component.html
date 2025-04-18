@@ -1,20 +1,20 @@
 <div class="tournament-details-page">
   <div class="tournament-header">
       <div class="header-bar">
-        <h1>{{ tournament.title }}</h1>
+        <h1>{{ getTournamentTitle(tournament) }}</h1>
 
         @if (!tournament.ended) {
-          <button class="join-button" (click)="redirectToPayment()">Join Tournament</button>
+          <button class="join-button" (click)="redirectToPayment()">{{ 'TOURNAMENT-DETAILS.HTML.BTN_JOIN' | translate }}</button>
         }
       </div>
 
       <p class="game">{{ tournament.game }} – {{ tournament.date | date:'dd/MM/yyyy' }}</p>
-    <p class="description">{{ tournament.description }}</p>
+    <p class="description">{{ getTournamentDescription(tournament) }}</p>
 
     @if (!tournament.ended) {
       <div class="tournament-infos-inline">
-        <p><span class="label">Entry Fee:</span> {{ tournament.entryFee | currency: 'USD' }}</p>
-        <p><span class="label">Prize Pool:</span> {{ tournament.prize | currency: 'USD' }}</p>
+        <p><span class="label">{{ 'TOURNAMENT-DETAILS.HTML.FEE' | translate }} </span> {{ tournament.entryFee | currency: 'USD' }}</p>
+        <p><span class="label">{{ 'TOURNAMENT-DETAILS.HTML.PRIZE' | translate }} </span> {{ tournament.prize | currency: 'USD' }}</p>
       </div>
     }
 
@@ -27,9 +27,9 @@
     @if (tournament.ended) {
       <div class="prize-section">
         <div class="left-content">
-          <h2 class="section-title">Prize Breakdown</h2>
+          <h2 class="section-title">{{ 'TOURNAMENT-DETAILS.HTML.TITLE_BDN' | translate }}</h2>
           <p class="section-description">
-            The top 3 players of this tournament earned their place on the podium — and walked away with cash prizes.
+            {{ 'TOURNAMENT-DETAILS.HTML.DESCRIPTION' | translate }}
           </p>
         </div>
 

@@ -133,6 +133,18 @@
 
     }
   },
+  "TOURNAMENT-DETAILS": {
+    "HTML": {
+      "BTN_JOIN": "Join Tournament",
+      "FEE": "Entry Fee:",
+      "PRIZE": "Prize Pool:",
+      "TITLE_BDN": "Prize Breakdown",
+      "DESCRIPTION": "The top 3 players of this tournament earned their place on the podium — and walked away with cash prizes."
+    },
+    "TS": {
+
+    }
+  },
   "TOURNAMENT-PAGE": {
     "HTML": {
 
