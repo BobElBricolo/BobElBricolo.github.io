@@ -229,5 +229,23 @@
         "BTN_RANKINGS": "Voir le classement complet"
       },
       "TS": {}
+    },
+    "403": {
+      "HTML": {
+        "TITLE": "Accès Interdit",
+        "DESCRIPTION": "Vous n'avez pas accès à cette zone.",
+        "DESCRIPTION2": "Veuillez contacter un administrateur.",
+        "BUTTON": "Retour à l'accueil"
+      },
+      "TS": {}
+    },
+    "404": {
+      "HTML": {
+        "TITLE": "Page non trouvée",
+        "DESCRIPTION": "Oups! la page que vous recherchez n'existe pas.",
+        "DESCRIPTION2": "Elle a peut-être été effacée ou déplacée.",
+        "BUTTON": "Retour à l'accueil"
+      },
+      "TS": {}
     }
 }

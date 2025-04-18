@@ -230,5 +230,23 @@
         "BTN_RANKINGS": "See Full Rankings"
       },
       "TS": {}
+    },
+    "403": {
+      "HTML": {
+        "TITLE": "Forbidden",
+        "DESCRIPTION": "Sorry, you do not have access to this page.",
+        "DESCRIPTION2": "Please contact the administrator.",
+        "BUTTON": "Go Home"
+      },
+      "TS": {}
+    },
+    "404": {
+      "HTML": {
+        "TITLE": "Page Not Found",
+        "DESCRIPTION": "Oops! The page you're looking for doesn't exist.",
+        "DESCRIPTION2": "It might have been moved or deleted.",
+        "BUTTON": "Go Home"
+      },
+      "TS": {}
     }
 }
