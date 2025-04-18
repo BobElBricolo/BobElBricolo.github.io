@@ -31,6 +31,36 @@
 
     }
   },
+  "FORGOT": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "Cette fonctionnalité n'est pas encore implémentée.",
+      "DESCRIPTION": "On y travaille. Revenez plus tard.",
+      "GOTO": "Retourner au menu",
+      "LNK_LOGIN": "Connexion"
+    },
+    "TS": {
+
+    }
+  },
+  "REGISTER": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "La naissance d'un champion.",
+      "EMAIL": "Courriel",
+      "USERNAME": "Nom d'utilisateur",
+      "PASSWORD": "Mot de passe",
+      "CONFIRM_PWD": "Confirmer le mot de passe",
+      "BTN_REGISTER": "S'inscrire",
+      "ALREADY_ACCOUNT_WINNER": "Vous avez déjà un compte?",
+      "BTN_LOGIN": "Se connecter",
+      "WRN_REQUIRED": "Obligatoire",
+      "WRN_DIFFERENT": "Mots de passe différents"
+    },
+    "TS": {
+
+    }
+  },
   "PROFIL":{
     "HTML": {
 

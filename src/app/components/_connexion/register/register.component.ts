@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 import { AuthentificationService } from '../../../_services/authentification/authentification.service';
 import { UserToConnect, UserToRegister } from '../../../_models/UserInfo';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +22,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
       FormsModule,
       ReactiveFormsModule,
       CommonModule,
-      NgOptimizedImage
+      NgOptimizedImage,
+      TranslatePipe
 
     ],
   templateUrl: './register.component.html',

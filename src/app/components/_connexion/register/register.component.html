@@ -2,57 +2,57 @@
     <mat-card class="card">
         <div class="logo-container">
             <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
-            <h3>GetGoodOrGetOut</h3>
+            <h3>{{ 'REGISTER.HTML.TITLE_APP' | translate }}</h3>
         </div>
-        <p class="welcome">Let's get started</p>
+        <p class="welcome">{{ 'REGISTER.HTML.WELCOME' | translate }}</p>
 
         <!-- Ajout du [formGroup] ici -->
         <form class="form-container" [formGroup]="signupForm">
             <div class="flex-container">
                 <mat-form-field class="email" appearance="outline">
-                    <mat-label>Email</mat-label>
+                    <mat-label>{{ 'REGISTER.HTML.EMAIL' | translate }}</mat-label>
                     <input matInput type="email" formControlName="email" required>
                 </mat-form-field>
             </div>
 
             <div class="flex-container">
                 <mat-form-field class="username" appearance="outline">
-                    <mat-label>Username</mat-label>
+                    <mat-label>{{ 'REGISTER.HTML.USERNAME' | translate }}</mat-label>
                     <input matInput type="text" formControlName="username" required>
                 </mat-form-field>
             </div>
 
             <div class="flex-container">
                 <mat-form-field class="password" appearance="outline">
-                    <mat-label>Password</mat-label>
+                    <mat-label>{{ 'REGISTER.HTML.PASSWORD' | translate }}</mat-label>
                     <input matInput type="password" formControlName="password" required>
                 </mat-form-field>
             </div>
 
             <div class="flex-container">
                 <mat-form-field appearance="outline">
-                    <mat-label>Confirm password</mat-label>
+                    <mat-label>{{ 'REGISTER.HTML.CONFIRM_PWD' | translate }}</mat-label>
                     <input matInput type="password" formControlName="confirmPassword" />
 
                     @if (signupForm.get('confirmPassword')?.touched &&
                     signupForm.get('confirmPassword')?.errors?.['required']) {
-                    <mat-error>Required</mat-error>
+                    <mat-error>{{ 'REGISTER.HTML.WRN_REQUIRED' | translate }}</mat-error>
                     }
 
                     @if (signupForm.get('confirmPassword')?.touched &&
                     signupForm.get('confirmPassword')?.errors?.['passwordsMismatch']) {
-                    <mat-error>Password doesnt match</mat-error>
+                    <mat-error>{{ 'REGISTER.HTML.WRN_DIFFERENT' | translate }}</mat-error>
                     }
                 </mat-form-field>
             </div>
 
             <div class="flex-container">
-                <button mat-flat-button class="button" (click)="onRegister()">Register</button>
+                <button mat-flat-button class="button" (click)="onRegister()">{{ 'REGISTER.HTML.BTN_REGISTER' | translate }}</button>
             </div>
 
             <div class="flex-container align-center">
-                <p>Already have an account?</p>
-                <a class="button" (click)="onLogin()">Sign-in</a>
+                <p>{{ 'REGISTER.HTML.ALREADY_ACCOUNT_WINNER' | translate }}</p>
+                <a class="button" (click)="onLogin()">{{ 'REGISTER.HTML.BTN_LOGIN' | translate }}</a>
             </div>
         </form>
     </mat-card>
