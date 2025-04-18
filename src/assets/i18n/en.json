@@ -59,7 +59,12 @@
   },
   "HEADER": {
     "HTML": {
-
+      "HOME": "Home",
+      "TOURNAMENTS": "Tournaments",
+      "ABOUT": "About us",
+      "DOWNLOAD": "Download",
+      "LOGIN": "Login",
+      "PROFIL": "Profile"
     },
     "TS": {
 

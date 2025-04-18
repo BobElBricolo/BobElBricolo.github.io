@@ -8,17 +8,17 @@
 
   <!-- Desktop nav -->
   <nav class="nav-links desktop-only">
-    <a class="link" mat-button routerLink="/home">Home</a>
-    <a class="link" mat-button routerLink="/tournaments">Tournament</a>
-    <a class="link" mat-button routerLink="/about">About us</a>
-    <a class="link" mat-button routerLink="/download">Download</a>
+    <a class="link" mat-button routerLink="/home">{{ 'HEADER.HTML.HOME' | translate }}</a>
+    <a class="link" mat-button routerLink="/tournaments">{{ 'HEADER.HTML.TOURNAMENTS' | translate }}</a>
+    <a class="link" mat-button routerLink="/about">{{ 'HEADER.HTML.ABOUT' | translate }}</a>
+    <a class="link" mat-button routerLink="/download">{{ 'HEADER.HTML.DOWNLOAD' | translate }}</a>
 
     @if (!isNotLogggedIn()) {
       <a (click)="onProfil()">
         <img class="image-profil" [src]="connectedUser.profileImage" alt="Profil" />
       </a>
     } @else {
-      <a (click)="onProfil()" class="link" mat-button routerLink="/login">Login</a>
+      <a (click)="onProfil()" class="link" mat-button routerLink="/login">{{ 'HEADER.HTML.LOGIN' | translate }}</a>
     }
   </nav>
 
@@ -29,15 +29,15 @@
 
   <!-- Mobile menu -->
   <mat-menu #mobileMenu="matMenu">
-    <button mat-menu-item routerLink="/home">Home</button>
-    <button mat-menu-item routerLink="/tournaments">Tournament</button>
-    <button mat-menu-item routerLink="/about">About us</button>
-    <button mat-menu-item routerLink="/download">Download</button>
+    <button mat-menu-item routerLink="/home">{{ 'HEADER.HTML.HOME' | translate }}</button>
+    <button mat-menu-item routerLink="/tournaments">{{ 'HEADER.HTML.TOURNAMENTS' | translate }}</button>
+    <button mat-menu-item routerLink="/about">{{ 'HEADER.HTML.ABOUT' | translate }}</button>
+    <button mat-menu-item routerLink="/download">{{ 'HEADER.HTML.DOWNLOAD' | translate }}</button>
 
     @if (!isNotLogggedIn()) {
-      <button mat-menu-item (click)="onProfil()">Profil</button>
+      <button mat-menu-item (click)="onProfil()">{{ 'HEADER.HTML.PROFIL' | translate }}</button>
     } @else {
-      <button mat-menu-item routerLink="/login">Login</button>
+      <button mat-menu-item routerLink="/login">{{ 'HEADER.HTML.LOGIN' | translate }}</button>
     }
   </mat-menu>
 </mat-toolbar>

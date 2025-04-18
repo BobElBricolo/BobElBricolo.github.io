@@ -58,7 +58,12 @@
   },
   "HEADER": {
     "HTML": {
-
+      "HOME": "Accueil",
+      "TOURNAMENTS": "Tournois",
+      "ABOUT": "À propos",
+      "DOWNLOAD": "Téléchargement",
+      "LOGIN": "Connexion",
+      "PROFIL": "Profil"
     },
     "TS": {
 
@@ -165,7 +170,7 @@
       "HTML": {
         "TITLE_WHITE": "Découvrez vos",
         "TITLE_BLUE": "Champions",
-        "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et on mérité leur place sur le podium.",
+        "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et ont mérité leur place sur le podium.",
         "DESCRIPTION2": "Célébrez avec nous leur victoire et leurs compétences exceptionnelles!",
         "BTN_RANKINGS": "Voir le classement complet"
       },
