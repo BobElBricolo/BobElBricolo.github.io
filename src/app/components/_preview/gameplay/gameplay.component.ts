@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
 import {animate, style, transition, trigger} from '@angular/animations';
 import {MatIcon} from '@angular/material/icon';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-gameplay',
   imports: [
-    MatIcon
+    MatIcon,
+    TranslatePipe
   ],
   templateUrl: './gameplay.component.html',
   styleUrl: './gameplay.component.css',

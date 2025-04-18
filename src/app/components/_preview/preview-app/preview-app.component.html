@@ -2,12 +2,12 @@
   <div class="results-wrapper">
     <!-- Partie gauche : équipes -->
     <div class="left-side">
-      <h1 class="title">Round Results</h1>
+      <h1 class="title">{{ 'PREVIEW.APP.HTML.TITLE' | translate }}</h1>
 
       <div class="match-summary">
         <div class="team team-a" [class.winner]="winner === 'A'">
           <img src="../../../../assets/_background/bear.png" alt="Team A" class="team-icon">
-          <h2>Team A</h2>
+          <h2>{{ 'PREVIEW.APP.HTML.TEAM1' | translate }}</h2>
           <span class="score">{{ teamA.score }}</span>
         </div>
 
@@ -15,7 +15,7 @@
 
         <div class="team team-b" [class.winner]="winner === 'B'">
           <img src="../../../../assets/_background/tiger.png" alt="Team B" class="team-icon">
-          <h2>Team B</h2>
+          <h2>{{ 'PREVIEW.APP.HTML.TEAM2' | translate }}</h2>
           <span class="score">{{ teamB.score }}</span>
         </div>
       </div>
@@ -29,11 +29,11 @@
         <table class="stats-table">
           <thead>
           <tr>
-            <th>Player</th>
-            <th>Kills</th>
-            <th>K/D</th>
-            <th>Win %</th>
-            <th>MVPs</th>
+            <th>{{ 'PREVIEW.APP.HTML.PLAYER' | translate }}</th>
+            <th>{{ 'PREVIEW.APP.HTML.KILLS' | translate }}</th>
+            <th>{{ 'PREVIEW.APP.HTML.RATIO' | translate }}</th>
+            <th>{{ 'PREVIEW.APP.HTML.WIN_RATIO' | translate }}</th>
+            <th>{{ 'PREVIEW.APP.HTML.MVPS' | translate }}</th>
           </tr>
           </thead>
           <tbody>

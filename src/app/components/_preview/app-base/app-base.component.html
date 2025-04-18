@@ -15,9 +15,9 @@
 @if (showPopup){
   <div class="popup-overlay">
     <div class="popup-content">
-      <h2>Heads up!</h2>
-      <p>This app is under construction. What you’re seeing are prototypes of upcoming features.</p>
-      <button (click)="showPopup = false">Got it</button>
+      <h2>{{ 'PREVIEW.POPUP.HTML.TITLE' | translate }}</h2>
+      <p>{{ 'PREVIEW.POPUP.HTML.DESCRIPTION' | translate }}</p>
+      <button (click)="showPopup = false">{{ 'PREVIEW.POPUP.HTML.BUTTON' | translate }}</button>
     </div>
   </div>
 

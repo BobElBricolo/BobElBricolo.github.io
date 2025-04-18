@@ -230,6 +230,69 @@
       },
       "TS": {}
     },
+    "PREVIEW": {
+      "POPUP": {
+        "HTML": {
+          "TITLE": "Attention!",
+          "DESCRIPTION": "Cette application est en cours de construction. Ce que vous voyez ici sont des prototypes de fonctionnalités à venir.",
+          "BUTTON": "Compris"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY": {
+        "HTML": {
+          "KILLS": "éliminations",
+          "RANK": "Rang: #",
+          "GAME": "Partie: #",
+          "ROUND": "Tour",
+          "PLAYERS_TITLE": "Les adversaires de ce tour"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu",
+          "TITLE_BLUE": "en Jeu",
+          "DESCRIPTION": "Un aperçu rapide de l’expérience en jeu. Touchez le bouton en bas à droite pour agrandir l’interface. Conçue pour rester discrète : minimale, intuitive et adaptée à un gameplay sans interruption."
+        },
+        "TS": {}
+      },
+      "MATCH_DETAIL": {
+        "HTML": {
+          "BUTTON": "Fermer"
+        },
+        "TS": {}
+      },
+      "APP": {
+        "HTML": {
+          "TITLE": "Résultats du Tour",
+          "TEAM1": "Équipe A",
+          "TEAM2": "Équipe B",
+          "PLAYER": "Joueur",
+          "KILLS": "Éliminations",
+          "RATIO": "É/M",
+          "WIN_RATIO": "Victoires %",
+          "MVPS": "Meilleurs joueurs"
+        },
+        "TS": {}
+      },
+      "PREVIEW_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu ",
+          "TITLE_BLUE": "des Statistiques",
+          "DESCRIPTION": "Comparez facilement les résultats finaux grâce à notre interface de statistiques post-match — même lorsque les affrontements ne sont pas en face-à-face."
+        },
+        "TS": {}
+      },
+      "MATCHBOARD": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu ",
+          "TITLE_BLUE": "du tableau des Matchs",
+          "DESCRIPTION": "Suivez facilement les classements, les matchs à venir et les résultats — le tout dans une interface claire et dynamique."
+        },
+        "TS": {}
+      }
+    },
     "403": {
       "HTML": {
         "TITLE": "Accès Interdit",

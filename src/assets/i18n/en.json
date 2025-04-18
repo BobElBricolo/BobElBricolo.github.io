@@ -124,22 +124,7 @@
 
     }
   },
-  "HERO": {
-    "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
-  "HOME-PAGE": {
-    "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
+  
   "TOURNAMENT-CARD": {
     "HTML": {
 
@@ -230,6 +215,69 @@
         "BTN_RANKINGS": "See Full Rankings"
       },
       "TS": {}
+    },
+    "PREVIEW": {
+      "POPUP": {
+        "HTML": {
+          "TITLE": "Heads Up!",
+          "DESCRIPTION": "This app is under construction. What you’re seeing are prototypes of upcoming features.",
+          "BUTTON": "Got it"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY": {
+        "HTML": {
+          "KILLS": "kills",
+          "RANK": "Rank: #",
+          "GAME": "In-game: #",
+          "ROUND": "Round",
+          "PLAYERS_TITLE": "This Round Opponents"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "In-Game",
+          "TITLE_BLUE": "Preview",
+          "DESCRIPTION": "Here's a quick look at the in-game experience. Tap the button in the bottom right to expand the interface.Designed to stay out of the way — minimal, intuitive, and tailored for uninterrupted gameplay."
+        },
+        "TS": {}
+      },
+      "MATCH_DETAIL": {
+        "HTML": {
+          "BUTTON": "Fermer"
+        },
+        "TS": {}
+      },
+      "APP": {
+        "HTML": {
+          "TITLE": "Round Results",
+          "TEAM1": "Team A",
+          "TEAM2": "Team B",
+          "PLAYER": "Player",
+          "KILLS": "Kills",
+          "RATIO": "K/D",
+          "WIN_RATIO": "Win %",
+          "MVPS": "MVPs"
+        },
+        "TS": {}
+      },
+      "PREVIEW_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "Stats ",
+          "TITLE_BLUE": "Preview",
+          "DESCRIPTION": "Easily compare final results with our post-game stats interface — even when matchups don’t happen head-to-head."
+        },
+        "TS": {}
+      },
+      "MATCHBOARD": {
+        "HTML": {
+          "TITLE_WHITE": "Matchboard ",
+          "TITLE_BLUE": "Preview",
+          "DESCRIPTION": "Easily track standings, upcoming matchups, and results — all in one clear and dynamic interface."
+        },
+        "TS": {}
+      }
     },
     "403": {
       "HTML": {
