@@ -1,14 +1,14 @@
 <div class="download-container">
   <div class="left-text">
-    <h1><span>Download</span> the app</h1>
+    <h1><span>{{ 'DOWNLOAD_SECTION.HTML.TITLE_WHITE' | translate }}</span> {{ 'DOWNLOAD_SECTION.HTML.TITLE_BLUE' | translate }}</h1>
 
     <p class="description">
-      Ready to join the arena? Download <strong>GettGoodOrGetOut</strong> for Mac or Windows and start creating or joining tournaments right from your desktop.
+      {{ 'DOWNLOAD_SECTION.HTML.DESCRIPTION1' | translate }} <strong>{{ 'DOWNLOAD_SECTION.HTML.DESCRIPTION2' | translate }}</strong> {{ 'DOWNLOAD_SECTION.HTML.DESCRIPTION3' | translate }}
     </p>
 
     <div class="download-buttons">
-      <button class="download-link" (click)="openApp()">Download for Mac</button>
-      <button class="download-link" (click)="openApp()">Download for Windows</button>
+      <button class="download-link" (click)="openApp()">{{ 'DOWNLOAD_SECTION.HTML.BTN_MAC' | translate }}</button>
+      <button class="download-link" (click)="openApp()">{{ 'DOWNLOAD_SECTION.HTML.BTN_WIN' | translate }}</button>
     </div>
   </div>
 

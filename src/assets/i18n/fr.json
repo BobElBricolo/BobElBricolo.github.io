@@ -24,33 +24,42 @@
 
     }
   },
-  "DOWNLOAD":{
+  "DOWNLOAD_SECTION":{
     "HTML": {
-
+      "TITLE_WHITE": "Téléchargez",
+      "TITLE_BLUE": "l'application",
+      "DESCRIPTION1": "Prêt à rejoindre l'arène ? Téléchargez",
+      "DESCRIPTION2": "GetGoodOrGetOut",
+      "DESCRIPTION3": "pour Mac ou Windows et commencez à créer ou rejoindre des tournois directement depuis votre ordinateur.",
+      "BTN_MAC": "Télécharger pour Mac",
+      "BTN_WIN": "Télécharger pour Windows"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-PAGE":{
+  "FUNCTIONNALITY": {
     "HTML": {
-
+      "TITLE_WHITE": "Découvrez nos",
+      "TITLE_BLUE": "fonctionnalités",
+      "FEATURE_TITLE1": "— Création de tournois sans effort",
+      "DESCRIPTION1": "Organisez vos compétitions en quelques clics. Notre plateforme s’occupe du suivi des scores, de la génération des brackets et de tout le reste en coulisses pour que vous puissiez vous concentrer sur le jeu.",
+      "FEATURE_TITLE2": "— Une expérience fluide pour tous",
+      "DESCRIPTION2": "Que vous soyez organisateur ou joueur, profitez d’un tableau de bord intuitif, de mises à jour en temps réel et d’une interface fluide et conviviale, pensée pour répondre à vos besoins.",
+      "FEATURE_TITLE3": "— Captivez votre audience grâce aux paris intégrés",
+      "DESCRIPTION3": "Ajoutez du suspense à vos événements grâce à notre système de paris intégré. Renforcez l’engagement des spectateurs et créez une ambiance compétitive réellement dynamique.",
+      "BTN_EXPLORE": "Explorer la plateforme"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-SECTION": {
+  "TERMS": {
     "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
-  "FONCTIONNALITY": {
-    "HTML": {
-
+      "TITLE_BLUE": "Conditions",
+      "TITLE_WHITE": "générales d'utilisation",
+      "DESCRIPTION": "Avant d’utiliser GetGoodOrGetOut, veuillez prendre un moment pour lire nos conditions d’utilisation. Ce document inclut les versions en français et en anglais.",
+      "BTN_PDF": "Télécharger le PDF"
     },
     "TS": {
 

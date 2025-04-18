@@ -25,33 +25,42 @@
 
     }
   },
-  "DOWNLOAD":{
+  "DOWNLOAD_SECTION":{
     "HTML": {
-
+      "TITLE_WHITE": "Download",
+      "TITLE_BLUE": "the app",
+      "DESCRIPTION1": "Ready to join the arena? Download",
+      "DESCRIPTION2": "GetGoodOrGetOut",
+      "DESCRIPTION3": "for Mac or Windows and start creating or joining tournaments right from your desktop.",
+      "BTN_MAC": "Download for Mac",
+      "BTN_WIN": "Download for Windows"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-PAGE":{
+  "FUNCTIONNALITY": {
     "HTML": {
-
+      "TITLE_WHITE": "Discover our",
+      "TITLE_BLUE": "features",
+      "FEATURE_TITLE1": "— Effortless tournament creation",
+      "DESCRIPTION1": "Set up your competitions in just a few clicks. Our platform handles score tracking, bracket generation, and everything else behind the scenes so you can focus on the game.",
+      "FEATURE_TITLE2": "— A seamless experience for everyone",
+      "DESCRIPTION2": "Whether you're an organizer or a player, enjoy an intuitive dashboard, real-time updates, and a smooth, user-friendly interface tailored to your needs.",
+      "FEATURE_TITLE3": "— Engage your audience with built-in betting",
+      "DESCRIPTION3": "Add excitement to your events with our integrated betting system. Boost viewer engagement and create a truly dynamic competitive atmosphere.",
+      "BTN_EXPLORE": "Explore the platform"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-SECTION": {
+  "TERMS": {
     "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
-  "FONCTIONNALITY": {
-    "HTML": {
-
+      "TITLE_BLUE": "Terms",
+      "TITLE_WHITE": "& Conditions",
+      "DESCRIPTION": "Before using GetGoodOrGetOut, please take a moment to read our terms of use. This document includes both the French and English versions.",
+      "BTN_PDF": "Download the PDF"
     },
     "TS": {
 
