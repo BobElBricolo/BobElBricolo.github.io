@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 import { AuthentificationService } from '../../../_services/authentification/authentification.service';
 import { UserToConnect } from '../../../_models/UserInfo';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-connexion',
@@ -22,6 +23,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
       ReactiveFormsModule,
       CommonModule,
       NgOptimizedImage,
+      TranslatePipe
     ],
   templateUrl: './connexion.component.html',
   styleUrl: './connexion.component.css'

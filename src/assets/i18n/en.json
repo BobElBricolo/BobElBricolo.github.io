@@ -17,6 +17,21 @@
 
     }
   },
+  "LOGIN": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "Ready to win?",
+      "EMAIL": "Email",
+      "PASSWORD": "Password",
+      "FORGOT_CRED": "Forgot password?",
+      "BTN_LOGIN": "Login",
+      "NO_ACCOUNT_LOSER": "Don't have an account yet?",
+      "BTN_SIGN_UP": "Sign up"
+    },
+    "TS": {
+
+    }
+  },
   "PROFIL":{
     "HTML": {
 
