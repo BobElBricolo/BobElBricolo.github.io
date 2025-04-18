@@ -1,11 +1,11 @@
 <div class="winners-page">
   <div class="left-section">
-    <h1>Meet the <span class="highlight">Champions</span>.</h1>
+    <h1>{{ 'ACTUALITY.HTML.TITLE_WHITE' | translate }} <span class="highlight">{{ 'ACTUALITY.HTML.TITLE_BLUE' | translate }}</span>.</h1>
     <p class="description">
-      These players stood out in the arena and earned their place on the podium.<br>
-      Celebrate their skill and victories!
+      {{ 'ACTUALITY.HTML.DESCRIPTION1' | translate }} <br>
+      {{ 'ACTUALITY.HTML.DESCRIPTION2' | translate }}
     </p>
-    <button (click)="openRank()" class="learn-more">See Full Rankings</button>
+    <button (click)="openRank()" class="learn-more">{{ 'ACTUALITY.HTML.BTN_RANKINGS' | translate }}</button>
   </div>
 
   <div class="right-section">

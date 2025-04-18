@@ -6,7 +6,7 @@
       "SEE-TOURNAMENTS-BTN": "Voir les tournois"
     },
     "TS": {
-      "TOURNAMENT-NAME-RL": "Valorant Cup",
+      "TOURNAMENT-NAME-RL": "Coupe Valorant",
       "TOURNAMENT-DATE-RL": "11 mai 2025",
       "TOURNAMENT-LOCATION-RL": "En ligne",
       "TOURNAMENT-DESCRIPTION-RL": "Tournoi 2v2 ouvert à tous, prix en argent disponible pour les gagnants !",
@@ -141,6 +141,34 @@
       "DESCRIPTION3": "Ou nous joindre par courriel à"
     },
     "TS": {}
-  }
-
+  },
+  "ACCUEIL": {
+    "HTML": {
+      "TITLE_WHITE": "Place au ",
+      "TITLE_BLUE": "Jeu",
+      "DESCRIPTION": "Bienvenue sur la plateforme e-sport ultime. Crée ou rejoins des tournois, défie tes amis et grimpe dans le classement.",
+      "BTN_COMPETING": "Rejoins la compétition",
+      "BTN_EXPLORE": "Explore les Tournois"
+    },
+    "TS": {}
+  },
+  "NEXT_TOURNAMENT": {
+      "HTML": {
+        "TITLE_WHITE": "Prochain",
+        "TITLE_BLUE": "Tournoi",
+        "DESCRIPTION": "Prêt à démontrer tes compétences ? Rejoins notre prochain tournoi et bats-toi pour atteindre le sommet.",
+        "BTN_REGISTER": "S'inscrire"
+      },
+      "TS": {}
+    },
+    "ACTUALITY": {
+      "HTML": {
+        "TITLE_WHITE": "Découvrez vos",
+        "TITLE_BLUE": "Champions",
+        "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et on mérité leur place sur le podium.",
+        "DESCRIPTION2": "Célébrez avec nous leur victoire et leurs compétences exceptionnelles!",
+        "BTN_RANKINGS": "Voir le classement complet"
+      },
+      "TS": {}
+    }
 }

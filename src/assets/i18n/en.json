@@ -142,8 +142,34 @@
       "DESCRIPTION3": "Or reach us by email at"
     },
     "TS": {}
-  }
-
-
-
+  },
+  "ACCUEIL": {
+    "HTML": {
+      "TITLE_WHITE": "Step into ",
+      "TITLE_BLUE": "the Game",
+      "DESCRIPTION": "Welcome to the ultimate e-sport platform. Create or join tournaments, challenge your friends, and climb the leaderboard.",
+      "BTN_COMPETING": "Start Competing",
+      "BTN_EXPLORE": "Explore Tournaments"
+    },
+    "TS": {}
+  },
+  "NEXT_TOURNAMENT": {
+      "HTML": {
+        "TITLE_WHITE": "Next",
+        "TITLE_BLUE": "Tournament",
+        "DESCRIPTION": "Ready to prove your skills? Join our upcoming tournament and battle your way to the top.",
+        "BTN_REGISTER": "Register Now"
+      },
+      "TS": {}
+    },
+    "ACTUALITY": {
+      "HTML": {
+        "TITLE_WHITE": "Meet the",
+        "TITLE_BLUE": "Champions",
+        "DESCRIPTION1": "These players stood out in the arena and earned their place on the podium.",
+        "DESCRIPTION2": "Celebrate their skill and victories!",
+        "BTN_RANKINGS": "See Full Rankings"
+      },
+      "TS": {}
+    }
 }
