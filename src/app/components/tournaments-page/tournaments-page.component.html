@@ -24,12 +24,12 @@
   </div>
 
   <div class="tournament-list">
-    @for (tournament of filteredTournaments; track tournament.title) {
+    @for (tournament of filteredTournaments; track getTournamentTitle(tournament)) {
       <div class="tournament-card">
-        <h2>{{ tournament.title }}</h2>
+        <h2>{{ getTournamentTitle(tournament) }}</h2>
         <img [src]="tournament.image" [alt]="tournament.title" class="tournament-image" />
-        <p class="game">Game: {{ tournament.game }}</p>
-        <p class="date">Date: {{ tournament.date | date:'dd/MM/yyyy' }}</p>
+        <p class="game">{{ 'TOURNAMENT-PAGE.HTML.GAME' | translate }} {{ tournament.game }}</p>
+        <p class="date">{{ 'TOURNAMENT-PAGE.HTML.DATE' | translate }} {{ tournament.date | date:'dd/MM/yyyy' }}</p>
         <div class="actions">
           <a class="join-button" (click)="openTournament(tournament.id)">{{ viewMode === 'past' ? 'Stats' : 'Join' }}</a>
           <button class="description-toggle" (click)="toggleDescription(tournament)">
@@ -38,7 +38,7 @@
         </div>
         @if(tournament.showDescription) {
           <p class="description">
-            {{ tournament.description }}
+            {{ getTournamentDescription(tournament) }}
           </p>
         }
       </div>

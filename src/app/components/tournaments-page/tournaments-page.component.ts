@@ -4,6 +4,7 @@ import {DatePipe} from '@angular/common';
 import {Router} from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import {TranslatePipe} from '@ngx-translate/core';
+import {Tournament, LanguageCode} from '../../_models/TournamentPage';
 
 @Component({
   selector: 'app-tournaments-page',
@@ -26,13 +27,7 @@ export class TournamentsPageComponent {
   
     getTournamentTitle(tournament: any): string {
       const lang = this.translate.currentLang;
-      const title = tournament.title;
-
-      if (!title) return '[Sans titre]'; // ou n’importe quel fallback
-
-      if (typeof title === 'string') return title;
-
-      return title[lang] /*|| title['en'] */|| Object.values(title)[0] || '[Sans titre]';
+      return tournament.title?.[lang] || tournament.title?.['en'];
     }
   
     getTournamentDescription(tournament: any): string {
@@ -45,7 +40,32 @@ export class TournamentsPageComponent {
   searchTerm: string = '';
   viewMode: 'upcoming' | 'past' = 'upcoming';
 
-  get filteredTournaments() {
+  get filteredTournaments(): Tournament[] {
+    const now = new Date();
+    const search = this.searchTerm.toLowerCase();
+    const lang = this.currentLang as LanguageCode;
+  
+    return this.tournaments
+      .filter(tournament => {
+        const title = tournament.title[lang]?.toLowerCase() ?? '';
+        const description = tournament.description[lang]?.toLowerCase() ?? '';
+        const game = tournament.game.toLowerCase();
+        const isPast = new Date(tournament.date) < now;
+  
+        const matchesSearch =
+          title.includes(search) ||
+          description.includes(search) ||
+          game.includes(search);
+  
+        const isInView =
+          (this.viewMode === 'upcoming' && !isPast) ||
+          (this.viewMode === 'past' && isPast);
+  
+        return matchesSearch && isInView;
+      })
+      .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  }
+  /*get filteredTournaments() {
       const now = new Date();
       return this.tournaments
         .filter(t => {
@@ -61,7 +81,7 @@ export class TournamentsPageComponent {
           );
         })
         .sort((a, b) => a.date.getTime() - b.date.getTime());
-    }
+    }*/
   
 
 
@@ -69,281 +89,449 @@ export class TournamentsPageComponent {
   tournaments = [
     {
       id: 1,
-      title: 'Valorant Cup',
+      title: {
+        en: 'Valorant Cup',
+        fr: 'Coupe Valorant'
+      },
       game: 'Valorant',
       date: new Date('2025-05-12'),
       link: '#',
-      description: 'Join the Valorant Cup, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Valorant Cup, where you could compete for glory and money!',
+        fr: 'Participez à la Coupe Valorant, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Valorant.jpg',
       showDescription: false
     },
     {
       id: 2,
-      title: 'Valorant Championship',
+      title: {
+        en: 'Valorant Championship',
+        fr: 'Championnat Valorant'
+      },
       game: 'Valorant',
       date: new Date('2025-06-25'),
       link: '#',
-      description: 'Join the Valorant Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Valorant Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat Valorant, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Valorant.jpg',
       showDescription: false
     },
     {
       id: 3,
-      title: 'Valorant Tournament',
+      title: {
+        en: 'Valorant Tournament',
+        fr: 'Tournoi Valorant'
+      },
       game: 'Valorant',
       date: new Date('2025-08-02'),
       link: '#',
-      description: 'Join the Valorant Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Valorant Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Valorant, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Valorant.jpg',
       showDescription: false
     },
     {
       id: 4,
-      title: 'Valorant League',
+      title: {
+        en: 'Valorant League',
+        fr: 'Ligue Valorant'
+      },
       game: 'Valorant',
       date: new Date('2025-06-29'),
       link: '#',
-      description: 'Join the Valorant League, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Valorant League, where you could compete for glory and money!',
+        fr: 'Participez à la Ligue Valorant, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Valorant.jpg',
       showDescription: false
     },
     {
       id: 5,
-      title: 'Rocket League Showdown',
+      title: {
+        en: 'Rocket League Showdown',
+        fr: 'Duel Rocket League'
+      },
       game: 'Rocket League',
       date: new Date('2025-06-15'),
       link: '#',
-      description: 'Join the Rocket League Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Rocket League Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel Rocket League, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/RocketLeague.jpg',
       showDescription: false
     },
     {
       id: 6,
-      title: 'Rocket League Tournament',
+      title: {
+        en: 'Rocket League Tournament',
+        fr: 'Tournoi Rocket League'
+      },
       game: 'Rocket League',
       date: new Date('2025-10-02'),
       link: '#',
-      description: 'Join the Rocket League Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Rocket League Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Rocket League, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/RocketLeague.jpg',
       showDescription: false
     },
     {
       id: 7,
-      title: 'Rocket League Cup',
+      title: {
+        en: 'Rocket League Cup',
+        fr: 'Coupe Rocket League'
+      },
       game: 'Rocket League',
       date: new Date('2025-08-17'),
       link: '#',
-      description: 'Join the Rocket League Cup, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Rocket League Cup, where you could compete for glory and money!',
+        fr: 'Participez à la Coupe Rocket League, où vous pourriez concourir pour la gloire et de l\'argent!'
+      },
       image: 'assets/_videoGames/RocketLeague.jpg',
       showDescription: false
     },
     {
       id: 8,
-      title: 'Rocket League Getaway',
+      title: {
+        en: 'Rocket League Getaway',
+        fr: 'Évasion Rocket League'
+      },
       game: 'Rocket League',
       date: new Date('2025-06-23'),
       link: '#',
-      description: 'Join the Rocket League Getaway, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Rocket League Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion Rocket League, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/RocketLeague.jpg',
       showDescription: false
     },
     {
       id: 9,
-      title: 'League of Legends Tournament',
+      title: {
+        en: 'League of Legends Tournament',
+        fr: 'Tournoi League of Legends'
+      },
       game: 'League of Legends',
       date: new Date('2025-08-20'),
       link: '#',
-      description: 'Join the League of Legends Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the League of Legends Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi League of Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/LeagueOfLegends.jpg',
       showDescription: false
     },
     {
       id: 10,
-      title: 'League of Legends Showdown',
+      title: {
+        en: 'League of Legends Showdown',
+        fr: 'Duel League of Legends'
+      },
       game: 'League of Legends',
       date: new Date('2025-11-03'),
       link: '#',
-      description: 'Join the League of Legends Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the League of Legends Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel League of Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/LeagueOfLegends.jpg',
       showDescription: false
     },
     {
       id: 11,
-      title: 'League of Legends Getaway',
+      title: {
+        en: 'League of Legends Getaway',
+        fr: 'Évasion League of Legends'
+      },
       game: 'League of Legends',
       date: new Date('2025-12-21'),
       link: '#',
-      description: 'Join the League of Legends Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the League of Legends Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion League of Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/LeagueOfLegends.jpg',
       showDescription: false
     },
     {
       id: 12,
-      title: 'League of Legends Championship',
+      title: {
+        en: 'League of Legends Championship',
+        fr: 'Championnat League of Legends'
+      },
       game: 'League of Legends',
       date: new Date('2025-09-23'),
       link: '#',
-      description: 'Join the League of Legends Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the League of Legends Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat League of Legends, où vous pourriez concourir pour la gloire et de l\'argent!'
+      },
       image: 'assets/_videoGames/LeagueOfLegends.jpg',
       showDescription: false
     },
     {
       id: 13,
-      title: 'Apex Legends Tournament',
+      title: {
+        en: 'Apex Legends Tournament',
+        fr: 'Tournoi Apex Legends'
+      },
       game: 'Apex Legends',
       date: new Date('2025-07-22'),
       link: '#',
-      description: 'Join the Apex Legends Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Apex Legends Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Apex Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/ApexLegends.jpg',
       showDescription: false
     },
     {
       id: 14,
-      title: 'Apex Legends Championship',
+      title: {
+        en: 'Apex Legends Championship',
+        fr: 'Championnat Apex Legends'
+      },
       game: 'Apex Legends',
       date: new Date('2025-09-24'),
       link: '#',
-      description: 'Join the Apex Legends Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Apex Legends Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat Apex Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/ApexLegends.jpg',
       showDescription: false
     },
     {
       id: 15,
-      title: 'Apex Legends Showdown',
+      title: {
+        en: 'Apex Legends Showdown',
+        fr: 'Duel Apex Legends'
+      },
       game: 'Apex Legends',
       date: new Date('2025-09-05'),
       link: '#',
-      description: 'Join the Apex Legends Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Apex Legends Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel Apex Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/ApexLegends.jpg',
       showDescription: false
     },
     {
       id: 16,
-      title: 'Apex Legends Getaway',
+      title: {
+        en: 'Apex Legends Getaway',
+        fr: 'Évasion Apex Legends'
+      },
       game: 'Apex Legends',
       date: new Date('2025-08-26'),
       link: '#',
-      description: 'Join the Apex Legends Getaway, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Apex Legends Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion Apex Legends, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/ApexLegends.jpg',
       showDescription: false
     },
     {
       id: 17,
-      title: 'Dota 2 Tournament',
+      title: {
+        en: 'Dota 2 Tournament',
+        fr: 'Tournoi Dota 2'
+      },
       game: 'Dota 2',
       date: new Date('2025-07-30'),
       link: '#',
-      description: 'Join the Dota 2 Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Dota 2 Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Dota 2, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Dota2.jpg',
       showDescription: false
     },
     {
       id: 18,
-      title: 'Dota 2 Championship',
+      title: {
+        en: 'Dota 2 Championship',
+        fr: 'Championnat Dota 2'
+      },
       game: 'Dota 2',
       date: new Date('2025-11-07'),
       link: '#',
-      description: 'Join the Dota 2 Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Dota 2 Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat Dota 2, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Dota2.jpg',
       showDescription: false
     },
     {
       id: 19,
-      title: 'Dota 2 Showdown',
+      title: {
+        en: 'Dota 2 Showdown',
+        fr: 'Duel Dota 2'
+      },
       game: 'Dota 2',
       date: new Date('2025-06-14'),
       link: '#',
-      description: 'Join the Dota 2 Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Dota 2 Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel Dota 2, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Dota2.jpg',
       showDescription: false
     },
     {
       id: 20,
-      title: 'Dota 2 Getaway',
+      title: {
+        en: 'Dota 2 Getaway',
+        fr: 'Évasion Dota 2'
+      },
       game: 'Dota 2',
       date: new Date('2025-03-30'),
       link: '#',
-      description: 'Join the Dota 2 Getaway, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Dota 2 Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion Dota 2, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Dota2.jpg',
       showDescription: false
     },
     {
       id: 21,
-      title: 'Fortnite Tournament',
+      title: {
+        en: 'Fortnite Tournament',
+        fr: 'Tournoi Fortnite'
+      },
       game: 'Fortnite',
       date: new Date('2025-05-18'),
       link: '#',
-      description: 'Join the Fortnite Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Fortnite Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Fortnite, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Fortnite.jpg',
       showDescription: false
     },
     {
       id: 22,
-      title: 'Fortnite Championship',
+      title: {
+        en: 'Fortnite Championship',
+        fr: 'Championnat Fortnite'
+      },
       game: 'Fortnite',
       date: new Date('2025-08-19'),
       link: '#',
-      description: 'Join the Fortnite Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Fortnite Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat Fortnite, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Fortnite.jpg',
       showDescription: false
     },
     {
       id: 23,
-      title: 'Fortnite Showdown',
+      title: {
+        en: 'Fortnite Showdown',
+        fr: 'Duel Fortnite'
+      },
       game: 'Fortnite',
       date: new Date('2025-03-09'),
       link: '#',
-      description: 'Join the Fortnite Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Fortnite Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel Fortnite, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Fortnite.jpg',
       showDescription: false
     },
     {
       id: 24,
-      title: 'Fortnite Getaway',
+      title: {
+        en: 'Fortnite Getaway',
+        fr: 'Évasion Fortnite'
+      },
       game: 'Fortnite',
       date: new Date('2025-07-31'),
       link: '#',
-      description: 'Join the Fortnite Getaway, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Fortnite Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion Fortnite, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Fortnite.jpg',
       showDescription: false
     },
     {
       id: 25,
-      title: 'Warzone Tournament',
+      title: {
+        en: 'Warzone Tournament',
+        fr: 'Tournoi Warzone'
+      },
       game: 'Warzone',
       date: new Date('2025-06-26'),
       link: '#',
-      description: 'Join the Warzone Tournament, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Warzone Tournament, where you could compete for glory and money!',
+        fr: 'Participez au Tournoi Warzone, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Warzone.jpg',
       showDescription: false
     },
     {
       id: 26,
-      title: 'Warzone Championship',
+      title: {
+        en: 'Warzone Championship',
+        fr: 'Championnat Warzone'
+      },
       game: 'Warzone',
       date: new Date('2025-11-27'),
       link: '#',
-      description: 'Join the Warzone Championship, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Warzone Championship, where you could compete for glory and money!',
+        fr: 'Participez au Championnat Warzone, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Warzone.jpg',
       showDescription: false
     },
     {
       id: 27,
-      title: 'Warzone Showdown',
+      title: {
+        en: 'Warzone Showdown',
+        fr: 'Duel Warzone'
+      },
       game: 'Warzone',
       date: new Date('2025-02-11'),
       link: '#',
-      description: 'Join the Warzone Showdown, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Warzone Showdown, where you could compete for glory and money!',
+        fr: 'Participez au Duel Warzone, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Warzone.jpg',
       showDescription: false
     },
     {
       id: 28,
-      title: 'Warzone Getaway',
+      title: {
+        en: 'Warzone Getaway',
+        fr: 'Évasion Warzone'
+      },
       game: 'Warzone',
       date: new Date('2025-09-01'),
       link: '#',
-      description: 'Join the Warzone Getaway, where you could compete for glory and money!',
+      description: {
+        en: 'Join the Warzone Getaway, where you could compete for glory and money!',
+        fr: 'Participez à l\'Évasion Warzone, où vous pourriez concourir pour la gloire et de l\'argent !'
+      },
       image: 'assets/_videoGames/Warzone.jpg',
       showDescription: false
     }

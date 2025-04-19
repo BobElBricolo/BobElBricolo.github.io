@@ -165,7 +165,9 @@
       "UPCOMING": "Futurs",
       "PAST": "Anciens",
       "TOURNAMENTS": "Tournois",
-      "SEARCH": "Chercher des tournois..."
+      "SEARCH": "Chercher des tournois...",
+      "GAME": "Jeu:",
+      "DATE": "Date:"
     },
     "TS": {
 

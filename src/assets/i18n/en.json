@@ -150,7 +150,10 @@
     "HTML": {
       "UPCOMING": "Upcoming",
       "PAST": "Past",
-      "TOURNAMENTS": "Tournaments"
+      "TOURNAMENTS": "Tournaments",
+      "SEARCH": "Search tournaments...",
+      "GAME": "Game:",
+      "DATE": "Date:"
     },
     "TS": {
 
