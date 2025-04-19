@@ -124,15 +124,6 @@
 
     }
   },
-  
-  "TOURNAMENT-CARD": {
-    "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
   "TOURNAMENT-DETAILS": {
     "HTML": {
       "BTN_JOIN": "Join Tournament",
@@ -153,7 +144,10 @@
       "TOURNAMENTS": "Tournaments",
       "SEARCH": "Search tournaments...",
       "GAME": "Game:",
-      "DATE": "Date:"
+      "DATE": "Date:",
+      "BTN_JOIN": "Join",
+      "BTN_VIEW": "View",
+      "BTN_HIDE": "Hide"
     },
     "TS": {
 

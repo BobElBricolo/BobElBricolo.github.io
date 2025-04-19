@@ -149,7 +149,7 @@
   },
   "TOURNAMENT-DETAILS": {
     "HTML": {
-      "BTN_JOIN": "Participer au Tournament",
+      "BTN_JOIN": "Participer au Tournoi",
       "FEE": "Frais d'entrée:",
       "PRIZE": "Cagnotte totale:",
       "TITLE_BDN": "Répartition des prix",
@@ -167,7 +167,10 @@
       "TOURNAMENTS": "Tournois",
       "SEARCH": "Chercher des tournois...",
       "GAME": "Jeu:",
-      "DATE": "Date:"
+      "DATE": "Date:",
+      "BTN_JOIN": "Participer",
+      "BTN_VIEW": "Voir",
+      "BTN_HIDE": "Cacher"
     },
     "TS": {
 

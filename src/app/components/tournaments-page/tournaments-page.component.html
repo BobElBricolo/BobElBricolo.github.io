@@ -31,9 +31,9 @@
         <p class="game">{{ 'TOURNAMENT-PAGE.HTML.GAME' | translate }} {{ tournament.game }}</p>
         <p class="date">{{ 'TOURNAMENT-PAGE.HTML.DATE' | translate }} {{ tournament.date | date:'dd/MM/yyyy' }}</p>
         <div class="actions">
-          <a class="join-button" (click)="openTournament(tournament.id)">{{ viewMode === 'past' ? 'Stats' : 'Join' }}</a>
+          <button class="join-button" (click)="openTournament(tournament.id)">{{ viewMode === 'past' ? 'Stats' : ('TOURNAMENT-PAGE.HTML.BTN_JOIN' | translate) }}</button>
           <button class="description-toggle" (click)="toggleDescription(tournament)">
-            {{ tournament.showDescription ? 'Hide' : 'Show' }} Description
+            {{ tournament.showDescription ? ('TOURNAMENT-PAGE.HTML.BTN_HIDE' | translate) : ('TOURNAMENT-PAGE.HTML.BTN_VIEW' | translate) }} Description
           </button>
         </div>
         @if(tournament.showDescription) {
