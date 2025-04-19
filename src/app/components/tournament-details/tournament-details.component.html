@@ -68,7 +68,7 @@
     @if (tournament.ended) {
       <div class="ranking-section">
         <div class="ranking-list-wrapper">
-          <h2 class="ranking-title">Final Ranking</h2>
+          <h2 class="ranking-title">{{ 'TOURNAMENT-DETAILS.HTML.RANKING' | translate }}</h2>
           <ol class="ranking-list">
             @for (player of tournament.ranking; track player.name) {
               <li>

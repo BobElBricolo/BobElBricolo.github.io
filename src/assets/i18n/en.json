@@ -139,7 +139,8 @@
       "FEE": "Entry Fee:",
       "PRIZE": "Prize Pool:",
       "TITLE_BDN": "Prize Breakdown",
-      "DESCRIPTION": "The top 3 players of this tournament earned their place on the podium — and walked away with cash prizes."
+      "DESCRIPTION": "The top 3 players of this tournament earned their place on the podium — and walked away with cash prizes.",
+      "RANKING": "Final Ranking"
     },
     "TS": {
 
