@@ -2,12 +2,12 @@
   <div class="forbidden-content">
     <div class="forbidden-text">
       <h1 class="code">403</h1>
-      <h2 class="title">Forbidden</h2>
+      <h2 class="title">{{ '403.HTML.TITLE' | translate }}</h2>
       <p class="message">
-        Sorry, you do not have access to this page. <br />
-        Please contact the administrator.
+        {{ '403.HTML.DESCRIPTION' | translate }} <br />
+        {{ '403.HTML.DESCRIPTION2' | translate }}
       </p>
-      <a routerLink="/home" class="forbidden-button">Return Home</a>
+      <a routerLink="/home" class="forbidden-button">{{ '403.HTML.BUTTON' | translate }}</a>
     </div>
 
     <div class="forbidden-image">

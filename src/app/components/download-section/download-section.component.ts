@@ -1,9 +1,10 @@
 import {Component, inject} from '@angular/core';
 import {Router} from '@angular/router';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-download-section',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './download-section.component.html',
   styleUrl: './download-section.component.css'
 })

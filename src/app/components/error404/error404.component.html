@@ -2,12 +2,12 @@
   <div class="not-found-content">
     <div class="not-found-text">
       <h1 class="code">404</h1>
-      <h2 class="title">Page Not Found</h2>
+      <h2 class="title">{{ '404.HTML.TITLE' | translate }}</h2>
       <p class="message">
-        Oops! The page you're looking for doesn't exist. <br />
-        It might have been moved or deleted.
+        {{ '404.HTML.DESCRIPTION' | translate }} <br />
+        {{ '404.HTML.DESCRIPTION2' | translate }}
       </p>
-      <a routerLink="/home" class="not-found-button">Return to Home</a>
+      <a routerLink="/home" class="not-found-button">{{ '404.HTML.BUTTON' | translate }}</a>
     </div>
 
     <div class="not-found-image">

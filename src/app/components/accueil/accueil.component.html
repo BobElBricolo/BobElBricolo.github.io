@@ -1,13 +1,13 @@
 <div class="home-container">
   <div class="left-section">
-    <h1>Step into <span class="highlight">the Game</span>.</h1>
+    <h1>{{ 'ACCUEIL.HTML.TITLE_WHITE' | translate }}<span class="highlight">{{ 'ACCUEIL.HTML.TITLE_BLUE' | translate }}</span>.</h1>
     <div class="intro">
       <p class="description">
-        Welcome to the ultimate e-sport platform. Create or join tournaments, challenge your friends, and climb the leaderboard.
+        {{ 'ACCUEIL.HTML.DESCRIPTION' | translate }}
       </p>
       <div class="cta-buttons">
-        <button class="learn-more" (click)="goToProfil()">Start Competing</button>
-        <button class="learn-more" (click)="goToTournaments()">Explore Tournaments</button>
+        <button class="learn-more" (click)="goToProfil()">{{ 'ACCUEIL.HTML.BTN_COMPETING' | translate }}</button>
+        <button class="learn-more" (click)="goToTournaments()">{{ 'ACCUEIL.HTML.BTN_EXPLORE' | translate }}</button>
       </div>
     </div>
   </div>

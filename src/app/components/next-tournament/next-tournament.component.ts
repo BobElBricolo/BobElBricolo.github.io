@@ -2,11 +2,13 @@ import {Component, inject} from '@angular/core';
 import {TournamentCard} from '../../_models/TournamentCard';
 import {TournamentCardComponent} from '../tournament-card/tournament-card.component';
 import {Router} from '@angular/router';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-next-tournament',
   imports: [
-    TournamentCardComponent
+    TournamentCardComponent,
+    TranslatePipe
   ],
   templateUrl: './next-tournament.component.html',
   styleUrl: './next-tournament.component.css'

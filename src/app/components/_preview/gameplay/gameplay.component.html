@@ -10,22 +10,22 @@
       <div class="tournament-info">
         <div class="info-row">
           <mat-icon>sports_esports</mat-icon>
-          <span>{{ tournamentInfo.kills }} kills</span>
+          <span>{{ tournamentInfo.kills }} {{ 'PREVIEW.GAMEPLAY.HTML.KILLS' | translate }}</span>
         </div>
         <div class="info-row">
           <mat-icon>emoji_events</mat-icon>
-          <span>Rank: #{{ tournamentInfo.tournamentRank }}</span>
+          <span>{{ 'PREVIEW.GAMEPLAY.HTML.RANK' | translate }}{{ tournamentInfo.tournamentRank }}</span>
         </div>
         <div class="info-row">
           <mat-icon>leaderboard</mat-icon>
-          <span>In-game: #{{ tournamentInfo.gameRank }}</span>
+          <span>{{ 'PREVIEW.GAMEPLAY.HTML.GAME' | translate }}{{ tournamentInfo.gameRank }}</span>
         </div>
         <div class="info-row">
           <mat-icon>repeat</mat-icon>
-          <span>Round {{ tournamentInfo.round }}</span>
+          <span>{{ 'PREVIEW.GAMEPLAY.HTML.ROUND' | translate }} {{ tournamentInfo.round }}</span>
         </div>
 
-        <div class="players-title">This Round Opponents</div>
+        <div class="players-title">{{ 'PREVIEW.GAMEPLAY.HTML.PLAYERS_TITLE' | translate }}</div>
         <div class="opponents">
           @for (player of tournamentInfo.opponents; track player.name) {
             <div class="opponent">

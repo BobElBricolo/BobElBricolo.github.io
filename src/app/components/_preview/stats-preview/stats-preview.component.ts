@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-stats-preview',
+  imports: [
+    TranslatePipe
+  ],
   templateUrl: './stats-preview.component.html',
   styleUrls: ['./stats-preview.component.css'],
 })

@@ -2,31 +2,31 @@
     <mat-card class="card">
         <div class="logo-container">
             <img ngSrc="assets/Logo.png" alt="Logo" class="logo" height="90" width="60">
-            <h3>GetGoodOrGetOut</h3>
+            <h3>{{ 'LOGIN.HTML.TITLE_APP' | translate }}</h3>
         </div>
-        <p class="welcome">Welcome back</p>
+        <p class="welcome">{{ 'LOGIN.HTML.WELCOME' | translate }}</p>
         <div class="form-container">
             <div class="flex-container">
                 <mat-form-field class="email" appearance="outline">
-                    <mat-label>Email</mat-label>
+                    <mat-label>{{ 'LOGIN.HTML.EMAIL' | translate }}</mat-label>
                     <input matInput type="email" [(ngModel)]="user.email" required>
                 </mat-form-field>
             </div>
             <div class="flex-container">
                 <mat-form-field class="password" appearance="outline">
-                    <mat-label>Password</mat-label>
+                    <mat-label>{{ 'LOGIN.HTML.PASSWORD' | translate }}</mat-label>
                     <input matInput type="password" [(ngModel)]="user.password" required>
                 </mat-form-field>
             </div>
             <div class="forgot-password">
-                <a class="button" (click)="onForgotPassword()">Forgot password</a>
+                <a class="button" (click)="onForgotPassword()">{{ 'LOGIN.HTML.FORGOT_CRED' | translate }}</a>
             </div>
             <div class="flex-container">
-                <button mat-flat-button class="button" (click)="onLogin()">Connexion</button>
+                <button mat-flat-button class="button" (click)="onLogin()">{{ 'LOGIN.HTML.BTN_LOGIN' | translate }}</button>
             </div>
             <div class="flex-container align-center">
-                <p>You don't have an account yet?</p>
-                <a class="button" (click)="onRegister()">Sign-up</a>
+                <p>{{ 'LOGIN.HTML.NO_ACCOUNT_LOSER' | translate }}</p>
+                <a class="button" (click)="onRegister()">{{ 'LOGIN.HTML.BTN_SIGN_UP' | translate }}</a>
             </div>
         </div>
     </mat-card>

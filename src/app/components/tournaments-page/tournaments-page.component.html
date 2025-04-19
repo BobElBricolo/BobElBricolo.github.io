@@ -1,16 +1,16 @@
 <div class="tournaments-container">
   <h1>
     @if (viewMode === 'upcoming') {
-      <span>Upcoming</span>
+      <span>{{ 'TOURNAMENT-PAGE.HTML.UPCOMING' | translate }} </span>
     } @else {
-      <span>Past</span>
+      <span>{{ 'TOURNAMENT-PAGE.HTML.PAST' | translate }}</span>
     }
-    Tournaments
+    {{ 'TOURNAMENT-PAGE.HTML.TOURNAMENTS' | translate }}
   </h1>
 
   <div class="view-toggle">
-    <button [class.active]="viewMode === 'upcoming'" (click)="viewMode = 'upcoming'">Upcoming</button>
-    <button [class.active]="viewMode === 'past'" (click)="viewMode = 'past'">Past</button>
+    <button [class.active]="viewMode === 'upcoming'" (click)="viewMode = 'upcoming'">{{ 'TOURNAMENT-PAGE.HTML.UPCOMING' | translate }}</button>
+    <button [class.active]="viewMode === 'past'" (click)="viewMode = 'past'">{{ 'TOURNAMENT-PAGE.HTML.PAST' | translate }}</button>
   </div>
 
   <div class="search-wrapper">
@@ -18,27 +18,27 @@
     <input
       type="text"
       class="search-bar"
-      placeholder="Search tournaments..."
+      placeholder="{{ 'TOURNAMENT-PAGE.HTML.SEARCH' | translate }}"
       [(ngModel)]="searchTerm"
     />
   </div>
 
   <div class="tournament-list">
-    @for (tournament of filteredTournaments; track tournament.title) {
+    @for (tournament of filteredTournaments; track getTournamentTitle(tournament)) {
       <div class="tournament-card">
-        <h2>{{ tournament.title }}</h2>
+        <h2>{{ getTournamentTitle(tournament) }}</h2>
         <img [src]="tournament.image" [alt]="tournament.title" class="tournament-image" />
-        <p class="game">Game: {{ tournament.game }}</p>
-        <p class="date">Date: {{ tournament.date | date:'dd/MM/yyyy' }}</p>
+        <p class="game">{{ 'TOURNAMENT-PAGE.HTML.GAME' | translate }} {{ tournament.game }}</p>
+        <p class="date">{{ 'TOURNAMENT-PAGE.HTML.DATE' | translate }} {{ tournament.date | date:'dd/MM/yyyy' }}</p>
         <div class="actions">
-          <a class="join-button" (click)="openTournament(tournament.id)">{{ viewMode === 'past' ? 'Stats' : 'Join' }}</a>
+          <button class="join-button" (click)="openTournament(tournament.id)">{{ viewMode === 'past' ? 'Stats' : ('TOURNAMENT-PAGE.HTML.BTN_JOIN' | translate) }}</button>
           <button class="description-toggle" (click)="toggleDescription(tournament)">
-            {{ tournament.showDescription ? 'Hide' : 'Show' }} Description
+            {{ tournament.showDescription ? ('TOURNAMENT-PAGE.HTML.BTN_HIDE' | translate) : ('TOURNAMENT-PAGE.HTML.BTN_VIEW' | translate) }} Description
           </button>
         </div>
         @if(tournament.showDescription) {
           <p class="description">
-            {{ tournament.description }}
+            {{ getTournamentDescription(tournament) }}
           </p>
         }
       </div>

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {MatCard} from '@angular/material/card';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-preview-app',
   imports: [
-    MatCard
+    MatCard,
+    TranslatePipe
   ],
   templateUrl: './preview-app.component.html',
   styleUrl: './preview-app.component.css'

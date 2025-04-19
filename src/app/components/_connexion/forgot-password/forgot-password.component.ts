@@ -1,6 +1,7 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import {TranslatePipe} from '@ngx-translate/core';
 
 import { Router } from '@angular/router';
 
@@ -10,7 +11,8 @@ import { Router } from '@angular/router';
     [
       MatCardModule,
       CommonModule,
-      NgOptimizedImage
+      NgOptimizedImage,
+      TranslatePipe
     ],
   templateUrl: './forgot-password.component.html',
   styleUrl: './forgot-password.component.css'

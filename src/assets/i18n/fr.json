@@ -6,7 +6,7 @@
       "SEE-TOURNAMENTS-BTN": "Voir les tournois"
     },
     "TS": {
-      "TOURNAMENT-NAME-RL": "Valorant Cup",
+      "TOURNAMENT-NAME-RL": "Coupe Valorant",
       "TOURNAMENT-DATE-RL": "11 mai 2025",
       "TOURNAMENT-LOCATION-RL": "En ligne",
       "TOURNAMENT-DESCRIPTION-RL": "Tournoi 2v2 ouvert à tous, prix en argent disponible pour les gagnants !",
@@ -14,6 +14,51 @@
       "TOURNAMENT-DATE-WARZONE": "6 avril 2025",
       "TOURNAMENT-LOCATION-WARZONE": "En ligne",
       "TOURNAMENT-DESCRIPTION-WARZONE": "Tournoi Battle Royale ouvert à tous, prix en argent disponible pour les gagnants !"
+    }
+  },
+  "LOGIN": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "Prêt à gagner?",
+      "EMAIL": "Courriel",
+      "PASSWORD": "Mot de passe",
+      "FORGOT_CRED": "Mot de passe oublié?",
+      "BTN_LOGIN": "Se connecter",
+      "NO_ACCOUNT_LOSER": "Vous n'avez pas encore de compte?",
+      "BTN_SIGN_UP": "Créer un compte"
+    },
+    "TS": {
+
+    }
+  },
+  "FORGOT": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "Cette fonctionnalité n'est pas encore implémentée.",
+      "DESCRIPTION": "On y travaille. Revenez plus tard.",
+      "GOTO": "Retourner au menu",
+      "LNK_LOGIN": "Connexion"
+    },
+    "TS": {
+
+    }
+  },
+  "REGISTER": {
+    "HTML": {
+      "TITLE_APP": "GetGoodOrGetOut",
+      "WELCOME": "La naissance d'un champion.",
+      "EMAIL": "Courriel",
+      "USERNAME": "Nom d'utilisateur",
+      "PASSWORD": "Mot de passe",
+      "CONFIRM_PWD": "Confirmer le mot de passe",
+      "BTN_REGISTER": "S'inscrire",
+      "ALREADY_ACCOUNT_WINNER": "Vous avez déjà un compte?",
+      "BTN_LOGIN": "Se connecter",
+      "WRN_REQUIRED": "Obligatoire",
+      "WRN_DIFFERENT": "Mots de passe différents"
+    },
+    "TS": {
+
     }
   },
   "PROFIL":{
@@ -24,33 +69,42 @@
 
     }
   },
-  "DOWNLOAD":{
+  "DOWNLOAD_SECTION":{
     "HTML": {
-
+      "TITLE_WHITE": "Téléchargez",
+      "TITLE_BLUE": "l'application",
+      "DESCRIPTION1": "Prêt à rejoindre l'arène ? Téléchargez",
+      "DESCRIPTION2": "GetGoodOrGetOut",
+      "DESCRIPTION3": "pour Mac ou Windows et commencez à créer ou rejoindre des tournois directement depuis votre ordinateur.",
+      "BTN_MAC": "Télécharger pour Mac",
+      "BTN_WIN": "Télécharger pour Windows"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-PAGE":{
+  "FUNCTIONNALITY": {
     "HTML": {
-
+      "TITLE_WHITE": "Découvrez nos",
+      "TITLE_BLUE": "fonctionnalités",
+      "FEATURE_TITLE1": "— Création de tournois sans effort",
+      "DESCRIPTION1": "Organisez vos compétitions en quelques clics. Notre plateforme s’occupe du suivi des scores, de la génération des brackets et de tout le reste en coulisses pour que vous puissiez vous concentrer sur le jeu.",
+      "FEATURE_TITLE2": "— Une expérience fluide pour tous",
+      "DESCRIPTION2": "Que vous soyez organisateur ou joueur, profitez d’un tableau de bord intuitif, de mises à jour en temps réel et d’une interface fluide et conviviale, pensée pour répondre à vos besoins.",
+      "FEATURE_TITLE3": "— Captivez votre audience grâce aux paris intégrés",
+      "DESCRIPTION3": "Ajoutez du suspense à vos événements grâce à notre système de paris intégré. Renforcez l’engagement des spectateurs et créez une ambiance compétitive réellement dynamique.",
+      "BTN_EXPLORE": "Explorer la plateforme"
     },
     "TS": {
 
     }
   },
-  "DOWNLOAD-SECTION": {
+  "TERMS": {
     "HTML": {
-
-    },
-    "TS": {
-
-    }
-  },
-  "FONCTIONNALITY": {
-    "HTML": {
-
+      "TITLE_BLUE": "Conditions",
+      "TITLE_WHITE": "générales d'utilisation",
+      "DESCRIPTION": "Avant d’utiliser GetGoodOrGetOut, veuillez prendre un moment pour lire nos conditions d’utilisation. Ce document inclut les versions en français et en anglais.",
+      "BTN_PDF": "Télécharger le PDF"
     },
     "TS": {
 
@@ -58,7 +112,12 @@
   },
   "HEADER": {
     "HTML": {
-
+      "HOME": "Accueil",
+      "TOURNAMENTS": "Tournois",
+      "ABOUT": "À propos",
+      "DOWNLOAD": "Téléchargement",
+      "LOGIN": "Connexion",
+      "PROFIL": "Profil"
     },
     "TS": {
 
@@ -88,9 +147,30 @@
 
     }
   },
+  "TOURNAMENT-DETAILS": {
+    "HTML": {
+      "BTN_JOIN": "Participer au Tournoi",
+      "FEE": "Frais d'entrée:",
+      "PRIZE": "Cagnotte totale:",
+      "TITLE_BDN": "Répartition des prix",
+      "DESCRIPTION": "Le top 3 des joueurs de ce tournoi a mérité sa place sur le podium - et remporté des prix en argent.",
+      "RANKING": "Classement Final"
+    },
+    "TS": {
+
+    }
+  },
   "TOURNAMENT-PAGE": {
     "HTML": {
-
+      "UPCOMING": "Futurs",
+      "PAST": "Anciens",
+      "TOURNAMENTS": "Tournois",
+      "SEARCH": "Chercher des tournois...",
+      "GAME": "Jeu:",
+      "DATE": "Date:",
+      "BTN_JOIN": "Participer",
+      "BTN_VIEW": "Voir",
+      "BTN_HIDE": "Cacher"
     },
     "TS": {
 
@@ -141,6 +221,115 @@
       "DESCRIPTION3": "Ou nous joindre par courriel à"
     },
     "TS": {}
-  }
-
+  },
+  "ACCUEIL": {
+    "HTML": {
+      "TITLE_WHITE": "Place au ",
+      "TITLE_BLUE": "Jeu",
+      "DESCRIPTION": "Bienvenue sur la plateforme e-sport ultime. Crée ou rejoins des tournois, défie tes amis et grimpe dans le classement.",
+      "BTN_COMPETING": "Rejoins la compétition",
+      "BTN_EXPLORE": "Explore les Tournois"
+    },
+    "TS": {}
+  },
+  "NEXT_TOURNAMENT": {
+      "HTML": {
+        "TITLE_WHITE": "Prochain",
+        "TITLE_BLUE": "Tournoi",
+        "DESCRIPTION": "Prêt à démontrer tes compétences ? Rejoins notre prochain tournoi et bats-toi pour atteindre le sommet.",
+        "BTN_REGISTER": "S'inscrire"
+      },
+      "TS": {}
+    },
+    "ACTUALITY": {
+      "HTML": {
+        "TITLE_WHITE": "Découvrez vos",
+        "TITLE_BLUE": "Champions",
+        "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et ont mérité leur place sur le podium.",
+        "DESCRIPTION2": "Célébrez avec nous leur victoire et leurs compétences exceptionnelles!",
+        "BTN_RANKINGS": "Voir le classement complet"
+      },
+      "TS": {}
+    },
+    "PREVIEW": {
+      "POPUP": {
+        "HTML": {
+          "TITLE": "Attention!",
+          "DESCRIPTION": "Cette application est en cours de construction. Ce que vous voyez ici sont des prototypes de fonctionnalités à venir.",
+          "BUTTON": "Compris"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY": {
+        "HTML": {
+          "KILLS": "éliminations",
+          "RANK": "Rang: #",
+          "GAME": "Partie: #",
+          "ROUND": "Tour",
+          "PLAYERS_TITLE": "Les adversaires de ce tour"
+        },
+        "TS": {}
+      },
+      "GAMEPLAY_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu",
+          "TITLE_BLUE": "en Jeu",
+          "DESCRIPTION": "Un aperçu rapide de l’expérience en jeu. Touchez le bouton en bas à droite pour agrandir l’interface. Conçue pour rester discrète : minimale, intuitive et adaptée à un gameplay sans interruption."
+        },
+        "TS": {}
+      },
+      "MATCH_DETAIL": {
+        "HTML": {
+          "BUTTON": "Fermer"
+        },
+        "TS": {}
+      },
+      "APP": {
+        "HTML": {
+          "TITLE": "Résultats du Tour",
+          "TEAM1": "Équipe A",
+          "TEAM2": "Équipe B",
+          "PLAYER": "Joueur",
+          "KILLS": "Éliminations",
+          "RATIO": "É/M",
+          "WIN_RATIO": "Victoires %",
+          "MVPS": "Meilleurs joueurs"
+        },
+        "TS": {}
+      },
+      "PREVIEW_SECTION": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu ",
+          "TITLE_BLUE": "des Statistiques",
+          "DESCRIPTION": "Comparez facilement les résultats finaux grâce à notre interface de statistiques post-match — même lorsque les affrontements ne sont pas en face-à-face."
+        },
+        "TS": {}
+      },
+      "MATCHBOARD": {
+        "HTML": {
+          "TITLE_WHITE": "Aperçu ",
+          "TITLE_BLUE": "du tableau des Matchs",
+          "DESCRIPTION": "Suivez facilement les classements, les matchs à venir et les résultats — le tout dans une interface claire et dynamique."
+        },
+        "TS": {}
+      }
+    },
+    "403": {
+      "HTML": {
+        "TITLE": "Accès Interdit",
+        "DESCRIPTION": "Vous n'avez pas accès à cette zone.",
+        "DESCRIPTION2": "Veuillez contacter un administrateur.",
+        "BUTTON": "Retour à l'accueil"
+      },
+      "TS": {}
+    },
+    "404": {
+      "HTML": {
+        "TITLE": "Page non trouvée",
+        "DESCRIPTION": "Oups! la page que vous recherchez n'existe pas.",
+        "DESCRIPTION2": "Elle a peut-être été effacée ou déplacée.",
+        "BUTTON": "Retour à l'accueil"
+      },
+      "TS": {}
+    }
 }

@@ -1,10 +1,11 @@
 import {Component, inject} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthentificationService} from '../../_services/authentification/authentification.service';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-accueil',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.css'
 })
