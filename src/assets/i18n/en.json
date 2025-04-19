@@ -64,7 +64,19 @@
   },
   "PROFIL":{
     "HTML": {
-
+      "LOGOUT": "Logout",
+      "SEARCH": "Search a user...",
+      "ACCOUNT_CREATION": "Account created on:",
+      "SAVE": "Save",
+      "NO_BIO": "No bio yet... Quietly working away",
+      "BADGES": "Badges",
+      "BIO": "Bio",
+      "GAME": "Game:",
+      "DATE": "Date:",
+      "POSITION": "Position:",
+      "ABOUT": "About",
+      "PAST": "Past Tournaments",
+      "FRIENDS": "Friend List"
     },
     "TS": {
 

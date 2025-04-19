@@ -15,6 +15,8 @@ import { ApiCallsService } from '../../../_services/service_api_call/api-calls.s
 import { AuthentificationService } from '../../../_services/authentification/authentification.service';
 import { User, UserName } from '../../../_models/UserInfo';
 import { MatTabsModule } from '@angular/material/tabs';
+import { TranslatePipe } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profil',
@@ -33,12 +35,24 @@ import { MatTabsModule } from '@angular/material/tabs';
     DatePipe,
     MatTabsModule,
     CommonModule,
+    TranslatePipe,
   ],
   templateUrl: './profil.component.html',
   styleUrl: './profil.component.css'
 })
 export class ProfilComponent implements OnInit {
+  constructor(public translate: TranslateService) {}
 
+  getTournamentTitle(tournament: any): string {
+    const lang = this.translate.currentLang;
+    return tournament.title?.[lang] || tournament.title?.['en'];
+  }
+
+  getBadgeTitle(badge: any): string {
+    const lang = this.translate.currentLang;
+    return badge.title?.[lang] || badge.title?.['en'];
+  }
+  
   apiCallsService = inject(ApiCallsService);
   authentificationService = inject(AuthentificationService);
   snackBar = inject(MatSnackBar);
@@ -147,7 +161,11 @@ export class ProfilComponent implements OnInit {
 
   tournaments = [
     {
-      title: 'Warzone',
+      title: {
+        en: 'League of Legends Tournament',
+        fr: 'Tournoi de League of Legends'
+      },
+      
       game: 'Valorant',
       date: 'February 12, 2025',
       link: '#',
@@ -155,15 +173,21 @@ export class ProfilComponent implements OnInit {
       index: 2,
     },
     {
-      title: 'CSGO',
-      game: 'Rocket League',
+      title: {
+        en: 'CSGO Tournament',
+        fr: 'Tournoi de CSGO'
+      },
+      game: 'CSGO',
       date: 'January 15, 2025',
       link: '#',
       image: 'assets/_videoGames/csgo.png',
       index: 4,
     },
     {
-      title: 'League of Legends Cup',
+      title: {
+        en: 'League of Legends Cup',
+        fr: 'Coupe de League of Legends'
+      },
       game: 'LoL',
       date: 'April 20, 2024',
       link: '#',
@@ -171,7 +195,10 @@ export class ProfilComponent implements OnInit {
       index: 3,
     },
     {
-      title: 'Civ5',
+      title: {
+        en: 'Civilization 5 Tournament',
+        fr: 'Tournoi de Civilization 5'
+      },
       game: 'Civilization 5',
       date: 'April 12, 2023',
       link: '#',
@@ -183,15 +210,24 @@ export class ProfilComponent implements OnInit {
   badges = [
     {
       image: 'assets/badges/badge1_v2.png',
-      title: 'Participer a son premier tournoie'
+      title: {
+        en: 'Participate in your first tournament',
+        fr: 'Participer a son premier tournoi'
+      }
     },
     {
       image: 'assets/badges/badge2.png',
-      title: 'Faire son premier dollars'
+      title: {
+        en: 'Win your first dollar',
+        fr: 'Gagner son premier dollar'
+      }
     },
     {
       image: 'assets/badges/badge2.png',
-      title: 'Gagner son premier tournoie'
+      title: {
+        en: 'Win your first tournament',
+        fr: 'Gagner son premier tournoi'
+      }
     }
   ]
 

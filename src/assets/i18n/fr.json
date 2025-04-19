@@ -63,7 +63,19 @@
   },
   "PROFIL":{
     "HTML": {
-
+      "LOGOUT": "Se déconnecter",
+      "SEARCH": "Chercher un utilisateur...",
+      "ACCOUNT_CREATION": "Compte créé le:",
+      "SAVE": "Enregistrer",
+      "NO_BIO": "Pas encore de bio...",
+      "BADGES": "Badges",
+      "BIO": "Bio",
+      "GAME": "Jeu:",
+      "DATE": "Date:",
+      "POSITION": "Position:",
+      "ABOUT": "À propos",
+      "PAST": "Anciens Tournois",
+      "FRIENDS": "Liste d'amis"
     },
     "TS": {
 
