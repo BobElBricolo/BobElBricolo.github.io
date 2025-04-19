@@ -2,40 +2,67 @@ import {Component, inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {DatePipe} from '@angular/common';
 import {Router} from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tournaments-page',
   imports: [
     FormsModule,
     DatePipe,
+    TranslatePipe
   ],
   templateUrl: './tournaments-page.component.html',
   styleUrl: './tournaments-page.component.css',
 })
 export class TournamentsPageComponent {
 
+  constructor(public translate: TranslateService) {
+  }
+
+    get currentLang(): string {
+      return this.translate.currentLang || this.translate.getDefaultLang();
+    }
+  
+    getTournamentTitle(tournament: any): string {
+      const lang = this.translate.currentLang;
+      const title = tournament.title;
+
+      if (!title) return '[Sans titre]'; // ou n’importe quel fallback
+
+      if (typeof title === 'string') return title;
+
+      return title[lang] /*|| title['en'] */|| Object.values(title)[0] || '[Sans titre]';
+    }
+  
+    getTournamentDescription(tournament: any): string {
+      const lang = this.translate.currentLang;
+      return tournament.description?.[lang] || tournament.description?.['en'];
+    }
+  
   private router = inject(Router)
 
   searchTerm: string = '';
   viewMode: 'upcoming' | 'past' = 'upcoming';
 
   get filteredTournaments() {
-    const now = new Date();
-    return this.tournaments
-      .filter(t => {
-        const matchesSearch =
-          t.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-          t.game.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-          t.description.toLowerCase().includes(this.searchTerm.toLowerCase());
-
-        const isPast = t.date < now;
-        return matchesSearch && (
-          (this.viewMode === 'upcoming' && !isPast) ||
-          (this.viewMode === 'past' && isPast)
-        );
-      })
-      .sort((a, b) => a.date.getTime() - b.date.getTime());
-  }
+      const now = new Date();
+      return this.tournaments
+        .filter(t => {
+          const matchesSearch =
+            t.title.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+            t.game.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+            t.description.toLowerCase().includes(this.searchTerm.toLowerCase());
+  
+          const isPast = t.date < now;
+          return matchesSearch && (
+            (this.viewMode === 'upcoming' && !isPast) ||
+            (this.viewMode === 'past' && isPast)
+          );
+        })
+        .sort((a, b) => a.date.getTime() - b.date.getTime());
+    }
+  
 
 
 

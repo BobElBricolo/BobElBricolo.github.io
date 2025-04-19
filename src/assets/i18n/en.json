@@ -148,7 +148,9 @@
   },
   "TOURNAMENT-PAGE": {
     "HTML": {
-
+      "UPCOMING": "Upcoming",
+      "PAST": "Past",
+      "TOURNAMENTS": "Tournaments"
     },
     "TS": {
 

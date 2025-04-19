@@ -162,7 +162,10 @@
   },
   "TOURNAMENT-PAGE": {
     "HTML": {
-
+      "UPCOMING": "Futurs",
+      "PAST": "Anciens",
+      "TOURNAMENTS": "Tournois",
+      "SEARCH": "Chercher des tournois..."
     },
     "TS": {
 

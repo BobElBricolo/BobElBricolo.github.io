@@ -1,16 +1,16 @@
 <div class="tournaments-container">
   <h1>
     @if (viewMode === 'upcoming') {
-      <span>Upcoming</span>
+      <span>{{ 'TOURNAMENT-PAGE.HTML.UPCOMING' | translate }} </span>
     } @else {
-      <span>Past</span>
+      <span>{{ 'TOURNAMENT-PAGE.HTML.PAST' | translate }}</span>
     }
-    Tournaments
+    {{ 'TOURNAMENT-PAGE.HTML.TOURNAMENTS' | translate }}
   </h1>
 
   <div class="view-toggle">
-    <button [class.active]="viewMode === 'upcoming'" (click)="viewMode = 'upcoming'">Upcoming</button>
-    <button [class.active]="viewMode === 'past'" (click)="viewMode = 'past'">Past</button>
+    <button [class.active]="viewMode === 'upcoming'" (click)="viewMode = 'upcoming'">{{ 'TOURNAMENT-PAGE.HTML.UPCOMING' | translate }}</button>
+    <button [class.active]="viewMode === 'past'" (click)="viewMode = 'past'">{{ 'TOURNAMENT-PAGE.HTML.PAST' | translate }}</button>
   </div>
 
   <div class="search-wrapper">
@@ -18,7 +18,7 @@
     <input
       type="text"
       class="search-bar"
-      placeholder="Search tournaments..."
+      placeholder="{{ 'TOURNAMENT-PAGE.HTML.SEARCH' | translate }}"
       [(ngModel)]="searchTerm"
     />
   </div>
