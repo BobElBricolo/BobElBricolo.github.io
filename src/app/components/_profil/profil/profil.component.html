@@ -1,11 +1,11 @@
 @if(!isLoading()){
 <div class="profil-container">
   <div class="logout-container">
-    <button mat-flat-button class="logout-button" (click)="logout()">Logout</button>
+    <button mat-flat-button class="logout-button" (click)="logout()">{{'PROFIL.HTML.LOGOUT' | translate }}</button>
   </div>
 
   <mat-form-field class="search-user-field" appearance="outline">
-    <mat-label>Rechercher un utilisateur</mat-label>
+    <mat-label>{{'PROFIL.HTML.SEARCH' | translate }}</mat-label>
     <input type="text" matInput [matAutocomplete]="auto" [value]="searchQuery()"
       (input)="searchQuery.set($any($event.target).value)">
     <mat-icon matPrefix>search</mat-icon>
@@ -97,7 +97,7 @@
 
           <p class="created">
             <mat-icon style="vertical-align: middle; margin-right: 5px;">event</mat-icon>
-            Compte créé le {{ profilInfo()?.createdAt | date:'dd MMM yyyy' }}
+            {{'PROFIL.HTML.ACCOUNT_CREATION' | translate }} {{ profilInfo()?.createdAt | date:'dd MMM yyyy' }}
           </p>
         </div>
       </div>
@@ -105,7 +105,7 @@
       @if (isEditing()) {
       <div class="save-button">
         <button mat-raised-button color="primary" [disabled]="!profileForm.valid" (click)="saveProfile()">
-          Enregistrer
+          {{'PROFIL.HTML.SAVE' | translate }}
         </button>
       </div>
       }
@@ -114,51 +114,49 @@
 
 
   <mat-tab-group class="tabs-container">
-    <mat-tab label="About">
+    <mat-tab label="{{'PROFIL.HTML.ABOUT' | translate }}">
       <mat-card class="bio-card">
         <p class="bio-title">Bio</p>
         @if (!isEditing()) {
         @if (profilInfo()?.bio) {
         <p>{{ profilInfo()?.bio }}</p>
         } @else {
-        <p>No bio yet...
-
-          Quietly working away</p>
+        <p>{{'PROFIL.HTML.NO_BIO' | translate }}</p>
         }
 
-        <p class="bio-title">Badges</p>
+        <p class="bio-title">{{'PROFIL.HTML.BADGES' | translate }}</p>
         <div class="badges-container">
-          @for(badge of badges; track badge.title) {
+          @for(badge of badges; track getBadgeTitle(badge)) {
           <div class="badge">
             <img class="image-badge" src="{{badge.image}}" alt="{{badge.title}}" />
-            <p class="badge-title">{{badge.title}}</p>
+            <p class="badge-title">{{getBadgeTitle(badge)}}</p>
           </div>
           }
         </div>
 
         } @else {
         <mat-form-field appearance="outline" class="bio-field">
-          <mat-label>Bio</mat-label>
+          <mat-label>{{'PROFIL.HTML.BIO' | translate }}</mat-label>
           <textarea matInput rows="3" [(ngModel)]="profileInfoCopyToEdit.bio"></textarea>
         </mat-form-field>
         }
       </mat-card>
     </mat-tab>
 
-    <mat-tab label="Past Tournements">
+    <mat-tab label="{{'PROFIL.HTML.PAST' | translate }}">
 
       <div class="tournament-list">
-        @for (tournament of tournaments; track tournament.title) {
+        @for (tournament of tournaments; track getTournamentTitle(tournament)) {
         <div class="tournament-card">
-          <h2>{{ tournament.title }}</h2>
+          <h2>{{ getTournamentTitle(tournament) }}</h2>
           <img [src]="tournament.image" [alt]="tournament.title" class="tournament-image" />
-          <p class="game">Game: {{ tournament.game }}</p>
-          <p class="date">Date: {{ tournament.date }}</p>
+          <p class="game">{{'PROFIL.HTML.GAME' | translate }} {{ tournament.game }}</p>
+          <p class="date">{{'PROFIL.HTML.DATE' | translate }} {{ tournament.date }}</p>
           <p class="position">
             <span [ngClass]="'rank-icon rank' + tournament.index">
               {{ getMedalIcon(tournament.index) }}
             </span>
-            Position: {{ tournament.index }}
+            {{'PROFIL.HTML.POSITION' | translate }} {{ tournament.index }}
           </p>
         </div>
         }
@@ -168,7 +166,7 @@
     </mat-tab>
 
     @if(isProfileOwner()){
-    <mat-tab label="Friend List">
+    <mat-tab label="{{'PROFIL.HTML.FRIENDS' | translate }}">
       @for (user of allUsers(); track user.id) {
       <mat-option [value]="user" (click)="selectUser(user)">
         <div class="option-content">
