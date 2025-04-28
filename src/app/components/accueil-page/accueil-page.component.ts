@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import {DownloadSectionComponent} from '../download-section/download-section.component';
-import {FonctionnalityComponent} from '../fonctionnality/fonctionnality.component';
-import {TermsComponent} from '../terms/terms.component';
+import {Component} from '@angular/core';
 import {AccueilComponent} from '../accueil/accueil.component';
 import {ActualityComponent} from '../actuality/actuality.component';
 import {NextTournamentComponent} from '../next-tournament/next-tournament.component';
@@ -17,5 +14,4 @@ import {NextTournamentComponent} from '../next-tournament/next-tournament.compon
   styleUrl: './accueil-page.component.css'
 })
 export class AccueilPageComponent {
-
 }

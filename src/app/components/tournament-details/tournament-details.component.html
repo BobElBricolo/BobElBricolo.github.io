@@ -1,14 +1,22 @@
 <div class="tournament-details-page">
   <div class="tournament-header">
-      <div class="header-bar">
-        <h1>{{ getTournamentTitle(tournament) }}</h1>
+    <div class="header-bar">
+      <h1>{{ getTournamentTitle(tournament) }}</h1>
 
-        @if (!tournament.ended) {
-          <button class="join-button" (click)="redirectToPayment()">{{ 'TOURNAMENT-DETAILS.HTML.BTN_JOIN' | translate }}</button>
-        }
-      </div>
+      @if (!tournament.ended) {
+        <div class="button-group">
+          <button class="join-button" (click)="redirectToPayment()">
+            {{ 'TOURNAMENT-DETAILS.HTML.BTN_JOIN' | translate }}
+          </button>
 
-      <p class="game">{{ tournament.game }} – {{ tournament.date | date:'dd/MM/yyyy' }}</p>
+          <button class="bet-button" (click)="redirectToBet()">
+            {{ 'TOURNAMENT-DETAILS.HTML.BTN_BET' | translate }}
+          </button>
+        </div>
+      }
+    </div>
+
+    <p class="game">{{ tournament.game }} – {{ tournament.date | date:'dd/MM/yyyy' }}</p>
     <p class="description">{{ getTournamentDescription(tournament) }}</p>
 
     @if (!tournament.ended) {
