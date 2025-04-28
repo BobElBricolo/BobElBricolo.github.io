@@ -1,0 +1,989 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Valorant Cup",
+      "fr": "Coupe Valorant"
+    },
+    "game": "Valorant",
+    "date": "2025-05-12",
+    "description": {
+      "en": "Join the Valorant Cup, where you could compete for glory and money!",
+      "fr": "Rejoignez la Coupe Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_cN2bJi5czalG0jm8wy",
+    "entryFee": 11,
+    "prize": 777,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player4431",
+        "points": 179
+      },
+      {
+        "name": "Player7276",
+        "points": 159
+      },
+      {
+        "name": "Player9244",
+        "points": 125
+      },
+      {
+        "name": "Player3451",
+        "points": 117
+      },
+      {
+        "name": "Player9025",
+        "points": 68
+      },
+      {
+        "name": "Player7686",
+        "points": 216
+      },
+      {
+        "name": "Player1732",
+        "points": 277
+      },
+      {
+        "name": "Player9954",
+        "points": 169
+      },
+      {
+        "name": "Player8262",
+        "points": 50
+      },
+      {
+        "name": "Player3542",
+        "points": 163
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Valorant Championship",
+      "fr": "Championnat Valorant"
+    },
+    "game": "Valorant",
+    "date": "2025-06-25",
+    "description": {
+      "en": "Join the Valorant Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_eVa3cMdJ551md68bIL",
+    "entryFee": 15,
+    "prize": 1015,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player6079",
+        "points": 248
+      },
+      {
+        "name": "Player6973",
+        "points": 252
+      },
+      {
+        "name": "Player5675",
+        "points": 146
+      },
+      {
+        "name": "Player4936",
+        "points": 60
+      },
+      {
+        "name": "Player5857",
+        "points": 146
+      },
+      {
+        "name": "Player6835",
+        "points": 270
+      },
+      {
+        "name": "Player3716",
+        "points": 241
+      },
+      {
+        "name": "Player6890",
+        "points": 298
+      },
+      {
+        "name": "Player1014",
+        "points": 214
+      },
+      {
+        "name": "Player7122",
+        "points": 283
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Valorant Tournament",
+      "fr": "Tournoi Valorant"
+    },
+    "game": "Valorant",
+    "date": "2025-08-02",
+    "description": {
+      "en": "Join the Valorant Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_6oE3cMbAX79u7LOaEI",
+    "entryFee": 11,
+    "prize": 905,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Valorant League",
+      "fr": "Ligue Valorant"
+    },
+    "game": "Valorant",
+    "date": "2025-06-29",
+    "description": {
+      "en": "Join the Valorant League, where you could compete for glory and money!",
+      "fr": "Rejoignez la Ligue Valorant, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Valorant.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIY28I7kHfG05DGeUZ",
+    "entryFee": 29,
+    "prize": 621,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player8385",
+        "points": 245
+      },
+      {
+        "name": "Player4461",
+        "points": 169
+      },
+      {
+        "name": "Player5465",
+        "points": 294
+      },
+      {
+        "name": "Player3961",
+        "points": 116
+      },
+      {
+        "name": "Player9156",
+        "points": 278
+      },
+      {
+        "name": "Player7767",
+        "points": 289
+      },
+      {
+        "name": "Player6321",
+        "points": 247
+      },
+      {
+        "name": "Player8920",
+        "points": 204
+      },
+      {
+        "name": "Player1859",
+        "points": 234
+      },
+      {
+        "name": "Player5251",
+        "points": 94
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Rocket League Showdown",
+      "fr": "Duel Rocket League"
+    },
+    "game": "Rocket League",
+    "date": "2025-06-15",
+    "description": {
+      "en": "Join the Rocket League Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_eVa5kUbAXbpKfegaEK",
+    "entryFee": 29,
+    "prize": 1308,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player7653",
+        "points": 281
+      },
+      {
+        "name": "Player3548",
+        "points": 223
+      },
+      {
+        "name": "Player3714",
+        "points": 99
+      },
+      {
+        "name": "Player3143",
+        "points": 183
+      },
+      {
+        "name": "Player5211",
+        "points": 70
+      },
+      {
+        "name": "Player2258",
+        "points": 115
+      },
+      {
+        "name": "Player2497",
+        "points": 250
+      },
+      {
+        "name": "Player8187",
+        "points": 55
+      },
+      {
+        "name": "Player8578",
+        "points": 127
+      },
+      {
+        "name": "Player2609",
+        "points": 123
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Rocket League Tournament",
+      "fr": "Tournoi Rocket League"
+    },
+    "game": "Rocket League",
+    "date": "2025-10-02",
+    "description": {
+      "en": "Join the Rocket League Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_3cs14EcF1alG5DG14b",
+    "entryFee": 22,
+    "prize": 1355,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Rocket League Cup",
+      "fr": "Coupe Rocket League"
+    },
+    "game": "Rocket League",
+    "date": "2025-08-17",
+    "description": {
+      "en": "Join the Rocket League Cup, where you could compete for glory and money!",
+      "fr": "Rejoignez la Coupe Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEUdRqeN9gK48PSdQY",
+    "entryFee": 15,
+    "prize": 850,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "Rocket League Getaway",
+      "fr": "Évasion Rocket League"
+    },
+    "game": "Rocket League",
+    "date": "2025-06-23",
+    "description": {
+      "en": "Join the Rocket League Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Rocket League, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/RocketLeague.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_28o28I8oLbpK7LO8wF",
+    "entryFee": 6,
+    "prize": 1203,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player1727",
+        "points": 106
+      },
+      {
+        "name": "Player4704",
+        "points": 176
+      },
+      {
+        "name": "Player6786",
+        "points": 69
+      },
+      {
+        "name": "Player8695",
+        "points": 196
+      },
+      {
+        "name": "Player3005",
+        "points": 252
+      },
+      {
+        "name": "Player7244",
+        "points": 136
+      },
+      {
+        "name": "Player7388",
+        "points": 212
+      },
+      {
+        "name": "Player7598",
+        "points": 81
+      },
+      {
+        "name": "Player4892",
+        "points": 226
+      },
+      {
+        "name": "Player6512",
+        "points": 249
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": {
+      "en": "League of Legends Tournament",
+      "fr": "Tournoi League of Legends"
+    },
+    "game": "League of Legends",
+    "date": "2025-08-20",
+    "description": {
+      "en": "Join the League of Legends Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEU3cMfRd79u4zC6oy",
+    "entryFee": 15,
+    "prize": 1137,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 10,
+    "title": {
+      "en": "League of Legends Showdown",
+      "fr": "Duel League of Legends"
+    },
+    "game": "League of Legends",
+    "date": "2025-11-03",
+    "description": {
+      "en": "Join the League of Legends Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_3cs9BacF19hC7LO9AL",
+    "entryFee": 24,
+    "prize": 873,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 11,
+    "title": {
+      "en": "League of Legends Getaway",
+      "fr": "Évasion League of Legends"
+    },
+    "game": "League of Legends",
+    "date": "2025-12-21",
+    "description": {
+      "en": "Join the League of Legends Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIYeVudJ52Te2ru28k",
+    "entryFee": 14,
+    "prize": 727,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 12,
+    "title": {
+      "en": "League of Legends Championship",
+      "fr": "Championnat League of Legends"
+    },
+    "game": "League of Legends",
+    "date": "2025-09-23",
+    "description": {
+      "en": "Join the League of Legends Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat League of Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/LeagueOfLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_cN2aFe5cz8dyc24cMZ",
+    "entryFee": 27,
+    "prize": 708,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 13,
+    "title": {
+      "en": "Apex Legends Tournament",
+      "fr": "Tournoi Apex Legends"
+    },
+    "game": "Apex Legends",
+    "date": "2025-07-22",
+    "description": {
+      "en": "Join the Apex Legends Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
+    "entryFee": 20,
+    "prize": 603,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 14,
+    "title": {
+      "en": "Apex Legends Championship",
+      "fr": "Championnat Apex Legends"
+    },
+    "game": "Apex Legends",
+    "date": "2025-09-24",
+    "description": {
+      "en": "Join the Apex Legends Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
+    "entryFee": 13,
+    "prize": 1296,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Apex Legends Showdown",
+      "fr": "Duel Apex Legends"
+    },
+    "game": "Apex Legends",
+    "date": "2025-09-05",
+    "description": {
+      "en": "Join the Apex Legends Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
+    "entryFee": 5,
+    "prize": 1289,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 16,
+    "title": {
+      "en": "Apex Legends Getaway",
+      "fr": "Évasion Apex Legends"
+    },
+    "game": "Apex Legends",
+    "date": "2025-08-26",
+    "description": {
+      "en": "Join the Apex Legends Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Apex Legends, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/ApexLegends.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_aEU00AgVhbpK2ru14i",
+    "entryFee": 10,
+    "prize": 1472,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 17,
+    "title": {
+      "en": "Dota 2 Tournament",
+      "fr": "Tournoi Dota 2"
+    },
+    "game": "Dota 2",
+    "date": "2025-07-30",
+    "description": {
+      "en": "Join the Dota 2 Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
+    "entryFee": 5,
+    "prize": 1399,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 18,
+    "title": {
+      "en": "Dota 2 Championship",
+      "fr": "Championnat Dota 2"
+    },
+    "game": "Dota 2",
+    "date": "2025-11-07",
+    "description": "Join the Dota 2 Championship, where you could compete for glory and money!",
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
+    "entryFee": 12,
+    "prize": 743,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 19,
+    "title": {
+      "en": "Dota 2 Showdown",
+      "fr": "Duel Dota 2"
+    },
+    "game": "Dota 2",
+    "date": "2025-06-14",
+    "description": {
+      "en": "Join the Dota 2 Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
+    "entryFee": 29,
+    "prize": 990,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player2769",
+        "points": 206
+      },
+      {
+        "name": "Player2706",
+        "points": 234
+      },
+      {
+        "name": "Player6025",
+        "points": 171
+      },
+      {
+        "name": "Player6591",
+        "points": 84
+      },
+      {
+        "name": "Player1416",
+        "points": 189
+      },
+      {
+        "name": "Player7924",
+        "points": 290
+      },
+      {
+        "name": "Player8358",
+        "points": 137
+      },
+      {
+        "name": "Player5533",
+        "points": 273
+      },
+      {
+        "name": "Player4943",
+        "points": 260
+      },
+      {
+        "name": "Player5794",
+        "points": 258
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": {
+      "en": "Dota 2 Getaway",
+      "fr": "Évasion Dota 2"
+    },
+    "game": "Dota 2",
+    "date": "2025-08-30",
+    "description": {
+      "en": "Join the Dota 2 Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Dota 2, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Dota2.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_bIY8x634rgK4d68dR5",
+    "entryFee": 29,
+    "prize": 666,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "title": {
+      "en": "Fortnite Tournament",
+      "fr": "Tournoi Fortnite"
+    },
+    "game": "Fortnite",
+    "date": "2025-05-18",
+    "description": {
+      "en": "Join the Fortnite Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
+    "entryFee": 14,
+    "prize": 1036,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      },
+      {
+        "name": "Player4154",
+        "points": 55
+      },
+      {
+        "name": "Player8861",
+        "points": 239
+      },
+      {
+        "name": "Player4824",
+        "points": 289
+      },
+      {
+        "name": "Player9979",
+        "points": 180
+      },
+      {
+        "name": "Player4229",
+        "points": 226
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": {
+      "en": "Fortnite Championship",
+      "fr": "Championnat Fortnite"
+    },
+    "game": "Fortnite",
+    "date": "2025-08-19",
+    "description": {
+      "en": "Join the Fortnite Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
+    "entryFee": 29,
+    "prize": 1082,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 23,
+    "title": {
+      "en": "Fortnite League",
+      "fr": "Ligue Fortnite"
+    },
+    "game": "Fortnite",
+    "date": "2025-09-09",
+    "description": {
+      "en": "Join the Fortnite League, where you could compete for glory and money!",
+      "fr": "Rejoignez la Ligue Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "entryFee": 13,
+    "prize": 947,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player5178",
+        "points": 178
+      },
+      {
+        "name": "Player4696",
+        "points": 295
+      },
+      {
+        "name": "Player6083",
+        "points": 195
+      },
+      {
+        "name": "Player4492",
+        "points": 107
+      },
+      {
+        "name": "Player6263",
+        "points": 255
+      },
+      {
+        "name": "Player4154",
+        "points": 55
+      },
+      {
+        "name": "Player8861",
+        "points": 239
+      },
+      {
+        "name": "Player4824",
+        "points": 289
+      },
+      {
+        "name": "Player9979",
+        "points": 180
+      },
+      {
+        "name": "Player4229",
+        "points": 226
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "title": {
+      "en": "Fortnite Getaway",
+      "fr": "Évasion Fortnite"
+    },
+    "game": "Fortnite",
+    "date": "2025-07-31",
+    "description": {
+      "en": "Join the Fortnite Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Fortnite, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Fortnite.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_8wM3cM34rgK45DG14k",
+    "entryFee": 23,
+    "prize": 790,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 25,
+    "title": {
+      "en": "Warzone Tournament",
+      "fr": "Tournoi Warzone"
+    },
+    "game": "Warzone",
+    "date": "2025-06-26",
+    "description": {
+      "en": "Join the Warzone Tournament, where you could compete for glory and money!",
+      "fr": "Rejoignez le Tournoi Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
+    "entryFee": 26,
+    "prize": 744,
+    "ended": false,
+    "ranking": [
+      {
+        "name": "Player9528",
+        "points": 168
+      },
+      {
+        "name": "Player2923",
+        "points": 224
+      },
+      {
+        "name": "Player8990",
+        "points": 243
+      },
+      {
+        "name": "Player6805",
+        "points": 143
+      },
+      {
+        "name": "Player9547",
+        "points": 101
+      },
+      {
+        "name": "Player8591",
+        "points": 54
+      },
+      {
+        "name": "Player7813",
+        "points": 300
+      },
+      {
+        "name": "Player8386",
+        "points": 123
+      },
+      {
+        "name": "Player2067",
+        "points": 227
+      },
+      {
+        "name": "Player3107",
+        "points": 205
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "title": {
+      "en": "Warzone Championship",
+      "fr": "Championnat Warzone"
+    },
+    "game": "Warzone",
+    "date": "2025-11-27",
+    "description": {
+      "en": "Join the Warzone Championship, where you could compete for glory and money!",
+      "fr": "Rejoignez le Championnat Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
+    "entryFee": 19,
+    "prize": 1339,
+    "ended": true,
+    "ranking": [
+      {
+        "name": "Player9528",
+        "points": 168
+      },
+      {
+        "name": "Player2923",
+        "points": 224
+      },
+      {
+        "name": "Player8990",
+        "points": 243
+      },
+      {
+        "name": "Player6805",
+        "points": 143
+      },
+      {
+        "name": "Player9547",
+        "points": 101
+      },
+      {
+        "name": "Player8591",
+        "points": 54
+      },
+      {
+        "name": "Player7813",
+        "points": 300
+      },
+      {
+        "name": "Player8386",
+        "points": 123
+      },
+      {
+        "name": "Player2067",
+        "points": 227
+      },
+      {
+        "name": "Player3107",
+        "points": 205
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "title": {
+      "en": "Warzone Showdown",
+      "fr": "Duel Warzone"
+    },
+    "game": "Warzone",
+    "date": "2025-09-11",
+    "description": {
+      "en": "Join the Warzone Showdown, where you could compete for glory and money!",
+      "fr": "Rejoignez le Duel Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
+    "entryFee": 24,
+    "prize": 1271,
+    "ended": false,
+    "ranking": []
+  },
+  {
+    "id": 28,
+    "title": {
+      "en": "Warzone Getaway",
+      "fr": "Évasion Warzone"
+    },
+    "game": "Warzone",
+    "date": "2025-09-01",
+    "description": {
+      "en": "Join the Warzone Getaway, where you could compete for glory and money!",
+      "fr": "Rejoignez l'Évasion Warzone, où vous pourriez concourir pour la gloire et de l'argent !"
+    },
+    "image": "assets/_videoGames/Warzone.jpg",
+    "link": "#",
+    "paiementLink": "https://buy.stripe.com/test_5kAaFefRddxSeac3ct",
+    "entryFee": 13,
+    "prize": 798,
+    "ended": false,
+    "ranking": []
+  }
+]
