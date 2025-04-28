@@ -9,7 +9,6 @@ import {TranslatePipe} from '@ngx-translate/core';
   styleUrl: './fonctionnality.component.css'
 })
 export class FonctionnalityComponent {
-  img_path = "assets/_background/controllers.png";
   private readonly router = inject(Router)
 
   openApp() {

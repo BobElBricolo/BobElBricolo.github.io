@@ -162,6 +162,7 @@
   "TOURNAMENT-DETAILS": {
     "HTML": {
       "BTN_JOIN": "Participer au Tournoi",
+      "BTN_BET": "Ouvrir les paris",
       "FEE": "Frais d'entrée:",
       "PRIZE": "Cagnotte totale:",
       "TITLE_BDN": "Répartition des prix",
@@ -182,7 +183,8 @@
       "DATE": "Date:",
       "BTN_JOIN": "Participer",
       "BTN_VIEW": "Voir",
-      "BTN_HIDE": "Cacher"
+      "BTN_HIDE": "Cacher",
+      "BTN_BET": "Ouvrir les paris"
     },
     "TS": {
 

@@ -1,0 +1,93 @@
+<div class="bet-page">
+  <div class="content-wrapper">
+    <div class="left-column">
+      <img [src]="tournament.image" [alt]="tournament.title" class="tournament-banner" />
+
+      <h1 class="tournament-title">{{ tournament.title }}</h1>
+      <p class="tournament-game">{{ tournament.game }}</p>
+      @if (currentUserId === tournament.ownerId && !tournament.betsClosed) {
+        <button class="close-bets-button" (click)="closeBets()">
+          Fermer les paris / Lancer le tournoi
+        </button>
+      }
+      @if (tournament.betsClosed) {
+        <div class="tournament-status">
+          <span class="lock-icon">🔒</span>
+          Les paris sont maintenant fermés. Le tournoi est en cours.
+        </div>
+      }
+    </div>
+
+
+    <div class="right-column">
+      <h2 class="bet-title">Paris des joueurs</h2>
+      <p class="total-bet">Montant total parié : {{ totalAmountBet | currency:'CAD' }}</p>
+      <ol class="ranking-list">
+        @for (player of tournament.ranking; track player.id) {
+          <li>
+            <div
+              class="ranking-line"
+              [class.disabled-line]="tournament.betsClosed"
+              (click)="!tournament.betsClosed && openBetModal(player)"
+            >
+
+            <span class="position">#{{ tournament.ranking.indexOf(player) + 1 }}</span>
+              <span class="name">{{ player.username }}</span>
+              <span class="points">{{ player.points }} pts</span>
+              <span class="bets">{{ player.bets }} paris</span>
+              <span class="amount">{{ player.totalAmountBet | currency:'CAD' }}</span>
+              <span class="odds">{{ player.odds != null ? 'x' + player.odds : '?' }}</span>
+            </div>
+
+            @if (getUserBet(player.id)) {
+              <div class="user-bet-info">
+                <p>Tu as parié <strong>{{ getUserBet(player.id)?.amount | currency:'CAD' }}</strong>
+                  → Gain potentiel :
+                  <strong>
+                    {{ (getUserBet(player.id)?.amount || 0) * (player.odds || 0) | currency:'CAD' }}
+                  </strong></p>
+              </div>
+            }
+          </li>
+        }
+
+      </ol>
+    </div>
+  </div>
+</div>
+
+@if (selectedPlayer) {
+  <div class="bet-modal-backdrop" (click)="closeBetModal()">
+    <div class="bet-modal" (click)="$event.stopPropagation()">
+      <h3>
+        {{ getUserBet(selectedPlayer.id) ? 'Modifier ton pari' : 'Parier sur ' + selectedPlayer.username }}
+      </h3>
+
+
+      <p>Montant disponible : <strong>{{ userBalance | currency:'CAD' }}</strong></p>
+
+      <label for="betAmount">Montant à miser :</label>
+      <input
+        id="betAmount"
+        type="number"
+        min="1"
+        [max]="userBalance"
+        [(ngModel)]="betAmount"
+      />
+
+      <p>Gain potentiel : {{ getPotentialGain(selectedPlayer) | currency:'CAD' }}</p>
+
+      <button
+        (click)="placeBet()"
+        [disabled]="betAmount > userBalance || betAmount < 1"
+      >
+        Parier
+      </button>
+
+      <button class="cancel" (click)="closeBetModal()">Annuler</button>
+
+      <button class="buy" (click)="buyCredits()">Acheter des crédits</button>
+
+    </div>
+  </div>
+}

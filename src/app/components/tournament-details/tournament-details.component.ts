@@ -1,7 +1,7 @@
 import {Component, inject, OnInit} from '@angular/core';
 import {CurrencyPipe, DatePipe, NgClass} from '@angular/common';
 import {ApiCallsService} from '../../_services/service_api_call/api-calls.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Tournament} from '../../_models/TournamentDetails';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslatePipe} from '@ngx-translate/core';
@@ -18,6 +18,7 @@ import {TranslatePipe} from '@ngx-translate/core';
   styleUrl: './tournament-details.component.css'
 })
 export class TournamentDetailsComponent implements OnInit {
+
   constructor(public translate: TranslateService) {}
 
   getTournamentTitle(tournament: any): string {
@@ -32,6 +33,7 @@ export class TournamentDetailsComponent implements OnInit {
 
   private readonly apiCall = inject(ApiCallsService);
   private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
 
   tournament!: Tournament;
 
@@ -48,6 +50,10 @@ export class TournamentDetailsComponent implements OnInit {
   redirectToPayment() {
     const features = 'width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes,status=yes';
     window.open(this.tournament.paiementLink, '_blank', features);
+  }
+
+  redirectToBet() {
+    this.router.navigate(['bet', this.tournament.id]);
   }
 }
 

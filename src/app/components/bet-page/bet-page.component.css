@@ -1,0 +1,275 @@
+.bet-page {
+  padding: 5rem 5% 3rem;
+  background: linear-gradient(to bottom right, #0e0526, #320c4b);
+  color: white;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.left-column {
+  flex: 0 0 300px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.tournament-banner {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.2);
+  margin-bottom: 1rem;
+}
+
+.tournament-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00e0ff;
+}
+
+.tournament-game {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+.right-column {
+  flex: 1;
+}
+
+.bet-title {
+  font-size: 1.4rem;
+  color: #00e0ff;
+  margin-bottom: 1rem;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ranking-list li {
+  background-color: #1a1a2e;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ranking-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover uniquement si la ligne n'est pas disabled */
+.ranking-line:hover:not(.disabled-line) {
+  background-color: rgba(0, 224, 255, 0.1);
+  transform: scale(1.02);
+}
+
+/* Quand c'est désactivé (paris fermés) */
+.disabled-line {
+  cursor: default;
+  opacity: 0.7; /* légère baisse d'opacité pour montrer que c’est verrouillé */
+}
+
+
+
+.position {
+  flex: 0 0 40px;
+  font-weight: bold;
+  color: #00e0ff;
+  text-align: left;
+}
+
+.name {
+  flex: 1 1 130px;
+  font-weight: bold;
+  color: white;
+  min-width: 130px;
+}
+
+
+.points {
+  flex: 0 0 80px;
+  color: #dcdcdc;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.bets {
+  flex: 0 0 80px;
+  color: #456978;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.amount {
+  flex: 0 0 90px;
+  font-size: 0.9rem;
+  color: #00e0ff;
+  font-weight: bold;
+  text-align: right;
+}
+
+.odds {
+  flex: 0 0 60px;
+  font-style: italic;
+  color: #80faff;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.bet-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 5, 38, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bet-modal {
+  background: #1a1a2e;
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.3);
+  width: 90%;
+  max-width: 400px;
+}
+
+.bet-modal h3 {
+  margin-top: 0;
+  color: #00e0ff;
+}
+
+.bet-modal input {
+  width: 50%;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0 1rem;
+  border: 2px solid #00e0ff;
+  border-radius: 8px;
+  background-color: #1a1a2e;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.bet-modal input:focus {
+  border-color: #80faff;
+  box-shadow: 0 0 5px rgba(0, 224, 255, 0.4);
+}
+
+.bet-modal label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #dcdcdc;
+  font-size: 0.95rem;
+}
+
+
+.bet-modal button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #00e0ff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bet-modal .cancel {
+  background: #444;
+  color: white;
+}
+
+.bet-modal p {
+  margin: 0.5rem 0;
+}
+
+.bet-modal .buy {
+  margin-top: 1rem;
+  background-color: #143550;
+  color: white;
+}
+
+.bet-modal .buy:hover {
+  background-color: #0071cc;
+}
+
+.user-bet-info {
+  background-color: rgba(0, 224, 255, 0.05);
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid #00e0ff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+.close-bets-button {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-bets-button:hover {
+  background-color: #e60000;
+}
+
+.tournament-status {
+  background-color: rgba(255, 77, 77, 0.1);
+  border-left: 4px solid #ff4d4d;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #ff9999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.lock-icon {
+  font-size: 1.2rem;
+}
+

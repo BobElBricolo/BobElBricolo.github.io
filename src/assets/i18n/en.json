@@ -139,6 +139,7 @@
   "TOURNAMENT-DETAILS": {
     "HTML": {
       "BTN_JOIN": "Join Tournament",
+      "BTN_BET": "Place a Bet",
       "FEE": "Entry Fee:",
       "PRIZE": "Prize Pool:",
       "TITLE_BDN": "Prize Breakdown",
@@ -159,7 +160,8 @@
       "DATE": "Date:",
       "BTN_JOIN": "Join",
       "BTN_VIEW": "View",
-      "BTN_HIDE": "Hide"
+      "BTN_HIDE": "Hide",
+      "BTN_BET": "Place a Bet"
     },
     "TS": {
 

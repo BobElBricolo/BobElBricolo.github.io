@@ -374,3 +374,28 @@
     gap: 0.5rem;
   }
 }
+
+.bet-button {
+  margin-top: 3rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #ffbb00;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.bet-button:hover {
+  background-color: #e6a800;
+  transform: scale(1.05);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
