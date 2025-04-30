@@ -1,5 +1,5 @@
 {
-  "HOME":{
+  "HOME": {
     "HTML": {
       "DOWNLOAD-BTN": "Télécharger l’application",
       "DESCRIPTION": "La plateforme ultime pour créer, rejoindre et gérer tes tournois en ligne. Que tu sois un amateur ou un compétiteur acharné, ici, c'est joue ou sors !",
@@ -28,7 +28,6 @@
       "BTN_SIGN_UP": "Créer un compte"
     },
     "TS": {
-
     }
   },
   "FORGOT": {
@@ -40,7 +39,6 @@
       "LNK_LOGIN": "Connexion"
     },
     "TS": {
-
     }
   },
   "REGISTER": {
@@ -58,10 +56,9 @@
       "WRN_DIFFERENT": "Mots de passe différents"
     },
     "TS": {
-
     }
   },
-  "PROFIL":{
+  "PROFIL": {
     "HTML": {
       "LOGOUT": "Se déconnecter",
       "SEARCH": "Chercher un utilisateur...",
@@ -78,10 +75,9 @@
       "FRIENDS": "Liste d'amis"
     },
     "TS": {
-
     }
   },
-  "DOWNLOAD_SECTION":{
+  "DOWNLOAD_SECTION": {
     "HTML": {
       "TITLE_WHITE": "Téléchargez",
       "TITLE_BLUE": "l'application",
@@ -92,7 +88,6 @@
       "BTN_WIN": "Télécharger pour Windows"
     },
     "TS": {
-
     }
   },
   "FUNCTIONNALITY": {
@@ -108,7 +103,6 @@
       "BTN_EXPLORE": "Explorer la plateforme"
     },
     "TS": {
-
     }
   },
   "TERMS": {
@@ -119,7 +113,6 @@
       "BTN_PDF": "Télécharger le PDF"
     },
     "TS": {
-
     }
   },
   "HEADER": {
@@ -132,31 +125,24 @@
       "PROFIL": "Profil"
     },
     "TS": {
-
     }
   },
   "HERO": {
     "HTML": {
-
     },
     "TS": {
-
     }
   },
   "HOME-PAGE": {
     "HTML": {
-
     },
     "TS": {
-
     }
   },
   "TOURNAMENT-CARD": {
     "HTML": {
-
     },
     "TS": {
-
     }
   },
   "TOURNAMENT-DETAILS": {
@@ -170,8 +156,37 @@
       "RANKING": "Classement Final"
     },
     "TS": {
-
     }
+  },
+  "BET_PAGE": {
+    "CLOSE_BETS": "Fermer les paris / Lancer le tournoi",
+    "BETS_CLOSED": "Les paris sont maintenant fermés. Le tournoi est en cours.",
+    "PLAYER_BETS": "Paris des joueurs",
+    "TOTAL_BET": "Montant total parié",
+    "POINTS": "pts",
+    "BETS": "paris",
+    "YOU_BET": "Tu as parié",
+    "POTENTIAL_WIN": "Gain potentiel",
+    "EDIT_BET": "Modifier ton pari",
+    "PLACE_BET_FOR": "Parier sur",
+    "AVAILABLE_CREDITS": "Montant disponible",
+    "BET_AMOUNT": "Montant à miser",
+    "PLACE_BET": "Parier",
+    "BUY_CREDITS": "Acheter des crédits",
+    "WINNER_YOU_BET": "Félicitations ! Tu as parié sur le gagnant : {{username}}",
+    "WINNER_NO_BET": "Le gagnant est : {{username}}"
+  },
+  "COMMON": {
+    "CANCEL": "Annuler"
+  },
+  "CREATE_TOURNAMENT": {
+    "TITLE": "Créer un tournoi",
+    "LABEL_TITLE": "Titre :",
+    "LABEL_GAME": "Jeu :",
+    "LABEL_DATE": "Date :",
+    "LABEL_DESCRIPTION": "Description :",
+    "LABEL_IMAGE": "Choisir une image",
+    "SUBMIT": "Créer"
   },
   "TOURNAMENT-PAGE": {
     "HTML": {
@@ -187,7 +202,6 @@
       "BTN_BET": "Ouvrir les paris"
     },
     "TS": {
-
     }
   },
   "POPUP": {
@@ -197,7 +211,6 @@
       "BUTTON": "Compris"
     },
     "TS": {
-
     }
   },
   "MISSION": {
@@ -234,7 +247,8 @@
       "ADDRESS": "3351 Bd des Forges, Trois-Rivières, QC G8Z 4M3",
       "DESCRIPTION3": "Ou nous joindre par courriel à"
     },
-    "TS": {}
+    "TS": {
+    }
   },
   "ACCUEIL": {
     "HTML": {
@@ -244,106 +258,115 @@
       "BTN_COMPETING": "Rejoins la compétition",
       "BTN_EXPLORE": "Explore les Tournois"
     },
-    "TS": {}
+    "TS": {
+    }
   },
   "NEXT_TOURNAMENT": {
-      "HTML": {
-        "TITLE_WHITE": "Prochain",
-        "TITLE_BLUE": "Tournoi",
-        "DESCRIPTION": "Prêt à démontrer tes compétences ? Rejoins notre prochain tournoi et bats-toi pour atteindre le sommet.",
-        "BTN_REGISTER": "S'inscrire"
-      },
-      "TS": {}
+    "HTML": {
+      "TITLE_WHITE": "Prochain",
+      "TITLE_BLUE": "Tournoi",
+      "DESCRIPTION": "Prêt à démontrer tes compétences ? Rejoins notre prochain tournoi et bats-toi pour atteindre le sommet.",
+      "BTN_REGISTER": "S'inscrire"
     },
-    "ACTUALITY": {
-      "HTML": {
-        "TITLE_WHITE": "Découvrez vos",
-        "TITLE_BLUE": "Champions",
-        "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et ont mérité leur place sur le podium.",
-        "DESCRIPTION2": "Célébrez avec nous leur victoire et leurs compétences exceptionnelles!",
-        "BTN_RANKINGS": "Voir le classement complet"
-      },
-      "TS": {}
+    "TS": {}
+  },
+  "ACTUALITY": {
+    "HTML": {
+      "TITLE_WHITE": "Découvrez vos",
+      "TITLE_BLUE": "Champions",
+      "DESCRIPTION1": "Ces joueurs se sont démarqués dans l'arène et ont mérité leur place sur le podium.",
+      "DESCRIPTION2": "Célébrez avec nous leur victoire et leurs compétences exceptionnelles!",
+      "BTN_RANKINGS": "Voir le classement complet"
     },
-    "PREVIEW": {
-      "POPUP": {
-        "HTML": {
-          "TITLE": "Attention!",
-          "DESCRIPTION": "Cette application est en cours de construction. Ce que vous voyez ici sont des prototypes de fonctionnalités à venir.",
-          "BUTTON": "Compris"
-        },
-        "TS": {}
+    "TS": {
+    }
+  },
+  "PREVIEW": {
+    "POPUP": {
+      "HTML": {
+        "TITLE": "Attention!",
+        "DESCRIPTION": "Cette application est en cours de construction. Ce que vous voyez ici sont des prototypes de fonctionnalités à venir.",
+        "BUTTON": "Compris"
       },
-      "GAMEPLAY": {
-        "HTML": {
-          "KILLS": "éliminations",
-          "RANK": "Rang: #",
-          "GAME": "Partie: #",
-          "ROUND": "Tour",
-          "PLAYERS_TITLE": "Les adversaires de ce tour"
-        },
-        "TS": {}
-      },
-      "GAMEPLAY_SECTION": {
-        "HTML": {
-          "TITLE_WHITE": "Aperçu",
-          "TITLE_BLUE": "en Jeu",
-          "DESCRIPTION": "Un aperçu rapide de l’expérience en jeu. Touchez le bouton en bas à droite pour agrandir l’interface. Conçue pour rester discrète : minimale, intuitive et adaptée à un gameplay sans interruption."
-        },
-        "TS": {}
-      },
-      "MATCH_DETAIL": {
-        "HTML": {
-          "BUTTON": "Fermer"
-        },
-        "TS": {}
-      },
-      "APP": {
-        "HTML": {
-          "TITLE": "Résultats du Tour",
-          "TEAM1": "Équipe A",
-          "TEAM2": "Équipe B",
-          "PLAYER": "Joueur",
-          "KILLS": "Éliminations",
-          "RATIO": "É/M",
-          "WIN_RATIO": "Victoires %",
-          "MVPS": "Meilleurs joueurs"
-        },
-        "TS": {}
-      },
-      "PREVIEW_SECTION": {
-        "HTML": {
-          "TITLE_WHITE": "Aperçu ",
-          "TITLE_BLUE": "des Statistiques",
-          "DESCRIPTION": "Comparez facilement les résultats finaux grâce à notre interface de statistiques post-match — même lorsque les affrontements ne sont pas en face-à-face."
-        },
-        "TS": {}
-      },
-      "MATCHBOARD": {
-        "HTML": {
-          "TITLE_WHITE": "Aperçu ",
-          "TITLE_BLUE": "du tableau des Matchs",
-          "DESCRIPTION": "Suivez facilement les classements, les matchs à venir et les résultats — le tout dans une interface claire et dynamique."
-        },
-        "TS": {}
+      "TS": {
       }
     },
-    "403": {
+    "GAMEPLAY": {
       "HTML": {
-        "TITLE": "Accès Interdit",
-        "DESCRIPTION": "Vous n'avez pas accès à cette zone.",
-        "DESCRIPTION2": "Veuillez contacter un administrateur.",
-        "BUTTON": "Retour à l'accueil"
+        "KILLS": "éliminations",
+        "RANK": "Rang: #",
+        "GAME": "Partie: #",
+        "ROUND": "Tour",
+        "PLAYERS_TITLE": "Les adversaires de ce tour"
       },
       "TS": {}
     },
-    "404": {
+    "GAMEPLAY_SECTION": {
       "HTML": {
-        "TITLE": "Page non trouvée",
-        "DESCRIPTION": "Oups! la page que vous recherchez n'existe pas.",
-        "DESCRIPTION2": "Elle a peut-être été effacée ou déplacée.",
-        "BUTTON": "Retour à l'accueil"
+        "TITLE_WHITE": "Aperçu",
+        "TITLE_BLUE": "en Jeu",
+        "DESCRIPTION": "Un aperçu rapide de l’expérience en jeu. Touchez le bouton en bas à droite pour agrandir l’interface. Conçue pour rester discrète : minimale, intuitive et adaptée à un gameplay sans interruption."
       },
       "TS": {}
+    },
+    "MATCH_DETAIL": {
+      "HTML": {
+        "BUTTON": "Fermer"
+      },
+      "TS": {
+      }
+    },
+    "APP": {
+      "HTML": {
+        "TITLE": "Résultats du Tour",
+        "TEAM1": "Équipe A",
+        "TEAM2": "Équipe B",
+        "PLAYER": "Joueur",
+        "KILLS": "Éliminations",
+        "RATIO": "É/M",
+        "WIN_RATIO": "Victoires %",
+        "MVPS": "Meilleurs joueurs"
+      },
+      "TS": {
+      }
+    },
+    "PREVIEW_SECTION": {
+      "HTML": {
+        "TITLE_WHITE": "Aperçu ",
+        "TITLE_BLUE": "des Statistiques",
+        "DESCRIPTION": "Comparez facilement les résultats finaux grâce à notre interface de statistiques post-match — même lorsque les affrontements ne sont pas en face-à-face."
+      },
+      "TS": {
+      }
+    },
+    "MATCHBOARD": {
+      "HTML": {
+        "TITLE_WHITE": "Aperçu ",
+        "TITLE_BLUE": "du tableau des Matchs",
+        "DESCRIPTION": "Suivez facilement les classements, les matchs à venir et les résultats — le tout dans une interface claire et dynamique."
+      },
+      "TS": {
+      }
     }
+  },
+  "403": {
+    "HTML": {
+      "TITLE": "Accès Interdit",
+      "DESCRIPTION": "Vous n'avez pas accès à cette zone.",
+      "DESCRIPTION2": "Veuillez contacter un administrateur.",
+      "BUTTON": "Retour à l'accueil"
+    },
+    "TS": {
+    }
+  },
+  "404": {
+    "HTML": {
+      "TITLE": "Page non trouvée",
+      "DESCRIPTION": "Oups! la page que vous recherchez n'existe pas.",
+      "DESCRIPTION2": "Elle a peut-être été effacée ou déplacée.",
+      "BUTTON": "Retour à l'accueil"
+    },
+    "TS": {
+    }
+  }
 }
