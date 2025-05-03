@@ -1,4 +1,31 @@
 {
+  "SEO": {
+    "TOURNAMENTS_TITLE": "Tournois | GetGoodOrGetOut",
+    "TOURNAMENTS_DESCRIPTION": "Découvrez tous les tournois e-sport disponibles sur notre plateforme. Participez à des compétitions privées ou publiques.",
+    "TOURNAMENTS_KEYWORDS": "tournoi esport, compétition gaming, tournois en ligne, GGOGO, paris",
+    "ABOUT_TITLE": "À propos | GetGoodOrGetOut",
+    "ABOUT_DESCRIPTION": "Découvre notre mission, notre vision et l’équipe derrière GetGoodOrGetOut, la plateforme e-sport innovante pour organiser des tournois privés avec mises.",
+    "ABOUT_KEYWORDS": "à propos GGOGO, mission esport, organisation tournoi, plateforme gaming, GetGoodOrGetOut",
+    "HOME_TITLE": "Accueil | GetGoodOrGetOut",
+    "HOME_DESCRIPTION": "Bienvenue sur GetGoodOrGetOut ! Consulte les dernières actualités e-sport, les statistiques des tournois récents et découvre le prochain événement à ne pas manquer.",
+    "HOME_KEYWORDS": "esport accueil, tournois à venir, stats gaming, actu esport, plateforme de tournoi, GGOGO",
+    "DOWNLOAD_TITLE": "Télécharge l’app | GetGoodOrGetOut",
+    "DOWNLOAD_DESCRIPTION": "Télécharge notre application desktop pour une expérience e-sport complète. Découvre toutes les fonctionnalités du site et lis les conditions d’utilisation.",
+    "DOWNLOAD_KEYWORDS": "téléchargement app esport, application desktop gaming, fonctionnalités GGOGO, conditions d’utilisation e-sport, GetGoodOrGetOut app",
+    "BET_TITLE": "Parie sur un joueur | GetGoodOrGetOut",
+    "BET_DESCRIPTION": "Choisis ton joueur favori et mise sur sa victoire ! Consulte les cotes et les mises actuelles pour maximiser tes gains.",
+    "BET_KEYWORDS": "pari esport, mise joueur, cotes tournoi, GGOGO paris, tournois privés",
+    "ERROR_TITLE": "Page introuvable | GetGoodOrGetOut",
+    "ERROR_DESCRIPTION": "La page que vous cherchez n'existe pas ou vous n'y avez pas accès.",
+    "ERROR_KEYWORDS": "erreur 404, erreur 403, page introuvable, accès refusé, GGOGO",
+    "PROFILE_TITLE": "Profil | GetGoodOrGetOut",
+    "PROFILE_DESCRIPTION": "Consulte ton profil, tes badges et tes anciens tournois sur GetGoodOrGetOut.",
+    "PROFILE_KEYWORDS": "profil joueur esport, badges GGOGO, historique tournois, compte utilisateur, GGOGO",
+    "LOGIN_TITLE": "Connexion | GetGoodOrGetOut",
+    "LOGIN_DESCRIPTION": "Connecte-toi à ton compte GetGoodOrGetOut pour rejoindre des tournois, parier et suivre tes statistiques e-sport.",
+    "LOGIN_KEYWORDS": "connexion esport, login GGOGO, compte joueur, tournoi en ligne, GGOGO"
+
+  },
   "HOME": {
     "HTML": {
       "DOWNLOAD-BTN": "Télécharger l’application",

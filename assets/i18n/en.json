@@ -1,4 +1,31 @@
 {
+  "SEO": {
+    "TOURNAMENTS_TITLE": "Tournaments | GetGoodOrGetOut",
+    "TOURNAMENTS_DESCRIPTION": "Browse all e-sport tournaments on our platform. Join private or public events and compete for glory!",
+    "TOURNAMENTS_KEYWORDS": "esport tournaments, gaming competition, online events, GGOGO, betting",
+    "ABOUT_TITLE": "About Us | GetGoodOrGetOut",
+    "ABOUT_DESCRIPTION": "Learn about our mission, vision, and the team behind GetGoodOrGetOut – the e-sport platform for creating private tournaments with wagers.",
+    "ABOUT_KEYWORDS": "about GGOGO, esport mission, tournament platform, gaming innovation, GetGoodOrGetOut",
+    "HOME_TITLE": "Home | GetGoodOrGetOut",
+    "HOME_DESCRIPTION": "Welcome to GetGoodOrGetOut! Check the latest e-sport news, tournament stats, and upcoming events you shouldn't miss.",
+    "HOME_KEYWORDS": "esport homepage, upcoming tournaments, gaming stats, esport news, tournament platform, GGOGO",
+    "DOWNLOAD_TITLE": "Download the App | GetGoodOrGetOut",
+    "DOWNLOAD_DESCRIPTION": "Download our desktop app for the full e-sport experience. Discover all features and review our terms of use.",
+    "DOWNLOAD_KEYWORDS": "esport app download, desktop gaming app, GGOGO features, esport terms, GetGoodOrGetOut app",
+    "BET_TITLE": "Place Your Bet | GetGoodOrGetOut",
+    "BET_DESCRIPTION": "Pick your favorite player and place your bet! Check current odds and bets to maximize your winnings.",
+    "BET_KEYWORDS": "esport bet, player odds, gaming wagers, GGOGO bet, private tournaments",
+    "ERROR_TITLE": "Page Not Found | GetGoodOrGetOut",
+    "ERROR_DESCRIPTION": "The page you're looking for doesn't exist or you don't have access to it.",
+    "ERROR_KEYWORDS": "404 error, 403 error, page not found, access denied, GGOGO",
+    "PROFILE_TITLE": "User Profile | GetGoodOrGetOut",
+    "PROFILE_DESCRIPTION": "View your profile, badges, and past tournaments on GetGoodOrGetOut.",
+    "PROFILE_KEYWORDS": "esport user profile, GGOGO badges, tournament history, user account, GGOGO",
+    "LOGIN_TITLE": "Login | GetGoodOrGetOut",
+    "LOGIN_DESCRIPTION": "Log into your GetGoodOrGetOut account to join tournaments, place bets, and track your e-sport stats.",
+    "LOGIN_KEYWORDS": "esport login, GGOGO login, player account, online tournaments, GGOGO"
+
+  },
   "HOME": {
     "HTML": {
       "DOWNLOAD-BTN": "Download the app",
